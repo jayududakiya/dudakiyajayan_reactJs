@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>lecture 2 </title>
+</head>
+
+<body>
+    <h2>This is Image tag </h2>
+
+    <img src="image/peakpx.jpg" alt="image is not found" height="200px" width="auto">
+    <img src="image/peakpx.jg" alt="image is not found" height="200px" width="auto"> <br>
+    <img src="image/ford-maustang_1969.webp" alt="image nor show" height="360px" width="auto">
+    <br>
+    <br>
+    <hr>
+
+    <h3>this is abbr tag </h3>
+
+    <abbr title="Hypertext Markup Language ">HTML</abbr>
+    <abbr title="Cascading Style Sheets ">&nbsp; CSS</abbr>
+    <abbr title="Java Script">&nbsp; JS</abbr>
+    <abbr title="Hypertext Transfer Protocol">&nbsp; HTTPS </abbr>
+    <br>
+    <hr>
+
+    <h3>this is a Address tag </h3>
+
+    <address>
+        Name : Hugh Jackman <br>
+        city : New York <br>
+        Street : 710-B, <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Advant Navis Business Park, <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sector-142, Noida Uttar Pradesh 201305 <br>
+        Email : <a href="mailto:jayandudakiya@gmail.com">jayandudakiya@gmail.com</a> <br>
+        Call : <a href="tel:7435200321">7435200321</a>
+    </address>
+    <hr>
+
+
+
+    <h3>this is a picture tag Just for information </h3>
+    <!-- picture tag is not used in HTML5 it can not run in Chrome browser / This tag output shows only on the Firefox browser -->
+    <!-- here only first image show in chrome browser  -->
+    <picture>
+        <source media="(min-width:720px)" srcset="image/wallpaper_street.jpg">
+        <source media="(min-width:480px)" srcset="image/ford-maustang_1969.webp">
+        <img src="image/peakpx.jpg" alt="image not show" width="300px" height="auto">
+    </picture>
+    <hr>
+
+    <h2>using of Q tag </h2>
+    <p>Full Name of Q tag is <q> &nbsp; Quotation &nbsp; </q> </p>
+
+    <hr>
+
+    <h3>this is blockquite tag </h3>
+    <!-- Here in "Cite" we put a link of content or  paragraph where we take it from the website -->
+    <!-- default margin from both sides given by the browser in this tag is 40px == (2.5em) -->
+    <blockquote cite="https://en.wikipedia.org/wiki/Chandrayaan-3">
+        Chandrayaan-3 (transl.Moon-craft, pronunciation (help·info))[7] is the third Indian lunar exploration mission
+        under the Indian Space Research Organisation's <abbr title="Indian Space Research Organisation "> (ISRO) </abbr>
+        Chandrayaan programme.[7] It consists of a lander named Vikram and a rover named Pragyan, similar to those of
+        the Chandrayaan-2 mission. The propulsion module carried the lander and rover configuration to lunar orbit in
+        preparation for a powered descent by the lander.
+    </blockquote>
+    <br>
+    <hr>
+
+
+    <h2>this is BDO tag </h2>
+    <h3> > BDO stands for Bi-Directional Override. The " BDO " tag is used to override the current text direction. </h3>
+    <!-- here a BDO tag has one attribute "dir" It has two values 1. " ltr " mins left to right &  2. " rtl " mins right to left -->
+
+    <bdo dir="ltr">Hello world !</bdo> <br> <!-- default use  -->
+    <bdo dir="rtl">Hello world !</bdo>
+
+
+</body>
+
+</html>
