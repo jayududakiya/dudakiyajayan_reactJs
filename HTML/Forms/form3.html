@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f84c90e4f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form 3</title>
+</head>
+<body>
+    <form style="text-align: center; border: 2px solid black; background-color: rgb(188, 255, 121);" >
+       <h2 style="color: red;">Personal Details</h2> 
+       <br> 
+       <label for="name">Name :</label>
+       <input type="text" id="name"> <br> <br>
+       <label for="password">Password :</label>
+       <input type="password" id="password"> <br> <br>
+       <label for="email">E-mail id :</label>
+       <input type="email" id="email"> <br> <br>
+
+       <label>Gender : </label> 
+       <label for="male">Male</label>
+       <input type="radio" id="male" name="Geander">
+       <label for="female">Female</label>
+       <input type="radio" id="female" name="Geander"> <br> <br>
+
+       <label for="content">Contact#: </label>
+       <input type="tel" id="content" name="content">
+       <br>
+       <h2 style="color: red;"> Educational Qualification </h2>
+       <br>
+        <label for="degree"> Degree :</label>       
+        <select name="degree" id="degree">
+            <option value="none" selected>--Select Group--</option>
+            <option value="Bachelor_of_Commerce">B.com</option>
+            <option value="Bachelor_of_Computer_Application">BCA</option>
+            <option value="Bachelor_of_Business_Administration">BBA</option>
+            <option value="Bachelor_of_Laws">LLB</option>
+            <option value="Bachelor_of_Technology">BTech</option>
+            <option value="Bachelor_of_Medicine,Bachelor_of_Surgery">MBBS</option>
+        </select>
+        <br> <br>
+        <label for="Engineering"> Engineering :</label>       
+        <select name="Engineering" id="Engineering">
+            <option value="none" selected style="text-align: center;">--Select Group--</option>
+            <option value="Chemical_Engineering">Chemical Engineering</option>
+            <option value="Mechanical_Engineering">Mechanical Engineering</option>
+            <option value="Civil_Engineering">Civil Engineering</option>
+            <option value="Automobile_Engineering">Automobile Engineering</option>
+            <option value="Electronic_Engineering">Electronic engineering</option>
+        </select> 
+        <br> <br>
+        <label for="Hobbies">Hobbies :</label>
+        <input type="checkbox" id="play">
+        <label for="paly">Palying Chess</label>
+        <input type="checkbox" id="book">
+        <label for="book">Reading Books</label>
+        <br> <br>
+        <h2 style="color: red;">Address</h2>
+        <textarea name="Address" cols="30" rows="5" placeholder="type Address hare...."></textarea>
+        <br> <br>
+        <label for="file">Attch Resume : </label>
+        <input type="file" id="file" >
+        <br> <br>
+            <button style="color: white; background-color: orange; padding: 6px; border-color: antiquewhite;">
+                SUBMIT  <i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
+        <br> 
+        <br>    
+    </form>
+</body>
+</html>

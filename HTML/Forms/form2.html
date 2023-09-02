@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f84c90e4f4.js" crossorigin="anonymous"></script>
+    <title>form 2</title>
+</head>
+<body>
+<form>
+    <h2>Sing Up </h2>
+
+    <label for="name">Name :</label> <br> <br>
+<span style="border: 1px solid gray; padding: 4px ;">
+    <input type="text" list="list" id="name" style="border: none; outline: none;" placeholder="full name">
+    <label for="name"><i id="name" class="fa-solid fa-caret-down"> </i> </label>
+</span>
+    <!-- <label for="name">Name :</label> <br>  -->
+    <!-- <input list="Full_name" id="name" name="name"  placeholder="full name">
+    <datalist id="Full_name" >
+        <option value="jayan dudakiya"></option>
+        <option value="nikhil kalsariya"></option>
+        <option value="akshy goti"></option>
+        <option value="samit savliya"></option>
+    </datalist> -->
+    <br> <br>
+    <label for="email">email :</label> <br> 
+    <input type="email" id="email" placeholder="gmail Id">
+    <br> <br>
+    <label for="password">Password</label> <br>
+    <input type="password" id="password" placeholder="8 characters">
+    <br> <br>
+    <label for="Con_password">Confirm Password</label> <br>
+    <input type="password" id="Con_password" placeholder="8 characters">
+    <br> <br>
+    <label for="DOB">Date of Birth :</label> <br>
+    <input type="date" id="DOB"> 
+    <br> <br>
+    <label> Gender : </label> <br>
+    <input type="radio" name="Gender" id="Male">
+    <label for="Male"> : Male</label>
+    <input type="radio" name="Gender" id="Female">
+    <label for="Female"> : Female</label>
+    <input type="radio" name="Gender" id="other">
+    <label for="other"> : Other</label>
+    <br> <br>
+
+    <label for="photo_file">Insert your Photo : </label> <br>
+    <input type="file" id="photo_file"> 
+    <br> <br>
+    <label for="resume_file">Insert your resume : </label> <br>
+    <input type="file" id="resume_file"> 
+    <br> <br>
+
+    <label for="question">Security Questions :</label> <br>
+    <select id="question">
+        <option selected value="none">select your question</option>
+        <option value="question-1">What was your favorite food as a child?</option>
+        <option value="question-2">In what city were you born?</option>
+        <option value="question-3">What is the name of your favorite pet?</option>
+        <option value="question-4">What high school did you attend?</option>
+        <option value="question-5">What was the make of your first car?</option>
+    </select> <br>
+    <textarea cols="32" rows="8"></textarea> 
+    <br> <br>
+    <input type="checkbox" id="terms"> <label for="terms">I agree trems and conditions </label> 
+    <br> <br>
+
+    <input type="button" value="Register">
+</form>
+
+</body>
+</html>
