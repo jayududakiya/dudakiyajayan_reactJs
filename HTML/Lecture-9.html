@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 9</title>
+</head>
+<body>
+    <h1>this code tag </h1>
+    <!-- this tag change default font family : monospace  -->
+    <code>
+        a=10 <br>
+        b=10 <br>
+        c  <br>
+        c=a+b <br>
+    </code>
+    
+    <!-- this tag change default font family : monospace  -->
+    <h1> this is kbd tag used to  'keyBordeShortCuts'  </h1>
+    <kbd>
+        ctrl + c 
+        ctrl + a
+    </kbd>
+    <br>
+    <h1>this is canvas tag </h1>
+    <canvas width="120" height="120" style="border: 1px solid black;">
+        An alternative text describing what your canvas displays.
+    </canvas>
+    <br>
+    <h1>this is output tag </h1>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="b" name="b" value="0" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+    </form>
+    <br>
+    <h1>this is a search tag</h1>
+    <search>
+      <form action="./search/">
+        <label for="movie">Find a Movie</label>
+        <input type="search" id="movie" name="q" />
+        <button type="submit">Search</button>
+      </form>
+    </search>
+    <br>
+    <h1>this is script tag </h1>
+    <!-- element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code -->
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script> 
+</body>
+</html>
