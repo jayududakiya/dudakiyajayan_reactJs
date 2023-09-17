@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Food</title>
+    <style>
+
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        header h1
+        {
+            text-align: center;
+            font-family: monospace;
+            font-weight: 200;
+            font-size: 40px;
+            padding: 20px 10px;
+            box-shadow:2px 2px 10px rgba(0,0,0,0.5) ;
+        }
+
+        .section
+        {
+            height: 100vh;
+            padding: 2.5% 5%;
+            background-color: #f6f6ef;
+            transition: 0.3s background-color;
+        }
+
+        .section:hover
+        {
+            background-color: transparent;
+        }
+        
+        .section .img-box
+        {
+            height: 95%;
+            width: 80%;
+            margin:auto;
+            position: relative;
+            border-radius: 20px;
+            box-shadow:4px 4px 10px rgba(0,0,0,0.7);
+        }
+
+        .section .img-box img
+        {
+            border-radius: 20px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            /* filter: blur(0.1em); */
+        }
+
+        .section .box-data
+        {
+            border-radius:21px;
+            top: 0%;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color:rgba(0,0,0,0.5);
+            transition: 0.3s background-color;
+        }
+
+
+        .section  .img-box:hover .box-data
+        {
+            background-color: transparent;
+        }
+
+        .section .box-data h1
+        {
+            padding: 12px 10px 10px 50px;
+            margin: auto;
+            letter-spacing: 5px;
+            font-size: 62px;
+            font-weight: 400;
+        }
+
+        .section .box-data .sub-text
+        {
+            text-transform: capitalize;
+            font-weight: 100;
+            font-size: 17px;
+            letter-spacing: 3px;
+            margin: auto;
+            display: inline-block;
+            padding: 10px 15px 10px 70px;
+        }
+
+        .section .box-data p
+        {
+            font-weight: 200;
+            line-break: anywhere;
+            padding: 20px 35px;
+            width: 55%;
+        }
+
+        .section .box-data .text-2
+        {
+            font-size: 14px;
+            padding-left: 50px;
+        }
+
+        .section .img-box:hover .box-data .sub-text,
+        .section .img-box:hover .box-data p
+        {
+            opacity:0.2;
+        }
+
+
+        /* ======================================================================================================================================= */
+
+        .section-1 .box-data h1
+        {
+            color: #F5F500;
+        }
+
+        .section-1 .box-data p
+        {
+            color: #fff;
+        }
+
+        .section-1 .box-data .sub-text
+        {
+            color: 	#FFFFCC;
+        }
+
+        .section-1 .box-data .text-2
+        {
+            color: #fff;
+        }
+
+        .section-2
+        {
+            background-color: #e7ecda;
+        }
+
+        .section-2 .img-box img
+        {
+            object-position:top;
+        }
+
+        .section-2 .box-data h1
+        {
+            font-size: 50px;
+            color: #fffaf4;
+        }
+
+        
+        .section-2 .box-data p
+        {
+            color: #fff;
+        }
+
+
+        .section-2 .box-data .sub-text
+        {
+            color: #f9f9f9;
+            font-size: 15px;
+        }
+
+        .section-2 .box-data p
+        {
+            width: 50%;
+            line-height: 20px;
+        }
+
+        .section-2 .box-data .text-2
+        {
+            width: 50%;
+            line-break: anywhere;
+            font-size: 12px;
+        }
+
+        .section-3
+        {
+            background-color: #e7d2e4;
+        }
+
+        .section-3 .box-data h1
+        {
+            font-size: 45px;
+            color: #cab083;
+        }
+
+
+        .section-3 .box-data .sub-text
+        {
+            font-size: 15px;
+            color: #dac8a8;
+        }
+
+        .section-3 .box-data p
+        {
+            width: 50%;
+            line-height: 20px;
+            color: #ffffff;
+        }
+
+        .section-3 .box-data .text-2
+        {
+            width: 80%;
+            line-height: 20px;
+            letter-spacing: 1px;
+            font-size: 12px;
+            color: #cfb88f;
+        }
+
+        footer
+        {
+            border-top: 2px solid rgba(0, 0, 0, 0.36);
+        }
+        
+        footer h4 {
+            text-align: center;
+            font-family:sans-serif;
+            font-size: 15px;
+            margin: auto;
+            padding: 8px 12px;
+            color: #666;
+        }
+        
+        footer h4 a
+        {
+            display: inline-block;
+            padding-left: 5px;
+            font-weight: 700;
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Favorite Food</h1>
+    </header>
+    <section class="section section-1">
+        <div class="img-box">
+            <img src="./project-6/pasta.jpg" alt="pasta-img">
+            <div class="box-data">
+                <h1>Pasta</h1>
+                <span class="sub-text text-1">
+                    <q>Pasta la vista, hunger!</q>
+                </span>
+                <p>
+                    Pasta, the humble yet extraordinary creation of flour and water, has a special place in my heart. It is not just a meal; it's a culinary embrace that wraps me in its warm, carb-laden goodness. As a self-proclaimed pasta aficionado, I have tasted its myriad forms and flavors, but one dish reigns supreme as my all-time favorite
+                </p>
+                <span class="sub-text text-2">
+                    Pasta is a staple food of Italian cuisine.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-2">
+        <div class="img-box">
+            <img src="./project-6/burger-4.jpg" alt="burger-img">
+            <div class="box-data">
+                <h1>Hamburger</h1>
+                <span class="sub-text text-1" >
+                    <q>Fry-day is the best day.</q>
+                </span>
+                <p>
+                    A burger holds a special place in my heart; it's not just a meal but a delightful experience waiting to happen. With its tantalizing blend of flavors and textures, it beckons me like an old friend, promising comfort and satisfaction with every bite.
+                    the freshness of lettuce and tomatoes all combine to create a symphony of taste that never fails to please my palate.
+                </p>
+                <span class="sub-text text-2" >
+                    The United States was the first country where two slices of bread and a ground beef patty were combined into a "hamburger sandwich" and sold. 
+                    <!-- 
+                    Shortly after its creation, the hamburger quickly included all of its currently typically characteristic trimmings, including onions, lettuce, and sliced pickles. -->
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-3">
+        <div class="img-box">
+            <img src="./project-6/pav bhaji.jpg" alt="pav bhaji img">
+            <div class="box-data">
+                <h1>Pav Bhaji</h1>
+                <span class="sub-text text-1" >
+                    a true delight for vegetarians.
+                </span>
+                <p>
+                    In the vibrant tapestry of Indian cuisine, there exists a dish that embodies the essence of both simplicity and complexity, street food and comfort food, all in one delightful package. It's none other than the beloved Pav Bhaji. For me, Pav Bhaji isn't just a dish; it's a cherished culinary journey that warms my heart every time I eating.
+                </p>
+                <span  class="sub-text text-2">
+                    The origin of this dish traces back to textile mill workers in Mumbai in the 1850s. They had lunch breaks too short for a full meal, and a light lunch
+                </span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4>I have taken the details to the web from
+            <a href="https://www.wikipedia.org/" target="_blank">
+                wikipedia.org
+            </a>
+        </h4>
+    <h4> 
+        This images , you can find it on 
+        <a href="https://pixabay.com/" target="_blank">
+            pixabay.com
+        </a>
+    </h4>
+    </footer>
+</body>
+</html>
