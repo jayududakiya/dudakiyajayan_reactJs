@@ -1,0 +1,104 @@
+/* INDEX
+css introduction
+css syntex
+css apply method
+css comment
+cascade and inheritance !important rule
+/* Css apply External Method */
+pre {
+    color: rgb(238, 14, 182);
+    border: 1px solid blue;
+    background-color: red;
+}
+
+/* h4 {} */
+
+/* text-align: left;
+text-decoration: line-through; */
+
+/* css comment */
+/* CASCADE AND INHERITANCE */
+/* cascade *
+    */
+/* .element-1 {
+    height: 200px;
+    width: 29Any */
+/* css comment */
+/* CASCADE AND INHERITANCE */
+/* cascade */
+/* .element-1 {
+height: 200px; width: 200px;
+background-color: RED;
+}
+.element-1 {
+background-color: blueviolet;
+height: 300px;
+width:500px;
+}
+.element-1 {
+height: 50px;
+} */
+/* inheritance */
+.heading-1 {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* inheritance */
+.heading-1 {
+    color: red;
+    text-decoration: underline;
+}
+
+.element-2 .heading-1 
+{
+    color:green;
+}
+
+
+.text .element-2 .heading-1 {
+    color: pink;
+}
+
+.text .heading-1 {
+    color: brown;
+}
+
+.element-3 .heading-1 {
+    color: yellow;
+}
+
+/* !important rule */
+.heading-2 {
+    color: tomato;
+    /* background-color: yellow; */
+}
+
+.text .heading-1 {
+    color: brown;
+}
+
+.element-3 .heading-1 {
+    color: yellow;
+}
+
+/* !important rule */
+.heading-2 
+{
+    color: tomato;
+}
+
+
+/* background-color: yellow; */
+.heading-2{
+    color: blue;
+    /* background-color:gray;*/
+}
+
+.para-11{
+color: pink !important;
+}
+.para-11{
+color: red !important;
+}
