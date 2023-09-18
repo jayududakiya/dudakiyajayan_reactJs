@@ -1,0 +1,87 @@
+*
+{
+    padding: 1%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;    
+}
+
+
+.background
+{
+    background-image: url(../Image/wallpaperflare.com_wallpaper.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: top center;
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip:content-box ;
+    background-clip: border-box;
+    background-attachment: fixed;
+}
+
+.background p
+{
+    text-align: center;
+    padding: 20px;
+    color: #fff0ff;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-1
+{
+    border: 40px solid rgba(255, 255, 59, 0.377);
+    background-position: bottom ;
+    background: url(../Image/wallpaper_street.jpg);
+}
+
+
+
+.linear-gradient-1 {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to top, red, blue,yellow,green);
+}
+
+.diagonal-linear-gradient {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to right top, red, yellow 100%);
+}
+
+.linear-gradient-rainbow {
+    height: 500px;
+    width: 50%;
+    border-radius: 100%;
+    background: linear-gradient(to left, red, yellow, green, blue, indigo, violet, orange)
+}
+
+.radial-gradient-simple {
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, orange, yellow, green, blue, indigo, violet);
+}
+
+.radial-gradient {
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle farthest-corner at right, red, blue);
+}
+
+.bullseye {
+    height: 100vh;
+    width: 100%;
+    background: repeating-radial-gradient(#fff0ff, red 10%, white 20%, white 25%);
+}
+
+.warning {
+    height: 100vh;
+    width: 100%;
+    background: repeating-linear-gradient(80deg,orange ,orange 10%, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 20%);
+}
