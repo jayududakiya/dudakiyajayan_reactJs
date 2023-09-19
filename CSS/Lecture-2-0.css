@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Poppins:wght@200;300;400&display=swap');
+
+/* font-family: 'Fuggles', cursive;
+font-family: 'Poppins', sans-serif; */
+
+
+
+.font-propertys p
+{
+    font-family: 'Poppins', sans-serif; 
+    font-size:calc(2vw + 16px);   /*  Responsive font size value */   
+    font-size:calc(70% + 16px);   /*  Responsive font size value */   
+    font-size: 1.7em;
+    font-weight: 400;
+    font-style: italic;
+    font-variant:small-caps;
+    line-height: 30px;
+}
+
+.font-propertys + h1
+{
+    text-shadow: 4px 2px 4px rgb(255, 0, 0);
+}
+
+.text-propertys p
+{
+    border: 2px solid lightcoral;
+    font-family: 'poppins' , sans-serif;
+    font-size: calc(1vw + 10px);
+    color: brown;
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-decoration: underline 1px wavy lightsalmon;
+    text-indent: 100px;
+}
+
+.direction p
+{
+    direction:rtl;
+    unicode-bidi: bidi-override;
+}
+
+
+
+.vertical p
+{
+    font-size: 32px;
+    text-decoration: overline 2px solid red;
+}
+
+.vertical p img
+{
+    vertical-align:top;
+    vertical-align: text-bottom;
+}
+
+
+.whitespace p
+{
+    font-size: 20px;
+    word-wrap:normal ;
+    word-wrap: break-word;
+    /* visibility: collapse; */
+    visibility: hidden;
+}
