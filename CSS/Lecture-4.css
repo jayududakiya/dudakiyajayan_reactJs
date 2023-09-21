@@ -1,0 +1,81 @@
+*
+{
+    padding:0%;
+    margin:2px 10px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 
+    :disabled
+    :enabled(defult)
+    ::placeholder
+    :checked
+    :focus
+    :hover
+    :required
+    :invalid
+    :valid 
+    ::marker this for list items
+
+*/
+
+
+fieldset
+{
+    margin: auto 20px;
+}
+
+form 
+{
+    margin: 30px auto;
+    width: 500px;
+    padding: 20px;
+}
+
+
+
+input[type="text"]:focus,
+input[type="range"]:focus{
+    background-color: lightgreen;
+}
+
+input[type="text"]:hover,
+input[type=checkbox]:hover{
+    width: 200px;
+    height: 30px;
+}
+
+
+/* ===   */
+
+input[name="check"]{
+   accent-color: yellow;    
+}
+
+input[id="check-box-1"]{
+   accent-color: red;    
+}
+
+
+input:required
+{
+    border: 2px solid red;
+}
+
+
+::placeholder{
+    color:red
+}
+
+input:invalid
+{
+    background-color: darkgray;
+    color: white;
+}
+
+input:valid
+{
+    background-color: lightgoldenrodyellow;
+    color:cornflowerblue;
+}
