@@ -169,6 +169,16 @@ ul li:nth-child(3)
     list-style-type: square;
 }
 
+.marker li
+{
+    list-style-type:decimal;
+}
+
+.marker li::marker
+{
+    color: red;
+}
+
 .li-img li
 {
     list-style-image:url(../Image/Shin-Chan-PNG-60X60px.png) ;
