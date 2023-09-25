@@ -8,9 +8,9 @@
 
 /* 
     :disabled
-    :enabled(defult)
-    ::placeholder
-    :checked
+    :enabled(defult) 
+    ::placeholder in html file & css to
+    :checked in html file & css to
     :focus
     :hover
     :required
@@ -19,7 +19,6 @@
     ::marker this for list items
 
 */
-
 
 fieldset
 {
@@ -32,8 +31,6 @@ form
     width: 500px;
     padding: 20px;
 }
-
-
 
 input[type="text"]:focus,
 input[type="range"]:focus{
@@ -79,3 +76,78 @@ input:valid
     background-color: lightgoldenrodyellow;
     color:cornflowerblue;
 }
+
+
+h1,h3
+{
+    text-align: center;
+    padding: 5px;
+}
+
+iframe
+{
+    width: 48%;
+    height: 500px;
+}
+
+.iframe-head
+{
+    text-align: center;
+    width: 48%;
+    float: left;
+}
+
+
+div:empty
+{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+span
+{
+    padding: 30px 0px;
+}
+
+span::before
+{
+    content: "this is before class";
+    height: 20px;
+    width: 400px;
+    color: white;
+    background-color: brown;
+}
+
+span::after
+{
+    content: "this is after class";
+    height: 20px;
+    width: 400px;
+    color: white;
+    background-color: rgb(244, 49, 49);
+}
+
+
+p:first-of-type::first-letter
+{
+    font-size: 30px;
+    color: blueviolet;
+}
+
+p:first-of-type::first-line
+{
+    background-color: burlywood;
+}
+
+p:nth-of-type(2)::selection
+{
+    background-color: brown;
+    color: lightgreen;
+}
+
+
+
+
+
