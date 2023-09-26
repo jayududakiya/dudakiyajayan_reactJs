@@ -1,0 +1,94 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 3px;
+    color: limegreen;
+}
+
+
+.block
+{
+    background-color: lightcoral;
+    color: white;
+    margin: 20px;
+}
+
+
+.inline
+{
+    display: inline;
+    background-color: lightskyblue;
+    color: brown;
+    margin: 20px ;
+}
+
+.inline-block
+{
+    display: inline-block;
+    background-color:burlywood;
+    color:blue;
+    margin: 10px;
+}  
+
+
+
+/* ============flex=============== */
+
+.flex-box
+{
+    display: flex;
+    background-color: lightsalmon;
+    height: 500px;
+    width: 1200px;
+    color: aliceblue;
+}
+
+
+.flex-box div{
+    /* flex-grow: 1;
+    flex-basis:190px; */
+    flex: 1 1 200px;
+}
+
+
+.box-1
+{
+    /* flex-shrink: 3; */
+    /* width: 200px; */
+    height: 200px;
+    background-color:lightcoral ;
+}
+.box-2
+{
+    /* width: 200px; */
+    height: 200px;
+    background-color:coral;
+}
+.box-3
+{
+    /* width: 200px; */
+    height: 200px;
+    background-color:firebrick;
+}
+.box-4
+{
+    /* width: 200px; */
+    height: 200px;
+    background-color:green;
+}
+.box-5
+{
+    /* width: 200px; */
+    height: 200px;
+    background-color:gray;
+}
+
+
+
+
