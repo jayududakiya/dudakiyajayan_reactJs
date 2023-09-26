@@ -59,7 +59,7 @@ background-color: green;
 }
 div:nth-last-of-type(3) h1:first-child
 {
-    background-color:pink;
+    background-color:lightgreen;
 }
 div:nth-last-of-type(3) h1:nth-child(2)
 {
