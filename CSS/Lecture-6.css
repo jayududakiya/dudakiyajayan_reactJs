@@ -1,0 +1,168 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 3px;
+    color: limegreen;
+    
+}
+
+
+.static
+{
+    width: 400px;
+    height: 500px;
+    background-color: lightpink;
+    position: static;
+}
+
+
+.parents-fixed{
+    background:  rgb(213, 92, 92);
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    z-index: 2;
+}
+
+.parents-fixed .fixed
+{
+    text-align: center;
+    color: #fff;
+    font-size: 33px;
+    top: 10px;
+    right: 0;
+    position: fixed;
+    width: 25%;
+    z-index: -1;
+    height: 100px;
+    background:  rgb(234, 164, 164);
+}
+
+
+.parents-sticky{
+    background:  rgb(87, 81, 81);
+    width: 70%;
+    margin: auto;
+}
+
+.parents-sticky .sticky
+{
+    position:sticky;
+    top: 0px;
+    background-color: #fff;
+}
+
+span
+{
+    font-size: 16px;
+}
+
+
+.relative
+{
+    background-color: #d3d3d3;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+.absolute
+{
+    position: absolute;
+}
+
+
+.absolute-1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    background-color: blue;
+}
+
+.absolute-2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 0;
+    background-color: red;
+}
+
+.absolute-3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0px;
+    left:0;
+    right:0;
+    margin:auto;
+    background-color: green;
+}
+
+.absolute-4 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    background-color: blueviolet;
+}
+
+.absolute-5 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: orange;
+}
+
+.absolute-6 {
+    position: absolute;
+    height: 100px;
+    width: 50%;
+    inset:50px;
+    z-index: 4;
+    margin: auto;
+    background-color: slateblue;
+}
+
+.absolute-7 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    right:0;
+    margin: auto;
+    background-color: black;
+}
+
+.absolute-8 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    background-color: rgb(61, 17, 24);
+}
+
+.absolute-9 {
+    position: absolute;
+    height: 300px;
+    width: 70%;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: auto;
+    background-color:brown;
+}
+
+
