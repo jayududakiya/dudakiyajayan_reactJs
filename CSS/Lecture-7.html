@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture-7 to CSS</title>
+    <link rel="stylesheet" href="Lecture-7.css">
+</head>
+<body>
+  <h1>transform property 2d</h1>
+
+  <fieldset>
+    <legend> this is translate</legend>
+    <div class="translate">
+        (x=150px,y=20px) 
+    </div>
+    <div class="translateX">
+      (x=200px)   
+    </div>
+    <div class="translateY">
+      (y=100px) 
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend> this is rotate</legend>
+    
+    <div class="rotate">
+        clockwise (140deg)
+    </div>
+    
+    <div class="rotateX">
+        rotateX(140deg)
+    </div>
+
+    <div class="rotateY">
+        rotateY(140deg)
+    </div>
+
+    <div class="anti-rotate">
+        anti clockwise (-100deg)
+    </div>
+    
+  </fieldset>
+
+  <fieldset>
+    <legend> this is  scale</legend>
+    
+    <div class="scale">
+        (x=1.5,y=1.5)
+    </div>
+    
+    <div class="scaleX">
+        (x=1.5)
+    </div>
+
+    <div class="scaleY">
+        (y=1.5)
+    </div>
+
+    <h2>
+        scale in negative
+    </h2>
+    <div class="scale-negative">
+        (x=0.5,y=0.5)
+    </div>
+
+  </fieldset>
+
+  <fieldset>
+    <legend> this is  skew</legend>
+    
+    <div class="skew">
+        skew(50deg
+        ,20deg);
+        /* (x,y) */
+    </div>
+    
+    <div class="skewX">
+        skewX(50deg)
+    </div>
+
+    <div class="skewY">
+        skewY(50deg)
+    </div>
+
+    <h2>
+        skew in negative
+    </h2>
+    <div class="skew-negative">
+        skew(-50deg
+        ,-20deg);
+        /* (x,y) */
+    </div>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>this about transition</legend>
+   <pre>
+
+    /* short hand method */
+
+    transition : 1.(duration) 2.(delay)  3.(property) 4.(timing-function);
+  
+    /*long */
+
+    1.transition-duration : 2s ;
+    
+    2.transition-delay : 3s ;
+    
+    3.transition-property: width heigth color " all ";
+    
+   4. transition-timing-function :  ; 
+                ease - specifies a transition effect with a slow start, then fast, then end slowly
+                linear - specifies a transition effect with the same speed from start to end
+                ease-in - specifies a transition effect with a slow start
+                ease-out - specifies a transition effect with a slow end
+                ease-in-out - specifies a transition effect with a slow start and end
+   </pre>
+</fieldset>
+
+<fieldset>
+    <legend>this example transition</legend>
+    transition: 4s 1s all ease-in-out;  
+
+    <div class="transition">
+
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>filter property</legend>
+    <ol start="1">
+        <li>filter: blur(1px);</li>
+        <li>filter:brightness(320%);</li>
+        <li>filter: contrast(180%);</li>
+        <li>filter: drop-shadow(10px 10px 10px orange);</li>
+        <li>filter: grayscale(100%); </li>
+        <li>filter: hue-rotate(90deg); </li>
+        <li>filter: invert(70%);</li>
+        <li>filter: none;</li>
+        <li>filter: opacity(0.9);</li>
+        <li>filter: saturate(200%);</li>
+        <li>filter: sepia(80%);</li>
+    </ol>
+</fieldset>
+
+<fieldset>
+    <legend>this example filter</legend>
+    <div class="filter">
+        <img src="../Image/smiley-baby-ganesha--forest.png">
+    </div>
+ </fieldset>
+
+</body>
+</html>

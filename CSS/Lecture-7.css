@@ -1,0 +1,260 @@
+h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    color: lightcoral;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+
+legend
+{
+    position: sticky;
+    top: 0%;
+    font-size: 30px;
+    color: lightcoral;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+fieldset
+{
+    height: 630px;
+    margin: 10px auto;
+}
+
+
+fieldset:nth-of-type(2)
+{
+    height: 850px;
+}
+
+fieldset:nth-of-type(4)
+{
+    height: 850px;
+}
+
+fieldset:nth-of-type(5)
+{
+    height: 450px;
+}
+
+fieldset:nth-of-type(5) pre
+{
+    width: 90%;
+    margin: 2% auto;
+    font-family: sans-serif;
+}
+
+
+fieldset:nth-of-type(6)
+{
+    height: 450px;
+}
+
+fieldset:nth-of-type(7)
+{
+    height: 350px;
+}
+
+fieldset:nth-of-type(7) ol
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+ 
+fieldset:nth-of-type(7) ol li{
+    padding:1.5px ;
+    color: rgb(77, 78, 77);
+}
+
+.translate,
+.translateX,
+.translateY
+{
+    width: 150px;
+    height: 100px;
+    margin: 8px;
+    background-color: limegreen;
+}
+
+.translate:hover
+{
+    transform: translate(150px,20px); /* (x,y) */
+    transition: 4s ;
+}
+
+.translateX:hover
+{
+    transform: translateX(200px); /* (x) */
+    transition: 4s ;
+}
+.translateY:hover
+{
+    transform: translateY(100px); /* (y) */
+    transition: 4s ;
+}
+
+.rotate,
+.rotateX,
+.rotateY,
+.anti-rotate
+{
+    margin: 10px;
+    width: 160px;
+    height: 160px;
+    background-color: limegreen;
+}
+
+.rotate:hover
+{
+    transform:rotate(140deg); /*clockwise*/
+    transition: 4s ;
+}
+
+.rotateX:hover
+{
+    transform:rotateX(140deg); /*clockwise*/
+    transition: 4s ;
+}
+
+.rotateY:hover
+{
+    transform:rotateY(140deg); /*clockwise*/
+    transition: 4s ;
+}
+
+.anti-rotate:hover
+{
+    transform:rotate(-100deg); /*anti-clockwise*/
+    transition: 4s ;
+}
+
+
+.scale,
+.scaleX,
+.scaleY,
+.scale-negative
+{
+    margin: 30px 10px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+
+
+.scale:hover
+{
+    transform: scale(1.5);/* (x,y) */
+    transition: 3s;
+}
+
+.scaleX:hover
+{
+    transform: scaleX(1.5); /* (x) */
+    transition: 3s;
+}
+
+.scaleY:hover
+{
+    transform: scaleY(1.5); /* (y) */
+    transition: 3s;
+}
+
+.scale-negative:hover
+{
+    transform: scale(0.5); /* (x,y) */
+    transition: 3s;
+}
+
+
+.skew,
+.skewX,
+.skewY,
+.skew-negative
+{
+    margin: 70px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+
+
+.skew:hover
+{
+    transform: skew(50deg,20deg);/* (x,y) */
+    transition: 3s;
+}
+
+.skewX:hover
+{
+    transform: skewX(50deg); /* (x) */
+    transition: 3s;
+}
+
+.skewY:hover
+{
+    transform: skewY(50deg); /* (y) */
+    transition: 3s;
+}
+
+
+.skew-negative:hover
+{
+    transform: skew(-50deg,-20deg);/* (x,y) */
+    transition: 3s;
+}
+
+
+
+
+.transition
+{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    border-radius: 12px;
+}
+
+
+.transition:hover
+{
+    transform: translate(500px , 200px);
+    transition: 4s 1s all ease-in-out;  /* short hand method */
+    /* sem */
+    transition-duration: 4s;
+    transition-delay: 1s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.filter
+{
+    margin: 20px auto;
+    border: 10px solid orchid;
+    height: 550px;
+    width: 800px;
+    background-color: orange;
+    /* filter: blur(1px);
+    filter:brightness(320%);
+    filter: contrast(180%);
+    filter: grayscale(100%);
+    filter: hue-rotate(90deg);
+    filter: invert(70%);
+    filter: none;
+    filter: opacity(0.9);
+    filter: saturate(200%);
+    filter: sepia(80%); */
+    filter: drop-shadow(10px 10px 10px orange);
+}
+
+.filter img
+{
+    margin: 10px auto;
+    display: block;
+}
