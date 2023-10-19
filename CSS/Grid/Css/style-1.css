@@ -15,9 +15,7 @@ body{
 /* #34C4BD */
 
 main{
-    border: 2px solid white;
     margin: auto;
-    /* height: 100vh; */
     width: 1200px;
     padding: 25px;
     display: grid;
