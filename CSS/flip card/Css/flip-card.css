@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flip-cantaner
+{
+    max-width: 1200px;
+    height: 80vh;
+    padding: 2px;
+    margin: 50px auto;
+    display: flex;
+    perspective: 1200px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    /* border: 1px solid sandybrown; */
+}
+
+
+.flip-cantaner .flip-card
+{
+    padding: 2px;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    position: relative;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d; 
+    /* -webkit-perspective: 100px;
+    perspective: 100px; */
+}
+
+.flip-cantaner .flip-card:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+.flip-card .flip-card-front,
+.flip-card .flip-card-back
+{
+    width: 290px;
+    height: 360px;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute;
+    -webkit-backface-visibility: hidden; 
+    /**/
+    backface-visibility:hidden;   
+}
+
+
+.flip-cantaner .flip-card .flip-card-back
+{
+    transform: rotateY(180deg); /**/
+} 
+    
+.flip-card .flip-card-front img
+{
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card .flip-card-back{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(to left, #1d5a56, #4b7166, #73897b, #97a196, #b9bbb5);
+}
+
+.flip-card-back .card-data 
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    padding-left: 20px;
+    width: 100%;
+    height: 50%;
+}
+
+.flip-card-back .card-data h1
+{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    font-weight: 400;
+}
+
+
+.flip-card-back .card-data h1 span
+{
+    color: #1e223d;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.flip-card-back .card-link
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.flip-card-back .card-link li
+{
+    list-style: none;
+}
+
+.flip-card-back .card-link li a
+{
+    text-decoration: none;
+    color: #1e223d;
+}
+
+.flip-card-back .card-link li a i
+{
+    font-size: 26px;
+}
+
+.flip-card-back .card-link li a:hover
+{
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.card-2 .flip-card-front img
+{
+    object-position: bottom;
+}
+
+.card-3 .flip-card-front img
+{
+    object-position:top;
+}

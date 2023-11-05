@@ -1,0 +1,12 @@
+.container-xl
+{
+    background-color: #d0d4d7;
+}
+
+
+.col-md-1
+{
+    height: 100px;
+    /* max-width: 6%; */
+    border: 1px solid gray;
+}
