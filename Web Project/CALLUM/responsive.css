@@ -9,6 +9,17 @@
     {
         padding-top:60px;
     }
+
+    header .header-box .row .header-deta .head-text .dynamic-text
+    {
+        align-items:center;
+        max-height: 44px;
+    }
+
+    header .header-box .row .header-deta .head-text .dynamic-text li h1
+    {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width:568px) {
