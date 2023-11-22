@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*  default  Css  */
+
+*{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0%;
+}
+
+
+.text-font{
+    font-family: 'Poppins', sans-serif;
+}
+
+* ::selection
+{
+    background-color: transparent;
+    color: white;
+}
+
+
+* ul li
+{
+    list-style-type: none;
+}
+
+* a
+{
+    text-decoration: none;
+}
+
+
+/* header section - I  */
+
+
+header{
+    min-height: 100vh;
+    background-color: #0dcaf0;
+}
+
+
+.navbar .btn-check,
+.navbar .navbar-close-btn,
+.navbar .navbar-open-btn
+{
+    right: 0%;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+
+
+.navbar .btn img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar .navbar-close-btn
+{
+    text-align: center;
+    inset: 0% 0% 0% 127.5% ;
+}
+
+
+
+.navbar .nav-slider-body 
+{
+    transform: translateY(-100%);
+    opacity: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    top: 0%;
+    left: 0%;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s linear;
+}
+
+
+.navbar .btn-check:checked ~ .nav-slider-body
+{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.navbar .nav-slider-body .slider-Btns li
+{
+    padding: 9px 0px 0px 0px ;
+}
+
+.navbar .nav-slider-body .slider-Btns li a,
+.navbar .nav-slider-body .slider-links li .btn
+{
+    color: #fff;
+}
+
+.navbar .nav-slider-body .slider-Btns li a:hover
+{
+    color:#0dcaf0;
+}
+
+.navbar .nav-slider-body .slider-links li .btn i
+{
+    transition: all 0.3s ;
+}
+
+
+.navbar .nav-slider-body .slider-links li .btn:hover i
+{
+    transform: scale(1.2);
+}
+
+
+.navbar .nav-slider-body .slider-links li .btn:hover .fa-x-twitter
+{
+    color: #00acee;
+}
+
+.navbar .nav-slider-body .slider-links li .btn:hover .fa-facebook
+{
+    color: #3b5998;
+}
+
+.navbar .nav-slider-body .slider-links li .btn:hover .fa-instagram
+{
+    color: #3f729b;
+}
+
+.navbar .nav-slider-body .slider-links li .btn:hover .fa-linkedin-in
+{
+    color: #0e76a8;
+}
+
+.navbar .nav-slider-body .slider-links li .btn:hover .fa-dribbble
+{
+    color: #ea4c89;
+}
+
+
+
+header .header-box
+{
+    border: 1px solid red;
+    padding-top: 50px;
+}
+
+/* header deta  */
+
+header .header-box .row
+{
+    /* border: 2px solid white; */
+}
+
+header .header-box .row .header-deta
+{
+    /* width: 50%; */
+    /* border: 2px solid white; */
+}
+
+/* animation text  */
+
+header .header-box .row .header-deta .head-text
+{
+    /* outline: 1px solid white; */
+    width: 100%;
+}
+
+header .header-box .row .header-deta .head-text .dynamic-text
+{
+    overflow: hidden;
+    max-height: 84px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+header .header-box .row .header-deta .head-text .dynamic-text li
+{
+    width: 100%;
+    animation:to-top 12s steps(3) infinite alternate-reverse;
+}
+
+
+
+@keyframes to-top  {
+    0%
+    {
+        transform: translateY(100%);
+    }
+
+    100%
+    {
+        transform: translateY(-200%);
+    }
+    
+}
+
+header .header-box .row .header-deta .head-text .dynamic-text li h1
+{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    font-size: 9rem;
+    overflow: hidden;
+    animation:  text-width 2s steps(9) infinite alternate ;
+}
+
+header .header-box .row .header-deta .head-text .dynamic-text li h1::after
+{
+    position: absolute;
+    top: 0%;
+    right:0%;
+    bottom: 0%;
+    content: "";
+    opacity: 0;
+    display: block;
+    margin: 0px;
+    width:12px;
+    padding: 0px;
+    background-color: #000;
+    animation: blinak-arrow 0.3s linear infinite alternate-reverse;
+}
+
+@keyframes text-width {
+    0%
+    {
+        width: 10%;
+    }
+
+    100%
+    {
+        width:100%;
+    }
+}
+
+
+@keyframes blinak-arrow {
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* header - image  */
+
+header .header-box .row .header-image
+{
+    /* width: 50%; */
+    margin: auto;
+    max-width: 476px;
+    max-height: 476px;
+    padding: 18px;
+    /* border: 2px solid black; */
+}
+
+header .header-box .row .header-image img
+{
+    width: 100%;
+    height: 100%;
+    outline: 12px solid white;
+}
+
+
+
+

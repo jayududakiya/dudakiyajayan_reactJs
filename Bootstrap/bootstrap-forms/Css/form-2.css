@@ -1,17 +1,21 @@
-body
+.bg-body-tertiary
 {
-    background-color: #e0dcdc;
+    min-height: 100vh;
 }
+
+
+
 .container-sm
 {
-    max-width: 45%;
+    width: 42%;
 }
+
 
 .container-sm  .form-btns
 {
-    min-height: 140px;
+    min-height:80px;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 5px;
     border-radius: 6px;
 }
 
@@ -26,8 +30,10 @@ body
     border: none;
 }
 
-
-.container-sm .form-body
-{
-    padding: 0px 20px;
+@media (max-width:768px) {
+    .container-sm
+    {
+        width: 100%;
+    }
+    
 }

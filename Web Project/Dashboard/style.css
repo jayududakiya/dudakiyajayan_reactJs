@@ -45,7 +45,7 @@ body
 .asid-wrapper{
     grid-column: 1/2;
     grid-row: 1/-1;
-
+    
     background-color: #fff;
     box-shadow: 2px 0px 6px 0px rgba(0,0,0,0.2);
     z-index: 5;
@@ -466,7 +466,7 @@ aside .aside-buttons .row-I-btns #dashbords ul li:nth-child(3) a::first-letter
     margin: auto;
     width:calc(100% - 25%);
     border-radius: 0px 0px 5px 5px ;
-    padding: 19px 0px 0px 0px ;
+    padding: 19px 0px 0px 0px;
 }
 
 #main-container .nav-warpper nav
