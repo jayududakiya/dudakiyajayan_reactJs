@@ -20,6 +20,19 @@
     {
         font-size: 3rem;
     }
+
+    .about-S1 .ab-deta .ab-title .title-box::before
+    {
+        height: 95%;
+        width: 100%;
+    }
+
+    .about-S1 .ab-deta .ab-title .title-box h1
+    {
+        padding: 10px;
+        font-size: 4rem;
+    }
+
 }
 
 @media (max-width:568px) {

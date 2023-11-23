@@ -13,11 +13,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-* ::selection
-{
-    background-color: transparent;
-    color: white;
-}
 
 
 * ul li
@@ -33,12 +28,27 @@
 
 /* header section - I  */
 
-
-header{
-    min-height: 100vh;
-    background-color: #0dcaf0;
+header h1::selection,
+header small::selection
+{
+    background-color: transparent;
+    color: white;
 }
 
+
+header{
+    margin-bottom: 7rem;
+    min-height: 100vh;
+    /* background-color: #0dcaf0; */
+    background-color: #00FFFF;
+}
+
+.navbar
+{
+    background-image:linear-gradient(to bottom , rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(255,255,255,0.9));
+    padding-bottom: 12px;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.5);
+}
 
 .navbar .btn-check,
 .navbar .navbar-close-btn,
@@ -165,7 +175,7 @@ header .header-box .row .header-deta .head-text .dynamic-text
 
 header .header-box .row .header-deta .head-text .dynamic-text li
 {
-    animation:to-top 12s steps(3) infinite alternate-reverse;
+    animation:to-top 12s steps(3) infinite alternate;
 }
 
 
@@ -256,7 +266,7 @@ header .header-box .row .header-image img
 
 header .header-box .row .header-deta .header-button 
 {
-    max-width:55%;
+    max-width:60%;
 }
 
 header .header-box .row .header-deta .header-button .btn
@@ -265,11 +275,16 @@ header .header-box .row .header-deta .header-button .btn
 }
 
 
-
-header .header-box .row .header-deta .header-button .button-link .btn-link:hover
+header .header-box .row .header-deta .header-button .button-link a
 {
+    text-decoration: underline;
+}
+
+header .header-box .row .header-deta .header-button .button-link a:hover
+{
+    transition: all 0.3s linear;
     text-decoration: none;
-    transition: all .3s linear;
+    opacity: 0.4;
 }
 
 
@@ -298,5 +313,121 @@ header .header-box .head-drop-btn .btn-link a
 }
 
 
+/* section - 1 about me  */
 
 
+.about-S1
+{
+    margin-bottom: 7rem;
+}
+
+.about-S1 .ab-heading h5
+{
+    background-color: #00FFFF;
+    display: inline-block;
+    padding: 2px 4px;
+}
+
+
+.about-S1 .ab-deta .ab-text h1 span
+{
+    border-bottom:2px solid #00FFFF;
+}
+
+.about-S1 .ab-deta .ab-text p
+{
+    line-break:loose;
+    line-height: 2.2rem;
+}
+
+.about-S1 .ab-deta .ab-title .title-box
+{
+    position: relative;
+}
+
+.about-S1 .ab-deta .ab-title .title-box::before
+{
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    margin: auto;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    content: "";
+    display: block;
+    height: 70%;
+    width: 75%;
+    background-color: #00FFFF;
+}
+
+
+.about-S1 .ab-deta .ab-title .title-box h1
+{
+    font-size: 9rem;
+    color: #4C4D4D;
+}
+
+
+.about-S1 .ab-tags .col-6 h6
+{
+    color: #8E9AB6;
+}
+
+
+.about-S1 .ab-tags .col-6 a
+{
+    text-decoration: underline;
+    word-wrap: break-word;
+}
+
+.about-S1 .ab-tags .col-6 a:hover
+{
+    text-decoration: none;
+}
+
+
+/*  section - 2 What I Do  */
+
+.what-i-do .row
+{
+    padding: 60px 0px;
+}
+
+.what-i-do .row .what-heading
+{
+    margin: 60px auto;
+}
+
+.what-i-do .row .what-heading h5
+{
+    background-color: #00FFFF;
+    display: inline-block;
+    padding: 2px 4px;
+}
+
+.what-i-do .row .col-md-6
+{
+    min-height: 300px;
+}
+
+.what-i-do .row .col-md-6 .W-box
+{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.what-i-do .row .col-md-6 .W-box .icon i
+{
+    font-size: 3.4rem;
+    color: #00FFFF;
+}
+
+.what-i-do .row .col-md-6 .W-box p
+{
+    color: #4C4D4D;
+}
