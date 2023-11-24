@@ -1,3 +1,13 @@
+@media (max-width:992px) {
+    .portfolio .row .col-12 .portfolio-link
+    {
+        width: calc(100% - 25%);
+        overflow: auto;
+    }
+}
+
+
+
 @media (max-width:768px) {
    
     .navbar .navbar-close-btn
@@ -32,6 +42,14 @@
         padding: 10px;
         font-size: 4rem;
     }
+
+
+    .portfolio .row .col-12 .portfolio-link
+    {
+        width: 100%;
+        /* overflow: auto; */
+    }
+
 
 }
 
