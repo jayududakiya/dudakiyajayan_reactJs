@@ -25,7 +25,7 @@
 </head>
 <body>
 
-  <header class="d-flex">
+  <header id="Home">
 
   <nav class="navbar fixed-top">
 
@@ -41,7 +41,7 @@
         <a href="tel:(060) 444 434 444" class="text-dark"><i class="fa-solid fa-phone-flip" style="color: #000000;"></i>  (060) 444 434 444 </a>
       </div>
 
-      <label class="btn btn-outline-secondary p-0 border-0  navbar-open-btn" for="btn-check-2-outlined"><img src="asset/Icon's/icons8-menu-192.png" alt="icon" ></label>
+      <label class="btn btn-outline-secondary p-0 border-0  navbar-open-btn" for="btn-check-2-outlined"><img src="asset/icons8-menu-192.png" alt="icon" ></label>
 
     </div>
 
@@ -59,42 +59,42 @@
         </label>
 
         <li>
-          <a href="#" class="d-block fs-4 fw-bolder">
+          <a href="#Home" class="d-block fs-4 fw-bolder">
             Home
           </a>
         </li>
         <li>
-          <a href="#" class="d-block fs-4 fw-bolder">
+          <a href="#About-Me" class="d-block fs-4 fw-bolder">
             About Me
           </a>
         </li>
         <li>
-          <a href="#" class="d-block fs-4 fw-bolder">
+          <a href="#What-I-Do" class="d-block fs-4 fw-bolder">
             What I Do
           </a>
         </li>
         <li>
-          <a href="#" class="d-block fs-4 fw-bolder">
+          <a href="#Resume" class="d-block fs-4 fw-bolder">
             Resume
           </a>
         </li>
         <li>
-          <a href="#" class="d-block fs-4 fw-bolder">
+          <a href="#Portfolio" class="d-block fs-4 fw-bolder">
             Portfolio
           </a>
         </li>
         <li>
-          <a href="#" class="d-block fs-4 fw-bolder">
+          <a href="#my-FAQ" class="d-block fs-4 fw-bolder">
             FAQ
           </a>
         </li>
         <li>
-          <a href="#" class="d-block fs-4 fw-bolder">
+          <a href="#Client-Speak" class="d-block fs-4 fw-bolder">
             Client Speak
           </a>
         </li>
         <li>
-          <a href="#" class="d-block fs-4 fw-bolder">
+          <a href="#Contact-Me" class="d-block fs-4 fw-bolder">
             Contact Me
           </a>
         </li>
@@ -198,16 +198,14 @@
 
         <div class="col-12 col-lg-6 order-1 order-lg-2 header-image d-flex align-items-center justify-content-center">
 
-          <!-- <div class="image-box"> -->
 
             <img src="./asset/asset 1.jpeg" alt="header-image" class="rounded-circle d-block" title="I'm Callum" >
-
-          <!-- </div> -->
 
         </div>
 
       </div>
 
+      <!--  dwon arrow button  -->
 
       <div class="head-drop-btn my-4">
 
@@ -220,14 +218,68 @@
       </div>
 
     </div>
-    
+
+    <!-- color button  -->
+
+    <div class="color-btn-box container-sm">
+
+      <input type="checkbox" name="color-btn" class="none">
+
+      <input type="checkbox" name="color-btn" class="position-fixed" id="color-btn">
+
+
+      <div class="color-wrapper position-fixed">
+
+        <div class="row p-0 m-0 d-flex">
+          
+          <div class="col-1 color-btn">
+
+            <label for="color-btn">
+
+              <i class="fa-solid fa-gear fs-4"></i>
+
+            </label>
+
+          </div>
+
+          <div class="col-4 color-code pt-3 m-0">
+
+            <h6 class="text-font text-capitalize fw-semibold"> Color Switcher <hr> </h6>
+
+            <ul class="row p-0 justify-content-between m-auto">
+
+              <li class="color-dot col-3 rounded-circle  p-0 mx-1 my-2"><a href="#" class="d-block w-100 m-auto h-100"></a></li>
+              <li class="color-dot col-3 rounded-circle  p-0 mx-1 my-2"><a href="#" class="d-block w-100 m-auto h-100"></a></li>
+              <li class="color-dot col-3 rounded-circle  p-0 mx-1 my-2"><a href="#" class="d-block w-100 m-auto h-100"></a></li>
+              <li class="color-dot col-3 rounded-circle  p-0 mx-1 my-2"><a href="#" class="d-block w-100 m-auto h-100"></a></li>
+              <li class="color-dot col-3 rounded-circle  p-0 mx-1 my-2"><a href="#" class="d-block w-100 m-auto h-100"></a></li>
+              <li class="color-dot col-3 rounded-circle  p-0 mx-1 my-2"><a href="#" class="d-block w-100 m-auto h-100"></a></li>
+              <li class="color-dot col-3 rounded-circle  p-0 mx-1 my-2"><a href="#" class="d-block w-100 m-auto h-100"></a></li>
+              <li class="color-dot col-3 rounded-circle  p-0 mx-1 my-2"><a href="#" class="d-block w-100 m-auto h-100"></a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </header>
+
+  <!-- mian section start  -->
 
   <main>
 
+    <span class="up-btn position-fixed">
+      <a href="#" class="rounded-circle"><i class="fa-solid fa-arrow-up fs-5 text-center"></i></a>
+    </span>
+
     <!-- section - 1 about me   -->
 
-    <section class="container-lg about-S1">
+    <section class="container-lg about-S1" id="About-Me">
 
       <div class="row">
 
@@ -314,7 +366,7 @@
 
     <!-- section - 2 What I Do  -->
 
-    <section class="what-i-do">
+    <section class="what-i-do" id="What-I-Do">
       <div class="container-lg">
 
         <div class="row">
@@ -454,7 +506,7 @@
 
     <!-- section - 3 resume  -->
 
-    <section class="resume">
+    <section class="resume" id="Resume">
 
       <div class="container-sm m-auto">
 
@@ -737,7 +789,7 @@
 
     <!-- section - 4 Portfolio -->
 
-    <section class="portfolio">
+    <section class="portfolio" id="Portfolio">
 
       <div class="container-sm m-auto">
         
@@ -933,7 +985,7 @@
 
     <!-- section - 6 FAQ -->
 
-    <section class="FAQ"">
+    <section class="FAQ" id="my-FAQ">
 
       <div class="container-sm FAQ-wrapper">
 
@@ -1079,7 +1131,7 @@
 
     <!-- section - 7  Client Speak -->
 
-    <section class="client-speak">
+    <section class="client-speak" id="Client-Speak">
       
         <div class="container-sm m-auto">
       
@@ -1255,7 +1307,7 @@
 
     <!-- section - 8 contact me   -->
 
-    <section class="contact-me">
+    <section class="contact-me" id="Contact-Me">
 
       <div class="container-sm m-auto">
 

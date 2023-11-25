@@ -1,9 +1,21 @@
+@media (max-width:1200px){
+    .color-btn-box
+    {
+        display: none;
+    }
+
+}
+
+
+
 @media (max-width:992px) {
     .portfolio .row .col-12 .portfolio-link
     {
         width: calc(100% - 25%);
         overflow: auto;
     }
+
+   
 }
 
 
@@ -51,9 +63,11 @@
     }
 
 
+
 }
 
 @media (max-width:576px) {
+
     header .header-box
     {
         padding-top:130px;
@@ -63,4 +77,8 @@
         min-height: 50rem;
     }
 
+
+
 }
+
+

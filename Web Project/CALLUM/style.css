@@ -48,6 +48,9 @@ header{
     background-color: #00FFFF;
 }
 
+
+/* floteing color button  */
+
 .navbar
 {
     background-image:linear-gradient(to bottom , rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(255,255,255,0.9));
@@ -317,6 +320,147 @@ header .header-box .head-drop-btn .btn-link a
         top: 25%;
     }
 }
+
+
+/* color button  */
+
+.color-btn-box
+{
+    height: 100%;
+    width: 100%;
+}
+
+.color-btn-box input[class="none"]
+{
+    opacity: 0;
+}
+
+.color-btn-box input[class="position-fixed"]:checked ~ .color-wrapper
+{
+    right: -1.5%;
+}
+
+
+.color-wrapper
+{
+    z-index: 2000;
+    top: 50%;
+    right:-20.6%;
+    transition: all 0.4s ease-in-out;
+}
+
+.color-wrapper .row .color-btn
+{
+    width: 4%;
+    width: 16%;
+}
+
+.color-wrapper .row .color-btn label
+{
+    cursor: pointer;
+    display: block;
+    border-radius: 6px 0px 0px 6px ;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #fff;
+    background-color: #555555;
+}
+
+.color-wrapper .row .color-btn label i
+{
+    display: block;
+    line-height: 2.3rem;
+    text-align: center;
+}
+
+.color-wrapper .row .color-code
+{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4);
+    width: 245px;
+    min-height: 200px;
+}
+
+.color-wrapper .row .color-code ul
+{
+    width: 100%;
+}
+
+
+.color-wrapper .row .color-code ul li
+{
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.color-wrapper .row .color-code ul li:nth-of-type(1)
+{
+    background-color: #00FFFF;
+}
+
+.color-wrapper .row .color-code ul li:nth-of-type(2)
+{
+    background-color: #00fe9c;
+}
+
+.color-wrapper .row .color-code ul li:nth-of-type(3)
+{
+    background-color: #adff2f;
+}
+
+.color-wrapper .row .color-code ul li:nth-of-type(4)
+{
+    background-color: #d6ed17;
+}
+
+.color-wrapper .row .color-code ul li:nth-of-type(5)
+{
+    background-color: #ff91fb;
+}
+
+.color-wrapper .row .color-code ul li:nth-of-type(6)
+{
+    background-color: #ff91fb;
+}
+
+.color-wrapper .row .color-code ul li:nth-of-type(7)
+{
+    background-color: #eee8aa;
+}
+
+.color-wrapper .row .color-code ul li:nth-of-type(8)
+{
+    background-color: #f5df4e;
+}
+
+/* =================================== main ========================*/
+ 
+
+/* up-btn */
+
+main .up-btn
+{
+    display: block;
+    top:91%;
+    right: 1%;
+}
+
+main .up-btn a
+{
+    padding: 6px 10px;
+    display: inline-block;
+    color: #ffffff;
+    background-color: #bcbbbb55;
+    transition: all 0.3s ease-in-out;
+}
+
+main .up-btn a:hover
+{
+    background-color: #00FFFF;
+    color: #000;
+}
+
 
 
 /* section heading  */
