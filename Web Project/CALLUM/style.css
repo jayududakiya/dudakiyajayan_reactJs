@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+/* carousel-CSS file Import  for slider */
+
+@import url(CarouselCSS/carousel.css);
+
 /*  default  Css  */
 
 *{
@@ -320,12 +325,13 @@ header .header-box .head-drop-btn .btn-link a
 .what-i-do .row .what-heading h5,
 .resume .row .resume-heading h5,
 .portfolio .row .portfolio-heading h5,
-.FAQ .FAQ-wrapper .row .FAQ-heading h5
+.FAQ .FAQ-wrapper .row .FAQ-heading h5,
+.client-speak .row .cskp-heading h6
 {
     background-color: #00FFFF;
     display: inline-block;
     padding: 2px 4px;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 } 
 
 
@@ -683,7 +689,6 @@ header .header-box .head-drop-btn .btn-link a
 }
 
 
-
 /* FAQ iamge  */
 
 .FAQ .FAQ-wrapper .row .FAQ-image img
@@ -695,5 +700,271 @@ header .header-box .head-drop-btn .btn-link a
     object-fit: contain;
 }
 
+/* section - 7  Client Speak  */
+
+.client-speak{
+    background-color:#939597;
+    padding: 90px 0px 30px 0px ;
+}
+
+        
+.client-speak{
+    min-height: 100vh;
+}
+
+.carousel *{
+    margin: 0;
+    padding: 0;
+}
 
 
+.carousel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    min-height: 15rem;
+    padding: 0.5rem;
+
+
+    max-width: 65rem;
+    min-height: 30rem;
+}
+
+
+.carousel-wrapper{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.carousel-slide{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    transform: translate(100%, 0);
+    opacity: 0;
+}
+
+
+/* Next and prev buttons */
+
+.carousel label[data-value|="slide"]{
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.carousel label[data-value|="slide"]::before,
+.carousel label[data-value|="slide"]::after{
+    content: "";
+    display: none;
+    position: absolute;
+    z-index: 3;
+
+    width: 2.8rem;
+    height: 2.8rem;
+
+
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
+    border-radius: 50rem;
+    opacity: 0;
+
+    cursor: pointer;
+
+
+    top: 0; 
+    bottom: 0;
+    margin: auto 0;
+
+    transition: all 1s  0.3s ease ;
+
+    background-size:30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+    background-image:url(asset/icons8-arrow-48.png);
+}
+
+.carousel:hover label[data-value|="slide"]::before,
+.carousel:hover label[data-value|="slide"]::after
+{
+    opacity: 1;
+}
+
+.carousel label[data-value|="slide"]::before{
+    transform: rotate(180deg);
+}
+
+
+
+/* carousel-box */
+
+
+.client-speak .carousel .carousel-wrapper .carousel-slide .carousel-box
+{
+    height: 100%;
+    width: calc(100% - 15%);
+}
+
+.client-speak .carousel .carousel-wrapper .carousel-slide .carousel-box h5
+{
+    line-height: 2.1rem;
+    width: calc(100% - 20%);
+}
+
+.client-speak .carousel .carousel-wrapper .carousel-slide .carousel-box .caro-image
+{
+    margin-bottom: 2rem;
+}
+
+.client-speak .carousel .carousel-wrapper .carousel-slide .carousel-box .caro-image img
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-speak .carousel .carousel-wrapper .carousel-slide .carousel-box .caro-heading p
+{
+    color: #dee3e4;
+}
+
+
+/* contact-me  */
+
+
+.contact-me
+{
+    background-color: #00FFFF;
+    padding: 60px 0px ;
+}
+
+/* contact-deta */
+
+/* .contact-me .row .col-12 .cont-head p
+{
+    display: -webkit-box;
+    line-break:anywhere;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+} */
+
+.contact-me .row .contact-deta
+{
+    padding: 0px 4.3rem;
+}
+
+.contact-me .row .contact-deta .cont-head p
+{
+    line-break:anywhere;
+}
+
+
+.contact-me .row .contact-deta .cont-links ul li .btn i
+{
+    color: #4C4D4D;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.contact-me .row .contact-deta .cont-links ul li:nth-of-type(1) .btn i:hover
+{
+    color: #00acee;
+    transform: scale(1.3);
+}
+
+.contact-me .row .contact-deta .cont-links ul li:nth-of-type(2) .btn i:hover
+{
+    color: #3b5998;
+    transform: scale(1.3);
+}
+
+.contact-me .row .contact-deta .cont-links ul li:nth-of-type(3) .btn i:hover
+{
+    color: #3f729b;
+    transform: scale(1.3);
+}
+
+.contact-me .row .contact-deta .cont-links ul li:nth-of-type(4) .btn i:hover
+{
+    color: #000;
+    transform: scale(1.3);
+}
+
+.contact-me .row .contact-deta .cont-links ul li:nth-of-type(5) .btn i:hover
+{
+    color: #ea4c89;
+    transform: scale(1.3);
+}
+
+
+/* contact-form */
+
+.contact-form form input,
+.contact-form form textarea
+{   
+    margin-top: 0.5rem;
+    background: transparent;
+    padding: 0%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #08d8d8;
+}
+
+
+
+.contact-form form  input:focus,
+.contact-form form  textarea:focus
+{
+    border-bottom: 2px solid black;
+    box-shadow: none;
+    background:none;
+}
+
+
+.contact-form form button
+{
+    padding: 14px 40px;
+    background-color: #000;
+}
+
+.contact-form form button:hover{
+    background-color: #000;
+}
+
+
+/* footer  */
+
+footer
+{
+    height: 13rem; 
+    background-color: #000;  
+}
+
+
+footer .row .col-12 p a
+{
+    color: #00FFFF;
+    text-decoration: underline;
+}
+
+footer .row .col-12 p a:hover
+{
+    text-decoration: none;
+}

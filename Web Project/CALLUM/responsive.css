@@ -53,10 +53,14 @@
 
 }
 
-@media (max-width:568px) {
+@media (max-width:576px) {
     header .header-box
     {
         padding-top:130px;
+    }
+
+    .carousel{
+        min-height: 50rem;
     }
 
 }
