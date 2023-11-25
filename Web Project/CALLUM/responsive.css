@@ -9,12 +9,17 @@
 
 
 @media (max-width:992px) {
+
     .portfolio .row .col-12 .portfolio-link
     {
         width: calc(100% - 25%);
         overflow: auto;
     }
 
+        header .header-box .row .header-deta .head-text .dynamic-text
+    {
+        align-items:center;
+    }
    
 }
 
@@ -73,10 +78,14 @@
         padding-top:130px;
     }
 
+    .navbar .contact-Btns
+    {
+        margin: 14px auto;
+    }
+
     .carousel{
         min-height: 50rem;
     }
-
 
 
 }

@@ -299,9 +299,10 @@ header .header-box .row .header-deta .header-button .button-link a:hover
 
 /* head-drop-btn */
 
+
 header .header-box .head-drop-btn .btn-link
 {
-    height: 30px;
+    height: 45px;
 }
 
 header .header-box .head-drop-btn .btn-link a
@@ -317,7 +318,7 @@ header .header-box .head-drop-btn .btn-link a
     100%
     {
         opacity: 1;
-        top: 25%;
+        top: 21%;
     }
 }
 
