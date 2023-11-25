@@ -336,6 +336,11 @@ header .header-box .head-drop-btn .btn-link a
     opacity: 0;
 }
 
+.color-btn-box input[class="position-fixed"]
+{
+    opacity: 0;
+}
+
 .color-btn-box input[class="position-fixed"]:checked ~ .color-wrapper
 {
     right: -1.5%;

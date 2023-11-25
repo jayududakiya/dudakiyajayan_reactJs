@@ -1,3 +1,5 @@
+
+
 @media (max-width:1200px){
     .color-btn-box
     {
@@ -90,4 +92,13 @@
 
 }
 
-
+/* 
+@media (orientation: landscape)
+{
+   
+    header{
+        margin-bottom: 3rem;
+        min-height: 100vh;
+        background-color: #0dcaf0;
+    } 
+} */
