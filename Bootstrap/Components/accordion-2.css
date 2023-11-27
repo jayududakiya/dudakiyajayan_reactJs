@@ -1,4 +1,30 @@
-#accordion .accordion-title i{
-    color: red;
 
+.accordion .accordion-item
+{
+    border-radius: 0%;
+    /* outline: 2px solid blue; */
+    background: none;
+    margin: 26px auto;
+}
+
+.accordion .accordion-item .accordion-header .accordion-btn
+{
+    width: 100%; 
+    background:none;
+    border: none;
+    color: #b8b8b8;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion .accordion-item .accordion-header .accordion-btn:hover,
+.accordion .accordion-item .accordion-header .accordion-btn:focus-within
+{
+    color: #000;
+}
+
+
+.accordion .accordion-item .accordion-header .accordion-btn:focus-within i
+{
+    transform: rotate(0.50turn);
+    transition: all 0.3s ease-in-out; 
 }

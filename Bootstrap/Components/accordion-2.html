@@ -19,91 +19,116 @@
     <!-- <link rel="stylesheet" href="Accordion.scss"> -->
 </head>
 <body>
-  
-<div class="container">
-  <div id="accordion" class="py-5">
 
-        <div class="card border-0">
+    <div class="container-sm">
+        
+        <div class="accordion " id="accordionExample">
 
-            <div class="card-header p-0 border-0" id="heading-239">
-            <button class="btn btn-link accordion-title border-0 collapse" data-toggle="collapse" data-target="#collapse-239" aria-expanded="true" aria-controls="#collapse-239"><i class="fa-solid fa-xmark text-center d-flex align-items-center justify-content-center h-100"></i>lorem header  1 </button>
+            <!-- item - 1  -->
 
-          </div>
+            <div class="accordion-item border-0">
 
-          <div id="collapse-239" class="collapse show" aria-labelledby="heading-239" data-parent="#accordion">
+              <h2 class="accordion-header">
 
-              <div class="card-body accordion-body">
+                <button class="accordion-btn fs-5 fw-medium d-flex align-items-center justify-content-start ps-3 text-capitalize text-font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <i class="fa-solid fa-chevron-down me-2"></i>  What is callum? 
+
+                </button>
+
+              </h2>
+              
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+
+                <div class="accordion-body">
+                  <p class="text-font ps-4 text-capitalize lh-lg">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet.</p>
+                </div>
 
               </div>
 
+              <hr>
+
+            </div>
+
+
+            <!-- item - 2  -->
+
+            <div class="accordion-item border-0">
+
+              <h2 class="accordion-header">
+
+                <button class="accordion-btn fs-5 fw-medium d-flex align-items-center justify-content-start ps-3 text-font text-capitalize  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa-solid fa-chevron-down me-2"></i> how can i help you? 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="text-font ps-4 text-capitalize lh-lg">Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                  <br>
+                  <br>
+                  Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</p>
+                </div>
+              </div>
+
+              <hr>
+
+            </div>
+
+            <!-- item - 3  -->
+
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header">
+                <button class="accordion-btn fs-5 fw-medium d-flex align-items-center justify-content-start ps-3 text-font text-capitalize collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-chevron-down me-2"></i> simple process of workflow?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="text-font ps-4 text-capitalize lh-lg">Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet.</p>
+                </div>
+              </div>
+
+              <hr>
+
+            </div>
+
+            <!-- item - 4  -->
+
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header">
+                <button class="accordion-btn fs-5 fw-medium d-flex align-items-center justify-content-start ps-3 text-font text-capitalize collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourth" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-chevron-down me-2"></i> is callum a multi-purose template?
+                </button>
+              </h2>
+              <div id="collapsefourth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="text-font ps-4 text-capitalize lh-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+              </div>
+              
+              <hr>
+
+            </div>
+
+            <!-- item - 5  -->
+
+            <div class="accordion-item border-0 mb-5">
+              <h2 class="accordion-header">
+                <button class="accordion-btn fs-5 fw-medium d-flex align-items-center justify-content-start ps-3 text-font text-capitalize collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-chevron-down me-2"></i> why responsive one page template?
+                </button>
+              </h2>
+              <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <p class="text-font ps-4 text-capitalize lh-lg">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</p>
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
-      </div>
-                              <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                      <div class="card-header p-0 border-0" id="heading-240">
-                          <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i class="fa-solid fa-xmark text-center d-flex align-items-center justify-content-center h-100"></i>Is there a 24/7 response for emergencies?                        </button>
-                      </div>
-                      <div id="collapse-240" class="collapse " aria-labelledby="heading-240" data-parent="#accordion">
-                          <div class="card-body accordion-body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          </div>
-                      </div>
-                  </div>
-                              <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                      <div class="card-header p-0 border-0" id="heading-241">
-                          <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-241" aria-expanded="false" aria-controls="#collapse-241"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>How are owners’ concerns handled?                        </button>
-                      </div>
-                      <div id="collapse-241" class="collapse " aria-labelledby="heading-241" data-parent="#accordion">
-                          <div class="card-body accordion-body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          </div>
-                      </div>
-                  </div>
-                              <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                      <div class="card-header p-0 border-0" id="heading-242">
-                          <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>How do I get repairs completed to my unit?                        </button>
-                      </div>
-                      <div id="collapse-242" class="collapse " aria-labelledby="heading-242" data-parent="#accordion">
-                          <div class="card-body accordion-body">
-                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          </div>
-                      </div>
-                  </div>
-                              <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                      <div class="card-header p-0 border-0" id="heading-243">
-                          <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-243" aria-expanded="false" aria-controls="#collapse-243"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>What are the duties of a property manager?                        </button>
-                      </div>
-                      <div id="collapse-243" class="collapse " aria-labelledby="heading-243" data-parent="#accordion">
-                          <div class="card-body accordion-body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          </div>
-                      </div>
-                  </div>
-                              <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                      <div class="card-header p-0 border-0" id="heading-244">
-                          <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-244" aria-expanded="false" aria-controls="#collapse-244"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>Do we receive copies of all invoices paid?                        </button>
-                      </div>
-                      <div id="collapse-244" class="collapse " aria-labelledby="heading-244" data-parent="#accordion">
-                          <div class="card-body accordion-body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          </div>
-                      </div>
-                  </div>
-                              <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                      <div class="card-header p-0 border-0" id="heading-245">
-                          <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-245" aria-expanded="false" aria-controls="#collapse-245"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>How are arrears handled?                        </button>
-                      </div>
-                      <div id="collapse-245" class="collapse " aria-labelledby="heading-245" data-parent="#accordion">
-                          <div class="card-body accordion-body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          </div>
-                      </div>
-                  </div>
-                      </div>
-    
-  </div>
+    </div>
   
 </body>
 </html>
