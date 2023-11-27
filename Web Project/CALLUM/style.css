@@ -811,32 +811,39 @@ main .up-btn a:hover
 .FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item
 {
     border-radius: 0%;
-    /* outline: 2px solid blue; */
     background: none;
     margin: 26px auto;
 }
 
-.FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item .accordion-header .accordion-btn
+.FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item .accordion-header .accordion-button
 {
+    position: relative;
+    padding-left: 40px;
+    box-shadow: none !important;
     width: 100%; 
     background:none;
+    color: #000;
     border: none;
-    color: #b8b8b8;
+    opacity: 0.4;
     transition: all 0.3s ease-in-out;
 }
 
-.FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item .accordion-header .accordion-btn:hover,
-.FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item .accordion-header .accordion-btn:focus-within
+.FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item .accordion-header .accordion-button:focus-within
 {
-    color: #000;
+    opacity: 1;
+}
+
+.FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item .accordion-header .accordion-button::after
+{
+    position: absolute;
+    margin: auto;
+    top: 0%;
+    left: 1.5%;
+    bottom: 0%;
+    background-image:url(asset/icons8-chevron-down-30.png);
 }
 
 
-.FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item .accordion-header .accordion-btn:focus-within i
-{
-    transform: rotate(0.50turn);
-    transition: all 0.3s ease-in-out; 
-}
 
 
 /* FAQ iamge  */
