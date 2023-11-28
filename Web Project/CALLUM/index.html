@@ -104,31 +104,31 @@
       <ul class="slider-links m-auto p-0 w-50 text-center d-flex justify-content-center p-0">
 
         <li>
-          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Twitter">
             <i class="fa-brands fa-x-twitter fs-4"></i>
           </button>
         </li>
 
         <li>
-          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Facebook">
             <i class="fa-brands fa-facebook fs-4"></i>
           </button>
         </li>
 
         <li>
-          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram">
             <i class="fa-brands fa-instagram fs-4"></i>
           </button>
         </li>
 
         <li>
-          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Linked in">
             <i class="fa-brands fa-linkedin-in fs-4"></i>
           </button>  
         </li>
 
         <li>
-          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Dribbble">
             <i class="fa-brands fa-dribbble fs-4"></i>
           </button>
         </li>
@@ -1347,31 +1347,31 @@
               p-0">
 
                 <li>
-                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Twitter">
                     <i class="fa-brands fa-x-twitter fs-4"></i>
                   </button>
                 </li>
         
                 <li>
-                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Facebook">
                     <i class="fa-brands fa-facebook fs-4"></i>
                   </button>
                 </li>
         
                 <li>
-                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram">
                     <i class="fa-brands fa-instagram fs-4"></i>
                   </button>
                 </li>
         
                 <li>
-                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Github">
                     <i class="fa-brands fa-github fs-4"></i>
                   </button>  
                 </li>
         
                 <li>
-                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="dribbble">
                     <i class="fa-brands fa-dribbble fs-4"></i>
                   </button>
                 </li>
@@ -1450,6 +1450,12 @@
 
   </main>
 
+  <!-- tooltip script line -->
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
 </body>
 </html>
