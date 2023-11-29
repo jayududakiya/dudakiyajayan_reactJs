@@ -25,6 +25,142 @@
    
 }
 
+@media  (min-width:1025px) and  (max-width:1500px) {
+    
+    /* main all Section animation  */
+
+    /* Main  */
+
+    main .animate__animated
+    {
+        animation-play-state: paused;
+    }
+
+    main:hover .animate__animated
+    {
+        animation-play-state: running;
+    }
+
+    /* About ME   */
+
+    #About-Me .animate__animated
+    {
+        animation-play-state: paused;
+    }
+
+    #About-Me:hover .animate__animated
+    {
+        animation-play-state: running;
+    }
+
+
+    /* What i Do */
+
+    #What-I-Do .animate__animated 
+    {
+        animation-play-state:paused;
+    }
+
+    #What-I-Do:hover .animate__animated 
+    {
+        animation-play-state: running;
+    }
+
+    /* Resume  */
+
+    #Resume .animate__animated 
+    {
+        animation-play-state:paused;
+    }
+
+    #Resume:hover .animate__animated 
+    {
+        animation-play-state: running;
+    }
+
+    /* Portfolio */
+
+    #Portfolio
+    {
+        overflow: hidden;
+    }
+
+    #Portfolio .animate__animated
+    {
+        animation-play-state: paused;
+    }
+
+    #Portfolio .port-img-wrapper 
+    {
+        animation-delay: 0.3s !important;
+    }
+
+    #Portfolio:hover .animate__animated
+    {
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
+
+
+
+    /* hire-me  */
+
+    #Hire .animate__animated
+    {
+        animation-play-state: paused;
+    }
+
+    #Hire:hover .animate__animated
+    {
+        animation-play-state:running; 
+    }
+
+    /* my-FAQ */
+
+    #my-FAQ .animate__animated
+    {
+        animation-play-state: paused;
+    }
+
+    #my-FAQ:hover .animate__animated
+    {
+        animation-play-state:running; 
+    }
+
+    /* Client-Speak */
+
+
+
+    #Client-Speak .animate__animated
+    {
+        animation-play-state: paused;
+    }
+
+    #Client-Speak:hover .animate__animated
+    {
+        animation-play-state:running; 
+    }
+
+    /* Contact-Me  */
+
+    #Contact-Me
+    {
+        overflow: hidden;
+    }
+
+
+    #Contact-Me .animate__animated
+    {
+        animation-play-state: paused;
+    }
+
+    #Contact-Me:hover .animate__animated
+    {
+        animation-play-state:running; 
+    }
+
+}
+
 
 
 @media (max-width:768px) {
@@ -66,7 +202,6 @@
     .portfolio .row .col-12 .portfolio-link
     {
         width: 100%;
-        /* overflow: auto; */
     }
 
 

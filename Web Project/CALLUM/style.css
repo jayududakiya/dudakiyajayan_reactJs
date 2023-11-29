@@ -43,8 +43,6 @@ header small::selection
 
 header{
     margin-bottom: 7rem;
-    min-height: 100vh;
-    /* background-color: #0dcaf0; */
     background-color: #00FFFF;
 }
 
@@ -183,7 +181,7 @@ header .header-box .row .header-deta .head-text .dynamic-text
 
 header .header-box .row .header-deta .head-text .dynamic-text li
 {
-    animation:to-top 12s steps(3) infinite alternate;
+    animation:to-top 14s steps(3) infinite alternate;
 }
 
 
@@ -208,7 +206,7 @@ header .header-box .row .header-deta .head-text .dynamic-text li h1
     height: 100%;
     font-size: 5.5rem;
     overflow: hidden;
-    animation:  text-width 2s steps(9) infinite alternate ;
+    animation:  text-width 2.4s steps(9) infinite alternate;
 }
 
 header .header-box .row .header-deta .head-text .dynamic-text li h1::after
@@ -221,21 +219,31 @@ header .header-box .row .header-deta .head-text .dynamic-text li h1::after
     opacity: 0;
     display: block;
     margin: 0px;
-    width:12px;
+    width:15px;
     padding: 0px;
     background-color: #000;
-    animation: blinak-arrow 0.3s linear infinite alternate-reverse;
+    animation: blinak-arrow 0.3s ease-in-out infinite alternate-reverse;
 }
 
 @keyframes text-width {
     0%
     {
-        width: 10%;
+        width: 20%;
+    }
+
+    50%
+    {
+        width:110%;
+    }
+
+    75%
+    {
+        width:110%;
     }
 
     100%
     {
-        width:120%;
+        width:110%;
     }
 }
 
@@ -440,9 +448,6 @@ header .header-box .head-drop-btn .btn-link a
     background-color: #f5df4e;
 }
 
-/* =================================== main ========================*/
- 
-
 /* up-btn */
 
 main .up-btn
@@ -467,6 +472,7 @@ main .up-btn a:hover
     color: #000;
 }
 
+/* =================================== main ========================*/
 
 
 /* section heading  */
@@ -481,7 +487,6 @@ main .up-btn a:hover
     background-color: #00FFFF;
     display: inline-block;
     padding: 2px 4px;
-    /* font-size: 1.2rem; */
 } 
 
 
@@ -533,7 +538,6 @@ main .up-btn a:hover
     font-size: 9rem;
     color: #4C4D4D;
 }
-
 
 .about-S1 .ab-tags .col-6 h6
 {
@@ -627,6 +631,7 @@ main .up-btn a:hover
 
 
 /*  section - 3 resume  skill div progress-bar */ 
+
 
 .resume .row .skill-box .skill-row 
 {
