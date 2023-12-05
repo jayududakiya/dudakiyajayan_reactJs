@@ -838,6 +838,7 @@ main .up-btn a:hover
 
 .FAQ .FAQ-wrapper .row .col-12 .FAQ-deta  .accordion-item .accordion-header .accordion-button::after
 {
+
     position: absolute;
     margin: auto;
     top: 0%;
