@@ -13,7 +13,7 @@ html
 
 .background
 {
-    background-image: url(../Image/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(../Aseet/Image/wallpaperflare.com_wallpaper.jpg);
     height: 100vh;
     width: 100%;
     background-position: top center;
@@ -38,7 +38,7 @@ html
 {
     border: 40px solid rgba(255, 255, 59, 0.377);
     background-position: bottom ;
-    background: url(../Image/wallpaper_street.jpg);
+    background: url(../Aseet/Image/wallpaper_street.jpg);
 }
 
 
