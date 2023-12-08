@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        
+    <!-- Bootstrap CDN link  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <title>Stacks</title>
+
+</head>
+<body>
+
+    <div class="vstack gap-3 mt-5">
+        <div class="p-2 text-bg-success">First item</div>
+        <div class="p-2 text-bg-success">Second item</div>
+        <div class="p-2 text-bg-success">Third item</div>
+    </div>
+
+    <hr>
+
+    <div class="hstack gap-3 bg-danger">
+
+        <div class="p-2 text-bg-info ms-3">First item</div>
+        <div class="p-2 text-bg-info ">Second item</div>
+        <div class="p-2 text-bg-info ms-auto me-3">Third item</div>
+
+    </div>
+
+    <hr>
+
+    <div class="vstack gap-3 col-md-3 mx-auto">
+        <div class="hstack">
+            <button type="button" class="btn btn-secondary">Save changes</button>
+            <button type="button" class="btn btn-primary ms-auto">Save changes</button>
+        </div>
+        <button type="button" class="btn btn-outline-secondary">Cancel</button>
+        <button type="button" class="btn btn-outline-success ">Cancel</button>
+        <button type="button" class="btn btn-outline-danger">Cancel</button>
+    </div>  
+
+
+    <hr class="border-3 ">
+
+    <div class="hstack gap-4 mx-5 mb-5">
+        <input class="form-control me-auto" type="text" placeholder="Add your item here..." aria-label="Add your item here...">
+        <button type="button" class="btn btn-outline-primary">search</button>
+        <div class="vr"></div>
+        <button type="button" class="btn btn-secondary">Submit</button>
+        <div class="vr"></div>
+        <button type="button" class="btn btn-outline-danger">Reset</button>
+    </div>
+
+</body>
+</html>
