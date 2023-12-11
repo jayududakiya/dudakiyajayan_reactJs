@@ -32,6 +32,8 @@ body
 
 .accordion .accordion-item .accordion-body
 {
+    margin-top: 5px;
+    border-radius: 12px;
     background: transparent;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2));
 }
