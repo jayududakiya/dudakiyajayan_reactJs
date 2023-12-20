@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap icon CDN  -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- bootstrap CDN link  -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+        .btn-1
+        {
+            background-color: rgb(3, 3, 136);
+            opacity: 1;
+            background-image:url(icon-svg/x.svg);
+            background-position: center;
+            background-size: cover;
+            box-shadow: none !important;
+            box-shadow: 0px 0px 2px 3px rgba(136, 3, 3, 0.4)  !important;
+        }
+
+        .btn-1:focus
+        {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 0px 2px 3px rgba(136, 3, 3, 0.8)  !important;
+        }
+
+        .btn-I,
+        .btn-II
+        {
+            font-family: sans-serif !important;
+            width: 135px ; 
+            height:40px;
+            opacity: 1;
+            background-image:none;
+            background-position: center;
+            background-size: cover;
+            box-shadow: none !important;
+        }
+
+        .btn-II
+        {
+            box-shadow: 0px 8px 8px 3px rgb(237, 230, 230) !important;
+        }
+
+        .btn-II:focus
+        {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 0px 4px 6px rgb(144, 237, 248)  !important;
+        }
+
+        .btn-2:hover
+        {
+            background-color: #d6c2c2;
+        }  
+    </style>    
+
+    <title>close </title>
+</head>
+<body>
+
+    <div class="container-sm m-auto mt-5">
+
+        <ul class="list-group list-unstyled m-auto d-flex flex-row align-items-center justify-content-center ">
+
+            <li class="p-3 m-3">
+                <span class="text-body-secondary d-block text-center mb-2">
+                    custom-close 
+                </span>
+                <button type="button" class="btn-close btn-1 p-3 rounded-4 m-auto d-block " aria-label="Close">
+                </button>
+            </li>
+
+            <li class="p-3 m-3">
+                <span class="text-body-secondary d-block text-center mb-2">
+                    sm-close 
+                </span>
+                <button type="button" class="btn-close btn-2 rounded-5 p-0 m-auto d-block " aria-label="Close" style="padding: 8px !important ;background-size:12px;">
+                </button>
+            </li>
+            <li class="p-3 m-3">  
+                <span class="text-body-secondary d-block text-center mb-2">
+                    md-close 
+                </span>      
+                <button type="button" class="btn-close btn-2 d-block m-auto rounded-5" aria-label="Close"  style="padding: 10px !important ;background-size:12px;">
+                </button>
+            </li>
+            <li class="p-3 m-3"> 
+                <span class="text-body-secondary d-block text-center mb-2">
+                    lg-close 
+                </span>       
+                <button type="button" class="btn-close  btn-2 m-auto d-block  rounded-5" aria-label="Close"  style="padding: 13px !important ;background-size:12px;">
+                </button>
+            </li>
+            <li class="p-3 m-3">     
+                <span class="text-body-secondary d-block text-center mb-2">
+                    xl-close 
+                </span>   
+                <button type="button" class="btn-close btn-2 rounded-5 d-block m-auto " aria-label="Close"  style="padding: 16px !important ;background-size:12px;">
+                </button>
+            </li>
+
+        </ul>
+
+
+        <h1 class="display-6 text-center text-uppercase ">Ul UX series</h1>
+
+        <ul class="list-group list-unstyled m-auto  d-flex flex-row  align-items-center justify-content-evenly pt-5">
+
+            <li>        
+
+                <button type="button" class="btn-close btn-I text-bg-dark rounded-5 fw-normal  text-capitalize  d-flex align-items-center justify-content-evenly   fs-3 lh-sm px-3" aria-label="Close">
+                    close  <i class="bi bi-x fs-1"></i>
+                </button>
+                
+            </li>
+
+            <li>        
+
+                <button type="button" class="btn-close btn-II text-bg-light rounded-5 fw-normal  text-capitalize  d-flex align-items-center justify-content-around  fs-3 lh-sm px-3" aria-label="Close">
+                    close  <i class="bi bi-x fs-1"></i>
+                </button>
+                
+            </li>
+
+        </ul>
+        
+        <!-- <p class="m-0 d-flex align-items-center justify-content-between lh-sm  fs-4 px-3">close  <i class="bi bi-x m-0 fs-1"></i> </p> -->
+
+
+    </div>
+
+
+    <!-- bootstrap js CDN link  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

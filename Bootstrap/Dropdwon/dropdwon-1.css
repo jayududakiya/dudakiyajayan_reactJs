@@ -1,0 +1,29 @@
+.btn-group .dropdown-toggle::after
+{
+    display: none;
+}
+
+
+.btn-group .dropdown-menu
+{
+    border-radius: 12px;
+    min-width: 12rem;
+}
+
+
+
+/* focus */
+
+.row .col:nth-child(4) .btn-group ul li:nth-child(2) a:focus
+{
+    background-color: lightgray;
+    color: #000;
+}
+
+/* selected  */
+
+/* .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active*/
+
+.row .col:nth-child(5) .btn-group ul li:nth-child(3) .btn.active,:not(.btn-check)+.btn:active{
+    color:rgb(107, 107, 230) ;
+}

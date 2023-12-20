@@ -1,0 +1,8 @@
+body
+{
+    background-color: #eef8ee;
+}
+.row .col
+{
+    min-height: 50vh;
+}

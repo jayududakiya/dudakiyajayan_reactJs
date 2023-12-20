@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap icon cdn link  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- bootstrap CDN link  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- custom css file  -->
+
+    <link rel="stylesheet" href="dropdwon-5.css">
+
+    <title>dropdwon-5</title>
+</head>
+<body>
+
+    <div class="container-sm m-auto">
+
+        <h1 class="text-center text-uppercase display-3 fw-semibold mt-3 mb-0">collapse</h1>
+
+        <div class="m-auto row row-cols-3 g-5">
+
+            <div class="col">
+
+                <div class="dropdown">
+                    
+                    <button class="btn w-100 text-start  text-primary text-uppercase font-monospace border-0 rounded-0  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        order details 
+                    </button>
+
+                    <ul class="dropdown-menu w-100 border-0 rounded-0 shadow-sm py-4">
+                        <li><a class="dropdown-item text-capitalize ps-4 py-2" href="#">view your orders</a></li>
+                        <li><a class="dropdown-item text-capitalize ps-4 py-2" href="#">download order reports</a></li>
+                        <li><a class="dropdown-item text-capitalize ps-4 py-2" href="#">view archived orders</a></li>
+                        <li><a class="dropdown-item text-capitalize ps-4 py-2" href="#">manage payment options</a></li>
+                        <li><a class="dropdown-item text-capitalize ps-4 py-2" href="#">add a credit/debit card </a></li>
+                    </ul>
+                </div>
+                <p class="text-primary">Basic</p>
+            </div>
+
+            <div class="col">
+
+                <button class="btn w-100 text-start px-0 text-primary text-uppercase font-monospace border-0 rounded-0 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    order details <i class="bi bi-chevron-down"></i>
+                </button>
+            
+                <div class="collapse show" id="collapseExample">
+
+                    <div class="list-group py-2 shadow-sm rounded-1 bg-white">
+
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-4 py-2 ">view your orders</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-4 py-2 ">download order reports</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-4 py-2">view archived orders</a>
+                        <hr class="my-3">
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-4 py-2">manage payment options</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-4 py-2 ">add a credit/debit card</a>
+
+                    </div>
+
+                </div>
+
+                <p class="text-primary mt-2">Grouped With Divider</p>
+            </div>
+
+            <div class="col">
+                <button class="btn w-100 text-start px-0 text-primary text-uppercase font-monospace border-0 rounded-0 " type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExampleone" aria-expanded="false" aria-controls="collapseExampleone">
+                    order details <i class="bi bi-chevron-down"></i>
+                </button>
+                
+                <div class="collapse show" id="collapseExampleone">
+                
+                    <div class="list-group  py-2 shadow-sm rounded-1 bg-white">
+
+                        <p class="fw-semibold text-capitalize ps-4 py-0 mb-1 mt-2"> order history </p>
+                
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-5 py-2 ">view
+                            your orders</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-5 py-2 ">download order
+                            reports</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-5 py-2">view
+                            archived orders</a>
+                        <hr class="my-4">
+
+                        <p class="fw-semibold text-capitalize ps-4 py-0 mb-1"> payment methods </p>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-5 py-2">manage
+                            payment options</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-capitalize ps-5 py-2 ">add a
+                            credit/debit card</a>
+
+                    </div>
+                
+                    
+                </div>
+
+                <p class="text-primary mt-2">Grouped With divider and header</p>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+    <!-- bootstrap JS link  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

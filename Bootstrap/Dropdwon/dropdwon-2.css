@@ -1,0 +1,35 @@
+body
+{
+    background-color: #171c3a;
+}
+
+.dropdown .dropdown-menu
+{
+    background-color: #DC3545;
+}
+
+.dropdown .dropdown-menu::before
+{
+    display: block;
+    content:"";
+    margin: auto;
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    width:15px;
+    height: 15px;
+    z-index: -1;
+    transform:rotate(45deg);
+    background-color:#DC3545;
+}
+
+.dropdown .dropdown-menu li a
+{
+    color: #fff;
+    background-color: #dc3546 !important;
+}
+
+.dropdown .dropdown-menu li a:hover
+{
+    background-color: #99313b !important;
+}

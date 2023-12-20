@@ -1,0 +1,50 @@
+body
+{
+    background-color: #292b2c;
+}
+
+.dropdown .btn
+{
+    background-color: lightseagreen !important;
+    border-radius: 4px !important;
+}
+
+.dropdown .dropdown-toggle::after
+{
+    margin-left: auto;
+    margin-right:36px !important;
+    filter:contrast(50%);
+}
+
+.dropdown .dropdown-menu
+{
+    background-color:lightseagreen;
+    border-radius: 4px !important;
+}
+
+.dropdown .dropdown-menu li a
+{
+    background-color:lightseagreen;
+    padding: 10px 18px;
+    margin: 10px auto;
+}
+
+.dropdown .dropdown-menu li a:hover
+{
+    background-color:rgb(48, 135, 130);
+}
+
+.dropdown .dropdown-menu::after
+{
+    display: block;
+    content:"";
+    margin: auto;
+    position: absolute;
+    top: -7px;
+    right: 52px;
+    width:15px;
+    height: 15px;
+    z-index: -1;
+    transform:rotate(45deg);
+    background-color:lightseagreen;
+}
