@@ -1,0 +1,107 @@
+body
+{
+    font-family: sans-serif;
+}
+
+
+.modal .modal-dialog .modal-header
+{
+    position: absolute;
+    transform:translate(0%,-50%);
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+}
+
+.modal .modal-dialog .modal-header .btn-close
+{
+    cursor: pointer;
+    background:url(svg-icon/x.svg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-content
+{
+    width: 90%;
+    margin: auto;
+}
+
+
+.modal .modal-dialog .modal-body .list-unstyled li{
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.4);
+    width: 45px ;
+    height: 45px;
+    margin: 0.5rem 1rem;
+}
+
+
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(1)
+{
+    background-color: #4267B2; 
+}
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(2)
+{
+    background-color:#14171A; 
+}
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(3)
+{
+    background-color:#0F9D58; 
+}
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(4)
+{
+    background-color:#4285F4; 
+}
+
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(4)
+{
+    background-color:#405DE6; 
+}
+
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(5)
+{
+    background-color:#405DE6; 
+}
+
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(6)
+{
+    background-color:#E60023; 
+}
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(7)
+{
+    background-color:#FF0000; 
+}
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(8)
+{
+    background-color:#1DB954; 
+}
+
+
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(9)
+{
+    background-color:#C13584; 
+}
+
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(10)
+{
+    background-color:#ECB32D; 
+}
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(11)
+{
+    background-color:#63C1A0; 
+}
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(12)
+{
+    background-color:#14171A; 
+}
+
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(13)
+{
+    background-color:#89D3DF; 
+}
+.modal .modal-dialog .modal-body .list-unstyled li:nth-child(14)
+{
+    background-color:#FF00BF; 
+}

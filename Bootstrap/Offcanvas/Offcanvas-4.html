@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap icon CDN link  -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- bootstrap CDN link  -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- custom css  -->
+    <style>
+        .offcanvas-header .btn-close
+        {
+            background-image: none;
+            box-shadow: none;
+        }
+
+        .offcanvas
+        {
+            width: 300px !important;
+        }
+
+
+        /* width */
+        ::-webkit-scrollbar {
+        width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #eae9e9; 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #fa7f7f; 
+        border-radius: 12px;
+        }
+
+        /* .offcanvas.show:not(.hiding), .offcanvas.showing {
+        transform: none;
+        transform:translate(327%,0px);
+        } */
+    </style>
+
+    <title>Offcanvas-4</title>
+</head>
+<body>
+
+    <header>
+       <nav class="navbar text-bg-info d-flex align-items-center  justify-content-between">
+
+        <div class="logo m-auto ms-sm-5">
+            <a class="navbar-brand link-light fw-semibold text-center d-block " href="#">Navbar</a>
+        </div>
+
+        <button class="btn m-auto me-sm-5  text-light border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> <i class="bi bi-list fs-3"></i>  </button>
+
+        
+        <div class="offcanvas show offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+
+            <div class="offcanvas-header text-bg-danger ">
+
+                <h5 class="offcanvas-title text-capitalize " id="offcanvasWithBothOptionsLabel">canvas header</h5>
+                <button type="button" class="btn-close opacity-100 fs-4  text-center fw-semibold text-light lh-1 me-1" data-bs-dismiss="offcanvas" aria-label="Close" > <i class="bi bi-x-circle"></i> </button>
+
+            </div>
+
+            <div class="offcanvas-body bg-light">
+
+                <ul class="list-group mb-5">
+
+                    <li class="list-group-item text-capitalize py-3 fw-medium">An item</li>
+                    <li class="list-group-item text-capitalize py-3 fw-medium">A second item</li>
+                    <li class="list-group-item text-capitalize py-3 fw-medium">A third item</li>
+                    <li class="list-group-item text-capitalize py-3 fw-medium">A fourth item</li>
+                    <li class="list-group-item text-capitalize py-3 fw-medium">And a fifth one</li>
+
+                </ul>
+
+                <label class="mb-2 text-body-dark text-capitalize fw-medium ">subscribe to ure chanl</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <button type="button" class="btn btn-outline-dark mt-3 ms-auto d-block fw-medium">Subscribe</button>
+
+                <table class="table mt-5 shadow ">
+
+                    <thead class="table-light ">
+                      <tr class="border border-2 text-center border-top-1 border-dark border-start-0 border-end-0 ">
+                        <th scope="col">#</th>
+                        <th scope="col">item</th>
+                        <th scope="col">Qut.</th>
+                        <th scope="col">remove</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider text-center">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>2</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>1</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>5</td>
+                        <td>X</td>
+                      </tr>
+                    </tbody>
+
+                </table>
+
+
+                <button type="button" class="btn btn-primary text-capitalize  fw-medium d-block m-auto">checkout</button>
+
+            </div>
+
+        </div>
+
+       </nav>
+
+        <h1 class="display-4 text-center lh-base text-capitalize fw-semibold pt-5 mt-5">
+            bootstrap 5.3 Offcanvas example
+            <span class="text-body-secondary fs-3 d-block">
+                canvas navigation bar system off - canvas and navbar 
+            </span>
+        </h1>
+
+    </header>
+
+
+
+
+
+
+    <!-- bootstrap JS CDN   -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>

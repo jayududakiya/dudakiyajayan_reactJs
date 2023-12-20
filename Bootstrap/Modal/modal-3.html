@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon CDN link  -->
+
+    <script src="https://kit.fontawesome.com/f84c90e4f4.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN link  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+    <!--custom css file -->
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+        .modal .modal-dialog .modal-content .modal-body .fa-bell {
+            font-size: 5rem;
+        }
+    </style>
+
+
+    <title>modal-3</title>
+</head>
+<body>
+
+    <div class="container-sm m-auto ">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-info text-center m-auto d-block mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Be Always Up To Date Modal-3 
+        </button>
+        
+        <!-- Modal -->
+
+        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header text-bg-info text-light rounded-0 ">
+                        <h1 class="modal-title fs-5 text-capitalize text-center w-100" id="staticBackdropLabel">be always up to date</h1>
+                    </div>
+                    <div class="modal-body">
+                        <i class="fa-solid fa-bell text-info text-center w-100"></i>
+                        <p class="text-center lh-lg text-secondary  fw-lihgt text-capitalize mt-4 px-5">
+                            do you want to recevive a push notification about the newest posts?
+                        </p>
+                    </div>
+                    <div class="modal-footer align-items-center  justify-content-center ">
+                        <button type="button" class="btn btn-info rounded-0 text-light btn-lg px-4">YES</button>
+                        <button type="button" class="btn btn-outline-info rounded-0 btn-lg px-4 shadow " data-bs-dismiss="modal">NO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- bootstrap js CDN link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
