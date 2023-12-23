@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap icon CDN link  -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- bootstrap CDN link  -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- custom css  -->
+    <style>
+        .offcanvas-header .btn-close
+        {
+            background-image: none;
+            box-shadow: none;
+        }
+
+        .offcanvas
+        {
+            width: 310px !important;
+            z-index: 3;
+        }
+
+        .navbar{
+            z-index: 10;
+            background-color: #ef79d1;   
+        }
+
+        .offcanvas-backdrop{
+            opacity: .8;
+            z-index: 2;
+        }
+
+        .offcanvas-header
+        {
+            visibility: collapse;
+        }
+
+        .offcanvas-body .list-group a
+        {
+            background: transparent;
+            color: #a12983;   
+        }
+
+        .offcanvas-body .list-group a:hover
+        {
+            transition: all 0.3s ease-in-out;
+            color: #fff;
+            background-color: #a12983;   
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+        width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #eae9e9; 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #0d6efd; 
+        border-radius: 12px;
+        }
+
+        /* .offcanvas.show:not(.hiding), .offcanvas.showing {
+        transform: none;
+        transform:translate(327%,0px);
+        } */
+
+    </style>
+
+    <title>Offcanvas-6</title>
+</head>
+<body>
+
+    <header>
+       <nav class="navbar d-flex align-items-center justify-content-between">
+
+
+        <div class="logo m-auto ms-sm-5">
+            <a class="navbar-brand link-light fw-semibold text-center d-block " href="#">Navbar</a>
+        </div>
+
+
+        <button class="btn d-block  m-auto me-sm-5 fs-3 text-light border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
+            <i class="bi bi-list"></i>
+        </button>
+        
+    </nav>
+    
+    <div class="offcanvas show offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action py-2 my-2 rounded-2 border-0 fw-semibold text-capitalize fs-5">
+                    <i class="bi bi-house-door"></i>  home
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2 my-2 rounded-2 border-0 fw-semibold text-capitalize fs-5 "><i class="bi bi-suit-heart-fill"></i>  favourites</a>
+                <a href="#" class="list-group-item list-group-item-action py-2 my-2 rounded-2 border-0 fw-semibold text-capitalize fs-5 "><i class="bi bi-person-circle"></i> profile</a>
+                <a href="#" class="list-group-item list-group-item-action py-2 my-2 rounded-2 border-0 fw-semibold text-capitalize fs-5 "><i class="bi bi-gear-fill"></i> account settings</a>
+                <a href="#" class="list-group-item list-group-item-action py-2 my-2 rounded-2 border-0 fw-semibold text-capitalize fs-5 "><i class="bi bi-box-arrow-right"></i> logout</a>
+            </div>
+
+        </div>
+    </div>
+
+        <h1 class="display-4 text-center lh-base text-capitalize fw-semibold pt-5 mt-5">
+            bootstrap 5.3 Offcanvas example
+            <span class="text-body-secondary fs-3 d-block">
+                canvas navigation bar system off - canvas and navbar 
+            </span>
+        </h1>
+
+    </header>
+
+
+
+
+
+
+    <!-- bootstrap JS CDN   -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>

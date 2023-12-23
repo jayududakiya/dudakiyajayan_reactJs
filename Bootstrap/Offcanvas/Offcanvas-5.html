@@ -38,8 +38,8 @@
         
         /* Handle */
         ::-webkit-scrollbar-thumb {
-        background: #fa7f7f; 
-        border-radius: 12px;
+        background: #3d8afe; 
+        border-radius: 10px;
         }
 
         /* .offcanvas.show:not(.hiding), .offcanvas.showing {
@@ -48,12 +48,12 @@
         } */
     </style>
 
-    <title>Offcanvas-4</title>
+    <title>Offcanvas-5</title>
 </head>
 <body>
 
     <header>
-       <nav class="navbar text-bg-info d-flex align-items-center  justify-content-between">
+       <nav class="navbar text-bg-info d-flex align-items-center  justify-content-between p-0">
 
         <div class="logo m-auto ms-sm-5">
             <a class="navbar-brand link-light fw-semibold text-center d-block " href="#">Navbar</a>
@@ -65,7 +65,7 @@
         <div class="offcanvas show offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
             aria-labelledby="offcanvasWithBothOptionsLabel">
 
-            <div class="offcanvas-header text-bg-danger ">
+            <div class="offcanvas-header text-bg-primary ">
 
                 <button type="button" class="btn-close opacity-100 fs-4  text-center fw-semibold text-light lh-1 me-1" data-bs-dismiss="offcanvas" aria-label="Close" > <i class="bi bi-x-circle"></i> </button>
                 <h5 class="offcanvas-title text-capitalize " id="offcanvasWithBothOptionsLabel">canvas header</h5>
@@ -74,28 +74,10 @@
 
             <div class="offcanvas-body bg-light">
 
-                <ul class="list-group mb-5">
+                <table class="table mt-5 table-responsive-sm bg-body-tertiary ">
 
-                    <li class="list-group-item text-capitalize py-3 fw-medium">An item</li>
-                    <li class="list-group-item text-capitalize py-3 fw-medium">A second item</li>
-                    <li class="list-group-item text-capitalize py-3 fw-medium">A third item</li>
-                    <li class="list-group-item text-capitalize py-3 fw-medium">A fourth item</li>
-                    <li class="list-group-item text-capitalize py-3 fw-medium">And a fifth one</li>
-
-                </ul>
-
-                <label class="mb-2 text-body-dark text-capitalize fw-medium ">subscribe to our chanl</label>
-                <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-
-                <button type="button" class="btn btn-outline-danger mt-3 ms-auto d-block fw-medium">Subscribe</button>
-
-                <table class="table mt-5 shadow ">
-
-                    <thead class="table-light ">
-                      <tr class="border border-2 text-center border-top-1 border-dark border-start-0 border-end-0 ">
+                    <thead>
+                      <tr>
                         <th scope="col">#</th>
                         <th scope="col">item</th>
                         <th scope="col">Qut.</th>
@@ -126,7 +108,26 @@
                 </table>
 
 
-                <button type="button" class="btn btn-primary text-capitalize  fw-medium d-block m-auto">checkout</button>
+                <button type="button" class="btn btn-primary text-capitalize  fw-medium d-block m-auto mb-3 rounded-1">checkout</button>
+
+
+                <ul class="list-group mb-5">
+
+                    <li class="list-group-item text-capitalize py-3 fw-medium">An item</li>
+                    <li class="list-group-item text-capitalize py-3 fw-medium">A second item</li>
+                    <li class="list-group-item text-capitalize py-3 fw-medium">A third item</li>
+                    <li class="list-group-item text-capitalize py-3 fw-medium">A fourth item</li>
+                    <li class="list-group-item text-capitalize py-3 fw-medium">And a fifth one</li>
+
+                </ul>
+
+                <label class="mb-2 text-body-dark text-capitalize fw-medium ">subscribe to our chanl</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <button type="button" class="btn btn-outline-primary  mt-3 ms-auto d-block fw-medium">Subscribe</button>
 
             </div>
 
