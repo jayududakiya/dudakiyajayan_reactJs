@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap icon cdn link  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- bootstrap CDN link  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- custom css file  -->
+
+        <!-- <link rel="stylesheet" href="dropdwon-7.css">     -->
+
+    <title>dropdwon-7</title>
+</head>
+<body>
+
+    <div class="container-sm m-auto mt-5 d-none ">
+
+        <div class="row m-auto g-5">
+
+            <div class="col-auto m-auto p-0 ">
+
+                <div class="dropdown-center border border-2 border-dark">
+
+                    <button class="btn  border-0 shadow-lg  dropdown-toggle text-capitalize fs-5 d-block w-100 m-auto" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        dropdown menu
+                    </button>
+
+                    <ul class="dropdown-menu w-100 border-0 shadow-lg ">
+
+                        <ul class="list-group list-unstyled ">
+
+                            <li><a class="dropdown-item list-group-item border-top-0  text-capitalize text-start py-3 ps-4 fw-medium " href="#">mail</a></li>
+                            <li><a class="dropdown-item list-group-item  text-capitalize text-start py-3 ps-4 fw-medium " href="#">calendar</a></li>
+                            <li><a class="dropdown-item list-group-item  text-capitalize text-start py-3 ps-4 fw-medium " href="#">note</a></li>
+                            <li><a class="dropdown-item list-group-item  text-capitalize text-start py-3 ps-4 fw-medium " href="#">libray</a></li>
+                            <li><a class="dropdown-item list-group-item  text-capitalize text-start py-3 ps-4 fw-medium " href="#">contacts</a></li>
+                            <li><a class="dropdown-item list-group-item  text-capitalize text-start py-3 ps-4 fw-medium " href="#">resources</a></li>
+                            <li><a class="dropdown-item list-group-item border-bottom-0  text-capitalize text-start py-3 ps-4 fw-medium " href="#">documents</a></li>
+
+                        </ul>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-auto m-auto p-0 d-none">
+
+                            <div class="dropdown-center">
+                            
+                                <button class="btn text-light border-0 shadow-lg  dropdown-toggle text-capitalize px-3 d-block  m-auto"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-discord fs-2 "></i>
+                                </button>
+                            
+                                <ul class="dropdown-menu border-0 shadow-lg" style="min-width:50px" >
+                            
+                                    <ul class="list-group list-unstyled">
+                            
+                                        <li><a class="dropdown-item list-group-item border-top-0 text-center py-1"
+                                        href="#"><i class="bi bi-person-circle fs-3"></i></a></li>
+
+                                        <li><a class="dropdown-item list-group-item text-center py-1"
+                                                href="#"><i class="bi bi-bar-chart-line fs-3"></i></a></li>
+                                        <li><a class="dropdown-item list-group-item text-center py-1"
+                                                href="#"><i class="bi bi-calendar2-day fs-3"></i></a></li>
+                                        <li><a class="dropdown-item list-group-item text-center py-1"
+                                                href="#"><i class="bi bi-envelope fs-3"></i></a></li>
+                                        <li><a class="dropdown-item list-group-item text-center py-1"
+                                                href="#"><i class="bi bi-gift fs-3"></i></a></li>
+                                        <li><a class="dropdown-item list-group-item text-center py-1"
+                                                href="#"><i class="bi bi-opencollective fs-3"></i></a></li>
+                                        <li><a class="dropdown-item list-group-item border-bottom-0 text-center py-1"
+                                                href="#"><i class="bi bi-lock fs-3"></i></a></li>
+                            
+                                    </ul>
+                            
+                                </ul>
+                            
+                            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-secondary m-5"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="This top tooltip is themed via CSS variables.">
+  Custom tooltip
+</button>
+
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+    Tooltip on top
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+    Tooltip on right
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+    Tooltip on bottom
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+    Tooltip on left
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script>
+
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+
+<!-- bootstrap JS link  -->
+
+
+</body>
+</html>

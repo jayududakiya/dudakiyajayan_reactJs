@@ -1,0 +1,23 @@
+
+
+.dropdown-menu
+{
+    display: block;
+    height: 0%;
+}
+
+.list-group{
+    height:inherit;    
+}
+
+.show
+{
+    background-color: yellowgreen;
+    height: 0% !important;
+}
+
+.dropdown-menu:not(.show)
+{
+    height: ;
+    background-color: lightcoral;
+}
