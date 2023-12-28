@@ -1,4 +1,6 @@
-@forward 'colors.scss';
-@forward 'display.scss';
-@forward 'fonts.scss';
-@forward 'size.scss';
+    
+    @import 'colors';
+    @import 'fonts';
+    @import 'size';
+    @import 'spacing';
+    @import 'utilities';

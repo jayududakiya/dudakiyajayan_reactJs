@@ -1,1 +1,146 @@
 // use methord and import file s 
+
+// import file 
+
+@import './variables/variables';
+
+// sass
+
+
+body
+{
+    background-color: $hex-off-white;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    font-size: 62.5%;
+}
+
+
+.main-container
+{
+    margin: $m-auto;
+}
+
+
+.main-container .box
+{
+  padding: $p-2;
+  margin-top: $m-5;
+  display: $flex;
+  flex-wrap: wrap;
+  align-items: $a-items-center;
+  justify-content: $j-content-center;
+}
+
+.box .card
+{
+    margin: 0px auto 30px auto;
+    border-radius: 10px;
+    flex: 0 1 28%;
+    width: 100%;
+    min-height:600px;
+    background-color: $hex-white;
+    outline: 2px solid $hex-black;
+    cursor: pointer;
+    display:  $flex;
+    flex-direction: $f-direction-col ;
+    align-items: $a-items-center;
+    justify-content: $j-content-around;
+    transition: all 0.3s  ease-in-out;
+
+
+    &:hover
+    {
+        outline:none;
+        background-color: $hex-Secret-Pink;
+        color: $hex-off-white;
+    }
+
+    &:hover button
+    {
+        color: $hex-Secret-Pink !important;
+        background-color: $hex-off-white !important;
+    }
+}
+
+
+.box .card .card-head
+{
+    width: calc(100% - 20%);
+}
+
+.box .card .card-head .card-icon
+{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 8rem;
+}
+
+.box .card .card-head .card-icon img
+{
+    display: none;
+    margin: $m-auto ;
+    width: $w-auto;
+    height: $h-auto;
+}
+
+
+.box .card .card-head .card-heading
+{
+    font-size: 2.8rem;
+    margin-top: 30px;
+    text-align: center;   
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.box .card .card-body
+{
+    width: calc(100% - 20%);
+    margin-bottom: 35px ;
+}
+
+.box .card .card-body p
+{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height:2rem;
+    font-weight: 600;
+}
+
+.box .card .card-body .card-btn
+{
+    margin-top: 40px;
+}
+
+.box .card .card-body .card-btn .btn
+{
+    cursor: pointer;
+    background-color: $hex-black;
+    color: $hex-white;
+    display: block;
+    width: 100%;
+    border: 0px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    min-height: 60px;
+}
+
+
+
+@media(max-width:992px){
+
+    .box .card
+    {
+        flex-direction: $f-direction-col ;
+        margin:20px;
+        min-width: 90%;
+    }
+
+}
