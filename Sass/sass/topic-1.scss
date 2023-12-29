@@ -36,7 +36,7 @@ body
 
 .box .card
 {
-    margin: 0px auto 30px auto;
+    margin: 0px auto $m-3 auto;
     border-radius: 10px;
     flex: 0 1 28%;
     width: 100%;
@@ -73,7 +73,7 @@ body
 
 .box .card .card-head .card-icon
 {
-    margin-top: 20px;
+    margin-top: $m-2;
     text-align: center;
     font-size: 8rem;
 }
@@ -90,7 +90,7 @@ body
 .box .card .card-head .card-heading
 {
     font-size: 2.8rem;
-    margin-top: 30px;
+    margin-top: $m-3 ;
     text-align: center;   
     text-transform: uppercase;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -101,7 +101,7 @@ body
 .box .card .card-body
 {
     width: calc(100% - 20%);
-    margin-bottom: 35px ;
+    margin-bottom: $m-4 ;
 }
 
 .box .card .card-body p
@@ -115,7 +115,7 @@ body
 
 .box .card .card-body .card-btn
 {
-    margin-top: 40px;
+    margin-top: $m-4 ;
 }
 
 .box .card .card-body .card-btn .btn
@@ -139,7 +139,7 @@ body
     .box .card
     {
         flex-direction: $f-direction-col ;
-        margin:20px;
+        margin: $m-2 ;
         min-width: 90%;
     }
 

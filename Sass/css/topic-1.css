@@ -11,8 +11,8 @@ body {
 }
 
 .main-container .box {
-  padding: 10px;
-  margin-top: 25px;
+  padding: 20px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -71,7 +71,7 @@ body {
 
 .box .card .card-body {
   width: 80%;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .box .card .card-body p {
