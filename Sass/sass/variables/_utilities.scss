@@ -1,14 +1,27 @@
 
+$d-block:block;
+
+$d-inline-block:inline-block;
+
+$d-inline:inline;
+
+
 // diplay-flex
 
-$flex:flex;
+$d-flex:flex;
+
+$f-wrap:wrap;
+$f-nowrap:nowrap;
 
 $f-direction-row: row;
 $f-direction-col: column;
 
 $a-items-center: center;
+$a-items-stretch: stretch;
 $a-items-start: start;
 $a-items-end: end;
+$a-items-f-start: flex-start;
+$a-items-f-end: flex-end;
 
 $j-content-center:center;
 $j-content-start: flex-start;
