@@ -1,0 +1,32 @@
+@import 'variables/variables';
+
+@mixin flexbox-custom($a-i:center,$j-c:center)
+{
+    display: flex ;
+    align-items: $a-i ;
+    justify-content: $j-c ;
+}
+
+%box-size
+{
+    height: $h-30;
+    width: $w-20 ;
+    background-color: $hex-yellow ;
+}
+
+main
+{
+    height: $vh-100 ;
+    @include flexbox-custom(center , space-between );
+
+    .box-1
+    {
+        @extend %box-size;
+    }
+
+    .box-2
+    {
+        @extend %box-size;
+        background-color: $hex-green ;
+    }
+}

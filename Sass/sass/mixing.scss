@@ -1,0 +1,63 @@
+@import 'variables/variables';
+
+// mixing
+
+@mixin flexbox
+{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+@mixin flexbox-custom($a-i:center,$j-c:center)
+{
+    display: flex ;
+    align-items: $a-i ;
+    justify-content: $j-c ;
+}
+
+@mixin link($color : $hex-Secret-Pink ){
+    background-color: $color;
+    @content;
+}
+
+nav
+{
+    background-color: $hex-red ;
+    ul
+    {
+        @include flexbox;
+
+        list-style-type: none ;
+
+
+
+        li{
+            margin: auto $m-4;
+            a
+            {
+                @include link
+                {
+                    border: 2px solid $hex-black;
+                }
+                text-decoration: none;
+                color: $hex-off-white ;
+                font-size: $fs-xsm ;
+            }
+        }
+    }
+}
+
+
+.list
+{
+    margin-top: $m-5 ; 
+    @include flexbox-custom( center , space-between );
+    list-style-type: none ;
+
+    li{
+        margin: auto $m-4;
+        font-size: $fs-7;
+    }
+}
+

@@ -1,0 +1,15 @@
+main .box-2, main .box-1 {
+  height: 300px;
+  width: 250px;
+  background-color: #FFFF00;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .box-2 {
+  background-color: #00FF00;
+}/*# sourceMappingURL=extend.css.map */
