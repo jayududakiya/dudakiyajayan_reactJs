@@ -1,0 +1,47 @@
+@import 'variables/variables';
+
+
+
+
+ul
+{
+    @include flexbox-custom(center,space-around);
+    list-style: none;
+}
+
+    @for $link-n from 1 through 10
+    {
+        .link-#{$link-n}
+        {
+            background-color: aqua;
+            color: #000000 ;
+            font-size: 5px * $link-n ;
+        }
+    }
+
+
+    // $a: 1;
+
+    // @while $a <= 10 {
+    //     .link-#{$a} {
+    //         display: block;
+    //         width: (10 * $a) + px;
+    //     }
+    
+    //     $a: $a + 1;
+    // }
+
+
+    $b: 1;
+
+    @while $b <= 10 {
+        .link-#{$b} {
+            display: block;
+            width: (10 * $b ) + px;
+            padding:(10 * $b) + px;
+        }
+
+        $b: $b + 1;
+    }
+
+   

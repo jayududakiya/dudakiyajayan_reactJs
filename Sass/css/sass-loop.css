@@ -1,0 +1,126 @@
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.link-1 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 5px;
+}
+
+.link-2 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 10px;
+}
+
+.link-3 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 15px;
+}
+
+.link-4 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 20px;
+}
+
+.link-5 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 25px;
+}
+
+.link-6 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 30px;
+}
+
+.link-7 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 35px;
+}
+
+.link-8 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 40px;
+}
+
+.link-9 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 45px;
+}
+
+.link-10 {
+  background-color: aqua;
+  color: #000000;
+  font-size: 50px;
+}
+
+.link-1 {
+  display: block;
+  width: 10px;
+  padding: 10px;
+}
+
+.link-2 {
+  display: block;
+  width: 20px;
+  padding: 20px;
+}
+
+.link-3 {
+  display: block;
+  width: 30px;
+  padding: 30px;
+}
+
+.link-4 {
+  display: block;
+  width: 40px;
+  padding: 40px;
+}
+
+.link-5 {
+  display: block;
+  width: 50px;
+  padding: 50px;
+}
+
+.link-6 {
+  display: block;
+  width: 60px;
+  padding: 60px;
+}
+
+.link-7 {
+  display: block;
+  width: 70px;
+  padding: 70px;
+}
+
+.link-8 {
+  display: block;
+  width: 80px;
+  padding: 80px;
+}
+
+.link-9 {
+  display: block;
+  width: 90px;
+  padding: 90px;
+}
+
+.link-10 {
+  display: block;
+  width: 100px;
+  padding: 100px;
+}/*# sourceMappingURL=sass-loop.css.map */
