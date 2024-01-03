@@ -1,0 +1,75 @@
+/* color-1 : #F2F3F6 */
+/* color-2 : #422AFB */
+/* color-3 : #242E52 */
+
+
+body
+{
+    background-color: #F2F3F6 ;
+    box-sizing: border-box ;
+    margin: 0% ;
+    padding: 0% ;
+}
+
+.card
+{
+    background-color: #fff ;
+    min-height: 440px ;
+    max-width: 500px ;
+    border: none ;
+}
+
+
+.card .card-head .menu-btn
+{
+    outline: none ;
+    border:none;
+    border-radius: 12px ;
+    display: block ;
+    color:  #422AFB ;
+    padding: 4px 15px  ;
+    font-size: 30px ;
+    margin: 20px 20px 5px auto ;
+}
+
+.card-body .card-img p
+{
+    color: #422AFB;
+    font-size: 4.5rem;
+    border-radius: 50% ;
+    background-color: #F2F3F6 ;
+    width: 124px ;
+    height: 124px;
+}
+.card-text h1
+{
+    text-align: center ;
+    text-transform: capitalize ;
+    font-family: sans-serif ;
+    font-weight: 600;
+    color: #242E52 ;
+}
+
+.card-text p
+{
+    padding-top: 10px;
+    font-size: 1.4rem ;
+    line-height: 2rem ;
+    text-align: center ;
+    text-transform: capitalize ;
+    font-family: sans-serif ;
+    color: #a2a1a1;
+}
+
+
+
+.card-foot p
+{
+    font-family: sans-serif ;
+    font-size: 1.3rem ;
+    font-weight: 600;
+    text-transform: uppercase ;
+    color: #444444;
+    padding-top: 10px;
+    opacity: 0.5 ;
+}
