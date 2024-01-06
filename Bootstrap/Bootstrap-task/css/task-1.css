@@ -1,0 +1,76 @@
+/*
+ body-color #e5e5e5
+ container-color #f4f5fa 
+ box-shdow color  #f9ecff
+
+ */
+
+
+ body
+ {
+    background-color:  #e5e5e5 ;
+ }
+
+ .box-wrapper
+ {
+    background-color: #f4f5fa ;
+    width: 100% ;
+    height: 90%;
+ }
+
+ .box-wrapper .box-header
+ {
+    margin: auto ;
+    width: calc(100% - 40% );
+}
+
+.box-cards .row .col .card
+{
+    border: none ;
+    max-width: 17.5rem;
+    margin: 20px auto ;
+    outline: 1px solid transparent;
+    border-radius: 18px ;
+    transition: all 0.4s ease-in-out ;
+    box-shadow:  -16px -16px 0px rgba(255, 207, 207, 0.928);
+}
+
+.box-cards .row .col .card:hover
+{
+    cursor: pointer;
+    outline: 1px solid rgb(225, 222, 222);
+    box-shadow:  -16px -16px 0px rgba(166, 166, 166, 0.928);
+}
+
+
+.card .card-head .card-logo
+{
+    /* outline: 2px solid red ; */
+    width:100px;
+    height: 50px;
+}
+
+.card .card-head .card-logo img
+{
+    display: block ;
+    margin: auto ;
+    width: 100% ;
+    height: 100% ;
+    object-fit: contain ;
+}
+
+.card .card-foot button
+{
+    text-align: center ;
+    padding: 12px 18px;
+    border: none ;
+    outline: none ;
+    box-shadow: 1px 7px 10px rgba(0,0,0,0.3);
+    background-color: #e5e5e5;
+    transition: all 0.3s ease-in-out ;
+}
+
+.card .card-foot button:hover
+{
+    box-shadow:none;
+}
