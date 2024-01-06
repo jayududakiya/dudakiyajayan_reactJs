@@ -74,3 +74,12 @@
 {
     box-shadow:none;
 }
+
+
+.box-wrapper .main-btn button
+{
+    background-color: rgb(15, 11, 41);
+    text-align: center ;
+    padding: 11px 18px;
+    color: #f4f5fa ;
+}
