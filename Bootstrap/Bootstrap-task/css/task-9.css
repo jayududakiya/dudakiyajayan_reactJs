@@ -1,0 +1,114 @@
+body
+{
+    background-color: #dcdcdc ;
+
+}
+
+img
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.card
+{
+    width: 25rem;
+    min-height: 420px ;
+}
+
+
+.card .card-img-wrapper
+{
+    position: relative;
+    width: 100% ;
+    height: 60%;
+}
+
+.card-img-wrapper .like-btn
+{
+    width: 45px ;
+    height: 45px;
+    margin-top: 10px ;
+    margin-right:15px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border-radius: 50% ;
+    background-color: #fff;
+}
+
+.card-head h4
+{
+    width: 50%; 
+}
+
+.card-head .people-img
+{
+    position: relative;
+    min-height: 40px;
+    width: 50% ;
+}
+
+.card-head .people-img li
+{
+    position: absolute;
+    outline: 2px solid #c1c1c1;
+    width: 40px ;
+    height: 100% ;
+    border-radius: 50% ;
+    overflow:hidden;
+    top: 0%;
+    right: 0%;
+}
+
+.card-head .people-img li:nth-child(1)
+{
+    top: 0% ;
+    right: 80px;
+    z-index: 4;
+}
+
+.card-head .people-img li:nth-child(2)
+{
+    top: 0% ;
+    right: 55px;
+    z-index: 3;
+}
+
+.card-head .people-img li:nth-child(3)
+{
+    top: 0% ;
+    right: 30px;
+    z-index: 2;
+}
+
+.card-head .people-img li:nth-child(4)
+{
+    top: 0% ;
+    right: 5px;
+    z-index: 1;
+}
+
+.sub-text
+{
+    font-family: sans-serif;
+}
+
+.card-footer p
+{
+    color: #6610f2;;
+}
+
+.card-footer button
+{
+    background-color:#6610f2 ;
+    color: #dcdcdc;
+}
