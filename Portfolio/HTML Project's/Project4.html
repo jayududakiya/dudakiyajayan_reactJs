@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jayan Dydakiya">
+    <title>Favourite movies or tv shows</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        header
+        {
+            margin: auto;
+            width: 100%;
+            border-bottom: 2px solid rgba(245, 245, 245, 0.36);
+        }
+
+        .heading
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            text-align: center;
+            padding:12px;
+            color: rgba(245, 245, 245, 0.679);
+            border-top: 2px solid rgba(245, 245, 245, 0.36);
+            border-bottom: 2px solid rgba(245, 245, 245, 0.36);
+        }
+
+        body
+        {
+            background-color: #00151e;
+        }
+
+        .post
+        {
+            height: 94vh;
+            position: relative;
+        }
+      
+        .post #background-post
+        {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(5px);
+        }
+
+        .post .box-1
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 90%;
+            padding: 2% 0%; 
+            border-radius:15px;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(4, 78, 87, 0.466);
+            align-content: center;
+        } 
+
+        .post .post-box .img-box
+        {
+            width: 24%;
+            border-radius: 15px;
+        }
+
+        .post .post-box .img-box img
+        {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        .post .post-box .img-data
+        {
+            border-radius: 15px;
+            width: 65%;
+            padding: 2% 4%;
+        }
+
+        .post .post-box .img-data h1
+        {
+            color: #ff0000e6;
+            font-size: 36px;
+            font-family: sans-serif;
+            font-weight: 800;
+            margin: 1% auto;
+            text-align: left;
+        }
+
+        .post .post-box .img-data .sub-title 
+        {
+            display: block;
+            color: #00ffdde6;
+            text-align: left;
+            text-transform: capitalize;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 200;
+            padding: 1% 0% 1.5% 2%;
+        }
+        
+        .post .post-box .img-data .sub-detalis
+        {
+            padding: 1% 0% 1% 3%;
+            text-align:left;
+            text-transform: uppercase;
+            color: #e1fffe99;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .post .post-box .img-data p
+        {
+            padding: 1% 0% 1.2% 2%; 
+            color: #ffffffe6;
+            font-family: sans-serif;
+            font-weight: 100;
+            font-size: 14px;
+            font-style: italic;
+            letter-spacing: 1px;
+            line-break:loose;
+            line-height: 21px;
+        }
+
+        .post .post-box .img-data .text-2 h3
+        {
+            display: inline-block;
+            padding-right: 1%;
+        }
+        
+        .post .post-box .img-data .text-2
+        {
+            font-size: 14px;
+        }
+
+
+        .post .post-box .img-data .link 
+        {
+            display: block;
+        }
+
+        .post .post-box .img-data .link h3
+        {
+            text-align: left;
+            font-size: 16px;
+            font-family: sans-serif;
+            color:#000;
+            padding: 1% 1% 0% 4%;
+        }   
+
+        .post .post-box .img-data .link h3 a
+        {
+            color: #ff0000e6;
+            font-size: 14px;
+            padding-left: 0.4%;
+            text-align: center;
+        }
+
+        .post-2
+        {
+            padding: 0%;
+            background-image: linear-gradient(to right, #000000dd, #181515e2, #18161600, #f9f8f800, #ffffff00),url(./project-4/Altered-Carbon-main-img.jpg);
+            height: 100vh;
+            background-position:top;
+            position:unset;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .post-2 .post-box
+        {
+            position:unset;
+            padding: 0%; 
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            flex-flow: column wrap;
+            align-content: flex-start;
+            justify-content: center;
+        }
+
+        .post-2 .post-box .img-2
+        {
+            width: 100%;
+            margin: 0% auto;
+            padding: 12% 0% 4% 5%;
+            border-radius: 0px;
+        }
+
+        .post-2 .post-box .img-2 img
+        {
+            width: 30%;
+        }
+
+        .post-2 .post-box .data-2
+        {
+            border-radius: 0px;
+            padding: 0% 4%;
+            width: 100%;
+            height: 50%;
+        }
+
+        .post-2 .post-box .data-2 h1
+        {
+            color: #ffffff;
+            font-size: 22px;
+            margin: 0% auto;
+            padding: 0%;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .post-2 .post-box .data-2 .sub-title 
+        {
+            color: #00ffdde6;
+            font-size: 16px;
+            padding: 1% 0% 0% 2%;
+        }
+
+        .post-2 .post-box .data-2 .sub-detalis
+        {
+            padding: 1% 0% 0% 5%;
+            color: #ffffffb8;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+
+        .post-2 .post-box .data-2 p
+        {
+            padding: 1% 0% 0.2% 2%; 
+            color: rgb(255, 255, 255,0.8);
+            font-size: 12px;
+            line-height: 18px;
+            width: 45%;
+            font-weight: 100;
+            line-break:loose;
+        }
+
+        .post-2 .post-box .data-2 .text-2 h3
+        {
+            display: inline-block;
+            padding-right: 1%;
+        }
+        
+        .post-2 .post-box .data-2 .text-2
+        {
+            font-size: 12px;
+        }
+
+
+        .post-2 .post-box .data-2 .link 
+        {
+            display: block;
+        }
+
+        .post-2 .post-box .data-2 .link h3
+        {
+            font-size: 14px;
+            color:#ff2d2d;
+            padding: 1% 1% 0% 4%;
+        }   
+
+        .post-2 .post-box .data-2   .link h3 a
+        {
+            color: #ffffffc3;
+            font-size: 12px;
+        }
+
+
+
+
+        footer
+        {
+            border-top: 2px solid rgba(245, 245, 245, 0.36);
+        }
+        
+        footer h4 {
+            text-align: center;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            margin: auto;
+            padding: 8px 12px;
+            color: #fff;
+        }
+        
+        footer h4 a
+        {
+            font-weight: 100;
+            color: orangered;
+        }
+     
+        
+        </style>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Favourite Movies</h1>
+    </header>
+
+    <section class="post post-1">
+        <video id="background-post" src="./project-4/inception-teaser.mp4" muted autoplay loop  preload="auto"></video>
+        <div class="post-box box-1">
+            <div class="img-box img-1">
+                <img id="poster" src="./project-4/Inception-poster.jpg" alt="poster">
+            </div>
+            <div class="img-data data-1">
+                <h1>     
+                    Inception
+                </h1>
+                <span class="sub-title text-1">
+                    Dream Is Real
+                </span>
+                <p class="sub-detalis"> 
+                    2010 | Maturity Rating:U/A 16+ | 2h 28m | Action 
+                </p>
+                <p>
+                    A troubled thief who extracts secrets from people's dreams takes one last job : leading a dangerous mission to plant an idea in a target's subconscious.
+                </p>
+                <span class="sub-title text-2">
+                   <h3>  Starring : </h3>Leonardo DiCaprio,Joseph Gordon-Levitt,Elliot Page
+                </span>
+                <span class="link">
+                    <h3>Watch all you want. <a href="https://www.netflix.com/in/title/70131314" target="_blank" title="watch on netflix">clike here</a></h3>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="heading">Favourite Tv Show</h1>
+
+    <section class="post post-2">
+
+        <div class="post-box box-2">
+
+            <div class="img-box img-2">
+                <img id="poster" src="./project-4/Alteret-Carbon-logo.png" alt="name-logo">
+            </div>
+
+            <div class="img-data data-2">
+                
+                <h1>     
+                    Alteret Carbon
+                </h1>
+                <span class="sub-title text-1">
+                    Welcome to a future full of endless possibilities.
+                </span>
+                <p class="sub-detalis"> 
+                    2018 | &#x41; | 2 Seasons | Action
+                </p>
+                <p>
+                    After 250 years on ice, a prisoner returns to life in a new body with one chance to win his freedom: by solving a mind-bending murder.
+                </p>
+                <span class="sub-title text-2">
+                    <h3>  Starring : </h3>Anthony Mackie,Lela Loren,Simone Missick <br><br>
+                    <h3>  Creators : </h3>Laeta Kalogridis 
+                </span>
+                <span class="link">
+                    <h3>Watch all you want. <a href="https://www.netflix.com/in/title/80097140?source=35" target="_blank" title="watch on netflix">clike here</a></h3>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>I have taken the details related to the web from a reference provided by <a
+                href="https://www.imdb.com/title/tt1375666/" target="_blank">IMDB.com</a></h4>
+        <h4> Watch Or Download, you can find it on <a href="https://movies4u.credit/inception-2010-dual-audio-hindi-english/"
+                target="_blank">movies4u.credit</a></h4>
+    </footer>
+</body>
+</html>
