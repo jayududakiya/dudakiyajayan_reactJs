@@ -1,0 +1,24 @@
+@mixin d-flex-custom($a-i: center , $j-c: center) {
+    display: flex;
+    align-items: $a-i ;
+    justify-content: $j-c ;
+    @content;
+}
+
+
+@mixin a-transition($t-time:0.3s)
+{
+    transition: all $t-time ease-in-out ;
+}
+
+@mixin backdp-filter($br: 4px) {
+    backdrop-filter: blur($br);
+}
+
+
+@mixin background-img{
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    @content;
+}

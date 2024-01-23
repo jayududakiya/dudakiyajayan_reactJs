@@ -1,0 +1,52 @@
+@mixin flex-custom ($fd:row,$ai:center,$jc:center)
+{
+    display: flex;
+    flex-direction: $fd ;
+    align-items: $ai ;
+    justify-content: $jc ;
+    @content;
+}
+
+@mixin transtion-s($t-time:0.3s)
+{
+    transition: all $t-time ease-in-out  ;
+    @content;
+}
+
+
+@mixin block-img($img-d:block,$img-w:100%,$ob-fit:cover)
+{
+    display: $img-d ;
+    margin: auto ;
+    max-width: $img-w ;
+    height: 100%;
+    object-fit: $ob-fit;
+    object-position: center ; 
+    @content;
+}
+
+@mixin img-rotated
+{
+    transform: rotate(22deg) translateY(2rem);
+}
+
+ 
+%for-bg-text
+{
+    font-size: 11rem ;
+    font-family: $p1-f-heading;
+    text-align: center ;
+    color: $p1-color-4;
+    text-transform: uppercase ;
+    line-height: 10rem ;
+}
+
+.active
+{
+    opacity: 0.5;
+}
+
+.line-through
+{
+    text-decoration: line-through;
+}

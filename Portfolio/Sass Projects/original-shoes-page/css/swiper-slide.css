@@ -1,0 +1,71 @@
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-btn
+{
+    cursor: pointer;
+    position: fixed ;
+    width: 42px;
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after
+{
+  content: " " ;
+  display: block ;
+  margin: auto;
+  height: 100% ;
+  width: 100% ;
+  background-image: url(../asset/icons/next-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+
+.swiper-button-next
+{
+  right: 0%;
+  top: 50% ;
+  transform: translateY(-50%);
+}
+
+.swiper-button-prev
+{
+  left: 0% ;
+  top: 50% ;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.swiper-pagination
+{
+    bottom: 0% ;
+    left: 0% ;
+    right: 0% ;
+    font-size: 3rem ;
+    color: #000 ;
+    text-align: center ;
+    line-height: 3rem;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    display:flex;
+    align-content: center ;
+    justify-content: center ;
+    margin: auto ;
+}

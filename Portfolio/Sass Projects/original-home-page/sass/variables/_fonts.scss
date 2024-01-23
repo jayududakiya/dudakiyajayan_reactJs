@@ -1,0 +1,95 @@
+
+ // font style imports 
+
+    //  page-1
+
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Pridi:wght@200;300&family=Raleway:wght@300;400;500;600;700&display=swap');
+    
+    $p1-head : 'Raleway', sans-serif ;
+
+    $p1-text : 'Alegreya Sans', sans-serif;
+
+    $p1-button : 'Pridi', serif;
+
+    // page-2 
+
+    @import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Francois+One&family=Maitree:wght@200;300;400;500;700&display=swap');
+
+    $p2-head : 'Francois One', sans-serif;
+
+    $p2-text : 'Amiko', sans-serif;
+
+    $p2-button : 'Maitree', serif;
+    
+    // page-3
+
+    @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Montserrat+Alternates:wght@200;300;400;500;600;700&display=swap');   
+
+    $p3-head : 'Montserrat Alternates', sans-serif;
+
+    $p3-text : 'Raleway', sans-serif;
+
+    $p3-button : 'Antic Slab', serif;
+
+    // page-4
+
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;500;700&family=Assistant:wght@400;500;600;700&family=Imprima&display=swap');
+
+    $p4-head : 'Alegreya Sans SC', sans-serif;
+
+    $p4-text : 'Assistant', sans-serif;
+
+    $p4-button : 'Imprima', sans-serif;
+
+    // page-5
+
+    @import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    $p5-head : 'Noticia Text', serif;
+
+    $p5-text : 'Maitree', serif;
+
+    $p5-button : 'Anaheim', sans-serif;
+
+    // page-6 
+
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Martel:wght@300;400;600&display=swap');
+
+    $p6-head : 'Dosis', sans-serif;
+
+    $p6-text : 'Dosis', sans-serif;
+
+    $p6-button : 'Martel', serif;
+
+    //page-7
+
+    @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600&family=Parisienne&family=Sanchez:ital@0;1&display=swap');
+
+
+    $p7-head : 'Sanchez', serif;
+
+    $p7-text : 'Parisienne',  cursive;
+
+    $p7-button : 'Enriqueta', serif;
+
+// font-size 
+
+$font-size: 65.25% ;
+
+$fs-1:1rem;
+$fs-2:1.2rem;
+$fs-3:1.3rem;
+$fs-4:1.4rem;
+$fs-5:1.5rem;
+$fs-6:1.6rem;
+$fs-7:1.7rem;
+$fs-8:1.8rem;
+$fs-9:1.9rem;
+$fs-10:2rem;
+
+$fs-xsm:2.5rem;
+$fs-sm:3.5rem;
+$fs-md:4.5rem;
+$fs-lg:5.5rem;
+$fs-xl:6.5rem;
+$fs-xxl:7.5rem;

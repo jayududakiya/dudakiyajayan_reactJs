@@ -1,0 +1,246 @@
+// colors 
+
+$hex-blue:#0000FF;
+$hex-red:#FF0000;
+$hex-yellow:#FFFF00;
+$hex-orange:#FF6600;
+$hex-Purple:#6600FF;
+$hex-green:#00FF00;
+$hex-white:#FFFFFF;
+$hex-black:#000000;
+
+
+// Brands Colors
+
+$hex-fb:#4267B2;
+$hex-gog:#4285F4;
+$hex-inta:#405DE6;
+$hex-twit:#14171A;
+$hex-pint:#E60023;
+$hex-snap:#FFFC00;
+$hex-yt:#FF0000;
+
+// RGBA opacity colors 
+
+$rgba-black-1:rgba(0, 0, 0, 0.1);
+$rgba-black-2:rgba(0, 0, 0, 0.2);
+$rgba-black-3:rgba(0, 0, 0, 0.3);
+$rgba-black-4:rgba(0, 0, 0, 0.4);
+$rgba-black-5:rgba(0, 0, 0, 0.5);
+$rgba-black-6:rgba(0, 0, 0, 0.6);
+$rgba-black-7:rgba(0, 0, 0, 0.7);
+$rgba-black-8:rgba(0, 0, 0, 0.8);
+$rgba-black-9:rgba(0, 0, 0, 0.9);
+$rgba-black-10:rgba(0, 0, 0, 1);
+
+
+// topic-1  card colors
+
+$hex-off-white:#f9f1f1;
+$hex-Bright-Red:#EE4B2B;
+$hex-Secret-Pink:#F9629F;
+
+
+// page-1 color 
+
+
+$p1-color-1:#591B20;
+$p1-color-2:#595859 ;
+$p1-color-3:#A6A6A6;
+$p1-color-4:#EBF2F1;
+$p1-color-5:#261111;
+
+$p1-rgba-color-1:#1A1A18 ;
+$p1-rgba-color-2: #9F9EA4;
+
+// page-2 color 
+
+$p2-color-1:#252326;
+$p2-color-2:#7E56A6;
+$p2-color-3:#A67A6A;
+$p2-color-4:#F2CFC2;
+$p2-color-5:#0D0D0D;
+$p2-color-6:#BFB6AE;
+$p2-color-7:#733F2C;
+
+$p2-rgba-color-1:#6A4F3A;
+$p2-rgba-color-2: #9D8680;
+
+
+//  page-3-color
+
+$p3-color-1:#262526;
+$p3-color-2:#F2DEA2;
+$p3-color-3:#F2BC57;
+$p3-color-4:#BFAE99;
+$p3-color-5:#594A1C;
+$p3-color-6:#403E3F;
+$p3-color-7:#F2F1DF;
+
+$p3-rgba-color-1:#2E1F0C ;
+$p3-rgba-color-2:#60361D;
+
+
+//  page-4-color:
+
+$p4-color-1:#40290E ;
+$p4-color-2:#F28D35 ;
+$p4-color-3:#8C3D0F;
+$p4-color-4:#591F0A;
+$p4-color-5:#D9D9D9;
+$p4-color-6:#0D0D0D;
+$p4-color-7:#594A38;
+
+$p4-rgba-color-1:#86552D;
+$p4-rgba-color-2:#E5995B;
+
+
+
+// page-5-color
+
+$p5-color-1:#85A6A0;
+$p5-color-2:#CCD9D5;
+$p5-color-3:#4C594A;
+$p5-color-4:#24261F;
+$p5-color-5:#0D0D0B;
+$p5-color-6:#39402E;
+
+$p5-rgba-color-1:#445245;
+$p5-rgba-color-2:#D2D8D4;
+
+
+ //page-6-color:
+
+$p6-color-1:#3B3C40;
+$p6-color-2:#F2E30F;
+$p6-color-3:#F2DB94;
+$p6-color-4:#8C5C03;
+$p6-color-5:#593B02;
+$p6-color-6:#BF7E04;
+$p6-color-7:#DFE9F2;
+$p6-color-8:#1e4e6a;
+
+$p6-rgba-color-1:#75735E;
+$p6-rgba-color-2: #5F5520;
+
+
+//  page-7-color:
+
+$p7-color-1:#3F3D40;
+$p7-color-2:#242426;
+$p7-color-3:#A65D03;
+$p7-color-4:#733702;
+$p7-color-5:#592202;
+$p7-color-6:#85A6A0;
+$p7-color-7:#CCD9D5;
+$p7-color-8:#DFE9F2;
+$p7-color-9:#908F8D;
+
+$p7-rgba-color-1:#7D5F2B;
+$p7-rgba-color-2:#6B3302;
+
+
+
+
+// // page-1 color 
+
+// $page-1-color:
+// (
+//     p1-color-1:#591B20,
+//     p1-color-2:#595859 ,
+//     p1-color-3:#A6A6A6,
+//     p1-color-4:#EBF2F1,
+//     p1-color-5:#261111,
+
+//     p1-rgba-color-1:#1A1A18 ,
+//     p1-rgba-color-2: #9F9EA4 
+
+// );
+
+
+// $page-2-color:
+// (
+//     p2-color-1:#252326,
+//     p2-color-2:#7E56A6,
+//     p2-color-3:#A67A6A,
+//     p2-color-4:#F2CFC2,
+//     p2-color-5:#0D0D0D,
+//     p2-color-6:#BFB6AE,
+//     p2-color-7:#733F2C,
+
+//     p2-rgba-color-1:#6A4F3A,
+//     p2-rgba-color-2: #9D8680 
+
+// );
+
+// $page-3-color:
+// (
+//     p3-color-1:#262526,
+//     p3-color-2:#F2DEA2,
+//     p3-color-3:#F2BC57,
+//     p3-color-4:#BFAE99,
+//     p3-color-5:#594A1C,
+//     p3-color-6:#403E3F,
+//     p3-color-7:#F2F1DF,
+
+//     p3-rgba-color-1:#2E1F0C ,
+//     p3-rgba-color-2:#60361D 
+
+// );
+
+// $page-4-color:
+// (
+//     p4-color-1:#40290E ,
+//     p4-color-2:#F28D35 ,
+//     p4-color-3:#8C3D0F,
+//     p4-color-4:#591F0A,
+//     p4-color-5:#D9D9D9,
+//     p4-color-6:#0D0D0D,
+//     p4-color-7:#594A38,
+
+//     p4-rgba-color-1:#86552D,
+//     p4-rgba-color-2:#E5995B 
+
+// );
+
+// $page-5-color:
+// (
+//     p5-color-1:#85A6A0,
+//     p5-color-2:#CCD9D5,
+//     p5-color-3:#4C594A,
+//     p5-color-4:#24261F,
+//     p5-color-5:#0D0D0B,
+//     p5-color-6:#39402E,
+
+//     p5-rgba-color-1:#445245,
+//     p5-rgba-color-2:#D2D8D4 
+
+// );
+
+// $page-6-color:
+// (
+//     p6-color-1:#3B3C40,
+//     p6-color-2:#F2E30F,
+//     p6-color-3:#F2DB94,
+//     p6-color-4:#8C5C03,
+//     p6-color-5:#593B02,
+//     p6-color-6:#BF7E04,
+//     p6-color-7:#DFE9F2,
+
+//     p6-rgba-color-1:#75735E,
+//     p6-rgba-color-2: #5F5520
+
+// );
+
+// $page-7-color:
+// (
+//     p7-color-1:#3F3D40,
+//     p7-color-2:#242426,
+//     p7-color-3:#A65D03,
+//     p7-color-4:#733702,
+//     p7-color-5:#592202,
+
+//     p7-rgba-color-1:#7D5F2B,
+//     p7-rgba-color-2:#6B3302
+
+// );

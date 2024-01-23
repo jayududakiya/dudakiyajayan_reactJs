@@ -1,0 +1,1903 @@
+// veriable link and custome file s
+
+@import 'variables/variables';
+
+$star-color-1:yellow;
+$star-color-2:#fff;
+
+// mixing contant 
+
+
+
+
+// sass start 
+
+body
+{
+    font-size: $font-size !important ; 
+}
+
+
+// navbar 
+
+nav {
+    
+    @include backdp-filter;
+    background-color: rgba($p1-color-2 , 0.6);
+    z-index: 15 !important;
+
+    .container-fluid {
+        min-height: 70px;
+    }
+
+    .navbar-brand {
+
+        position: absolute;
+        top: 50%;
+        left: 1%;
+        transform: translate(0%, -50%);
+
+        font-family: $p4-head ;
+        color: $hex-white  ;
+        letter-spacing: 2px;
+
+        .text-body-light {
+            opacity: 0.6;
+            font-weight: 200 ;
+            letter-spacing: none !important;
+            @include a-transition;
+        }
+
+        &:hover
+        {
+            color: $hex-white;
+            .text-body-light {
+                opacity: 1;
+                color: $hex-black ;
+            }
+        }
+    }
+
+    // menu btn 
+
+    .navbar-toggler {
+        font-size: $fs-8;
+        color: $hex-off-white ;
+    }
+
+    //main nav button class
+
+    .navbar-collapse {
+
+        .menu-btn {
+            width: $w-10 ;
+            overflow: hidden;
+            padding: 5px 0px;
+            border-radius: 30px;
+            color: rgba($hex-white, 0.8);
+            background-color: rgba($hex-black, 0.4);
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            backdrop-filter: blur(4px);
+
+
+            .collapse {
+                .card-body {
+                    ul {
+                        li {
+                            a {
+                                color: $hex-off-white ;
+
+                                &:hover {
+                                    background-color: rgba($hex-off-white , 0.6);
+                                    color: rgba($hex-black, 0.8);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-btn-group {
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            transform: translate(0%, 0%);
+
+            // shopping btn 
+
+            .btn-shop {
+                padding: 5px !important;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                background-color: rgba($hex-off-white , 0.4);
+
+                &::after {
+
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    @include background-img;
+                    background: url(../icons/icons8-shopping-bag-96.png);
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    border-radius: 0px;
+                }
+
+                &:hover::after {
+                    background: url(../icons/icons8-shopping-bag.gif);
+                }
+            }
+
+            // language btn 
+
+            .lang-btn {
+                border-radius: 20px;
+                background-color: rgba($hex-off-white , 0.4);
+
+                .btn {
+                    width: 158px;
+                    height: 50px;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        margin: auto 8px auto 0px;
+                        width: 24px;
+                        height: 24px;
+                        @include background-img;
+                        background: url(../icons/icons8-globe-48.png) ;
+                    }
+                }
+
+                .collapse {
+
+                    .card-body {
+                        ul {
+                            li {
+
+                                a {
+                                    color: $hex-off-white ;
+
+                                    &:hover {
+                                        background-color: rgba($hex-off-white , 0.6);
+                                        color: rgba($hex-black, 0.8);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header start 
+
+header {
+
+    // header background btns 
+
+    #navbar-example2 {
+
+        top: 50% ;
+        right: -2%;
+        // opacity: 0.5;
+
+        box-shadow: 0px 0px 10px $rgba-black-6;
+        border-radius: 16px 0px 0px 16px;
+    
+        @include a-transition;
+        @include backdp-filter;
+
+        &:hover
+        {
+            opacity: 1;
+            top: 50% ;
+            right: 0%;
+        }
+
+        z-index: 11;
+
+        .head-btns {
+            width: 100% ;
+            height: 100% ;
+
+            @include d-flex-custom(center , center )
+            {
+                flex-flow: column;
+            };
+
+            li {
+
+                .btns-link {
+
+                    border-radius: 50px;
+                    height: 50px;
+                    width: 50px;
+                    margin: 8px;
+                    
+                    img
+                    {
+                        cursor: pointer ;
+                        display: block;
+                        object-fit: cover ;
+                        object-position: center ;
+                        height: 100%;
+                        
+                        animation: img-zoom 0.4s ease-in-out backwards ;
+                        animation-play-state: paused ;
+                        animation-iteration-count: 1 ;
+
+                        @include a-transition;
+                    }
+                    
+
+                    &:focus-within{
+                        img {
+                            animation-play-state: running  ;
+                            animation-fill-mode: forwards ;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    @keyframes img-zoom {
+        from 
+        {
+            transform: scale(1) translateX(0%);
+        }
+        
+        to{
+            transform: scale(1.6) translateX(-55%);
+        }
+    }
+
+    .scrollspy-example {
+
+        scroll-behavior: smooth !important;
+        scroll-snap-type: x mandatory;
+
+        display: flex;
+        align-items: center;
+        flex-flow: row nowrap;
+
+        min-height: 100vh !important;
+
+        overflow: hidden;
+
+        .bg-mine-img {
+
+            scroll-snap-stop: always;
+            scroll-snap-align: center;
+
+            flex: 1 0 100% !important;
+            width: 100%;
+            height: 100vh !important;
+           
+            @include background-img;
+
+            .container-md {
+
+                min-width: calc(100vw - 2vw) !important;
+                height: calc(100vh - 20vh) !important;
+
+                // position: fixed;
+                // top: 55%;
+                // left: 50%;
+                // margin: auto;
+                // transform: translate(-50%,-50%);
+
+                .row {
+
+                    .column-1 {
+
+                        .sub-text {
+
+                            padding: 4px;
+                            cursor: pointer;
+                            border-radius: 20px;
+                            outline: 1px solid lightgray;
+                            @include backdp-filter(10px);
+
+                            .audio-icon {
+                                border-radius: 50%;
+                                width: 30px;
+                                height: 30px;
+
+                                label {
+                                    cursor: pointer;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    background-color: transparent;
+                                    background-position: center;
+                                    background-size: 28px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(../icons/icons8-pause-button-50.png);
+
+                                }
+
+                                input[type="checkbox"]:checked~label {
+                                    background-image: url(../icons/audio-wave.gif);
+                                }
+
+
+
+                            }
+
+
+                            .audio-text {
+
+                                color: #000000df;
+
+                                .txt-lf {
+                                    animation: text-move 10s ease-out infinite;
+
+                                    @keyframes text-move {
+                                        from {
+                                            transform: translateX(100%);
+                                        }
+
+                                        to {
+                                            transform: translateX(-120%);
+                                        }
+
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .sub-title {
+                            h1 {
+                                color: $hex-black ;
+                                margin: $m-2 0px  ;
+                            }
+                        }
+
+                        .sub-btns {
+
+                            .col-12 {
+
+                                .btn {
+
+                                    min-height: 70px ;
+                                    width: 180px ;
+                                    border-radius: 40px;
+                                    color: $hex-black ;
+                                    // outline:  2px solid ;
+
+                                    @include a-transition ;
+                                }
+
+
+                            }
+
+                        }
+                    }
+
+
+                    
+                    .col-lg-7 {
+                        
+                        // profile btns pandding 
+
+                        .column-2 {
+
+                            min-height: 70px ;
+                            max-width: 330px ;
+
+                            .pop-btn {
+
+                                @include d-flex-custom(center , center);
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50px;
+                                padding: 4px 24px !important;
+
+                                @include a-transition;
+
+                                .btn-img {
+                                    height: 100%;
+                                    width: 65px ;
+                                    
+                                    img
+                                    {
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                        object-position: center ;
+                                        display: block;
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+                                }
+
+
+                                .btn-text
+                                {
+                                    margin-left: 5px;
+                                    height: 100%;
+                                    font-size: $fs-2 ;
+                                }
+                            }
+
+                            .modal
+                            {
+
+                                .modal-content
+                                {
+
+                                    .modal-header
+                                    {
+                                        .btn-close
+                                        {
+                                            border-radius: 50%;
+                                            outline: none ;
+                                            opacity: 1;
+                                            margin-right: 8px;
+                                            width: 16px;
+                                            height: 16px;
+                                        
+                                            @include a-transition;
+                                            @include background-img;
+
+                                            background-image: url(../icons/close-circle-svgrepo-com.svg) !important ;
+
+                                            &:hover
+                                            {
+                                                opacity: 0.7 ;
+                                                box-shadow: inset -3px -3px 7px rgba($hex-white, 0.7),
+                                                inset 3px 3px 5px rgba($hex-black , 0.7) ;
+                                            }
+                                        }
+                                    }
+
+                                    margin: 4.5rem auto !important;
+                                    max-width: 380px ; 
+
+                                    .modal-body
+                                    {
+                                        
+                                        .modal-img
+                                        {
+                                            
+                                            position: relative;
+                                            width:100%;
+                                            min-height:30vh;
+                                            
+                                            &::before{
+
+                                            position: absolute ;
+                                            top: 0% ;
+                                            left: 0% ;
+
+                                            content: "" ;
+                                            display: block ;
+                                            width: 100% ; 
+                                            height: 65%;
+                                            border-radius: 20px ;
+                                            @include background-img;            
+                                            }
+                                            img{
+                                                display: block;
+                                                position: absolute; 
+                                                outline: 4px solid white;
+                                                top: 65%;
+                                                left: 50% ;
+                                                right: 0% ;
+                                                transform: translateX(-50%) translateY(-50%);
+                                                object-fit: cover;
+                                                object-position: center ;
+                                                border-radius: 50%;
+                                                width: 120px;
+                                                height: 120px;
+                                            }
+                                        }
+
+                                        .modal-text
+                                        {
+                                            .md-sub-text
+                                            {
+
+                                                @include d-flex-custom(center , space-evenly);
+
+                                                li
+                                                {
+                                                    @include d-flex-custom
+                                                    {
+                                                        flex-flow: column ;
+                                                    };
+
+                                                    h3
+                                                    {
+                                                        text-align: center ;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 1px;
+                                                        font-size: $fs-7;
+                                                    }
+                                                    span
+                                                    {
+                                                        display: block ;
+                                                        text-align: center;
+                                                        text-transform: capitalize;
+                                                        opacity: 0.5 ;
+                                                        font-size: $fs-3;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+                                    .modal-footer
+                                    {
+                                        ul{
+
+                                            li
+                                            {
+                                                // background-color: $hex-off-white ;
+                                                box-shadow: inset -3px -3px 7px rgba($hex-white, 0.7),
+                                                inset 3px 3px 5px rgba($hex-black , 0.7) ;
+                                                width: 50px ;
+                                                height: 50px;
+
+                                                @include a-transition;
+
+                                                                                                      
+                                                &:nth-child(1)
+                                                {
+                                                    
+                                                    &:hover
+                                                    {
+                                                        box-shadow: none;
+                                                        a
+                                                        {
+                                                            color: $hex-pint !important;
+                                                        }
+                                                    }
+                                                }
+
+                                                &:nth-child(2)
+                                                {
+                                                    &:hover
+                                                    {
+                                                        box-shadow: none;
+                                                        a
+                                                        {
+                                                            color: $hex-twit !important;
+                                                        }
+                                                    }
+                                                }
+
+                                                &:nth-child(3)
+                                                {
+                                                    &:hover
+                                                    {
+                                                        box-shadow: none;
+                                                        a
+                                                        {
+                                                            color: $hex-snap !important;
+                                                        }
+                                                    }
+                                                }
+
+                                                &:nth-child(4)
+                                                {
+                                                    &:hover
+                                                    {
+                                                        box-shadow: none;
+                                                        a
+                                                        {
+                                                            color: $hex-gog !important;
+                                                        }
+                                                    }
+                                                }
+
+
+                                                a
+                                                {
+                                                    @include d-flex-custom;
+                                                    
+                                                    text-decoration: none ;
+                                                    height: 100%;
+                                                    font-size: $fs-4 ;
+                                                    color: rgba($hex-black , 0.7);
+                                                
+                                                }
+
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                        // rating box  
+
+                        .column-3 {
+
+                            height: 60px;
+                            width: 250px;
+
+                            .rating {
+
+                                width: 100%;
+                                height: 100%;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-flow: row-reverse wrap;
+
+                                input {
+
+                                    display: none;
+
+                                    // &:hover, 
+                                    // &:checked~label{
+                                    //     color: $star-color-1 ;
+                                    // }
+                                }
+
+                                label {
+
+                                    @include a-transition ;
+
+                                    float: right;
+                                    cursor: pointer;
+                                    // color: $star-color-2;
+                                    position: relative;
+
+                                    &::before {
+                                        content: '\2605';
+                                        font-size: 30px;
+                                        margin: auto 5px;
+                                    }
+
+
+                                    &::after {
+
+                                        position: absolute;
+                                        top: 0%;
+
+
+                                        text-align: center;
+                                        font-size: $fs-2; 
+                                        line-height: 2rem;
+                                        content: '';
+                                        z-index: -1 ;
+                                        display: block;
+                                        width: 100%;
+                                        height: 90%;
+                                        opacity: 0 ;
+                                        background-image: url(../icons/chat.png);
+                                        background-position: center;
+                                        background-size: 35px;
+                                        background-repeat: no-repeat;
+                                        @include a-transition;
+                                    }
+
+                                    &:nth-child(10)::after {
+                                        content: '😥' !important;
+                                    }
+
+                                    &:nth-child(8)::after {
+                                        content: '🙂' !important;
+                                    }
+
+                                    &:nth-child(6)::after {
+                                        content: '😊' !important;
+                                    }
+
+                                    &:nth-child(4)::after {
+                                        content: '😀' !important;
+                                    }
+
+                                    &:nth-child(2)::after {
+                                        content: '😍' !important;
+                                    }
+
+                                    &:hover::after {
+                                        z-index: 1;
+                                        top: -90%;
+                                        opacity: 1;
+                                    }
+
+                                    // &:hover {
+                                    //     color: $star-color-1 ;
+                                    // }
+
+                                    // &:hover~label {
+                                    //     color: $star-color-1 ;
+                                    // }
+                                }
+
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        @at-root
+
+        .bg-image-1 {
+            background: url(../aseet/bg-image-1.jpg);
+            
+            .row
+            {
+                // head text box 
+
+                .column-1
+                {
+
+                    .sub-text
+                    {
+                        outline: 1px solid  $p1-color-1 !important;
+                        p
+                        {
+                            color: $p1-color-1 !important;
+                            font-family: $p1-text ;
+                            font-size: $fs-2 ;
+                        }
+                    }
+
+                    .sub-title
+                    {
+                        h1
+                        {
+                            color: $p1-color-1  !important;
+                            font-family: $p1-head ;
+                            font-weight: 600;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .sub-btns
+                    {
+                        .btn
+                        {
+                            color: $p1-color-4 !important;
+                            font-family: $p1-button ;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            outline: 2px solid $p1-color-1 ;
+
+                            background-color: rgba($p1-color-2 , 0.3) ;
+                            @include backdp-filter(5px);
+
+                            &:hover
+                            {
+                                @include backdp-filter(1px);
+                                outline:  2px solid $p1-color-4;
+                            }
+                        }
+                    }
+                }
+
+                // pop-card box 
+
+                .column-2
+                {
+                    .pop-btn
+                    {
+                        outline: 2px solid $p1-color-1 ;
+                        font-family: $p1-button ;
+                        color: $p1-color-1 !important;
+                        background-color: rgba($p1-color-2 , 0.3) ;
+                        @include backdp-filter(5px);
+
+                        &:hover
+                        {
+                            @include backdp-filter(1px);
+                            outline:  2px solid $p1-color-4;
+                        }
+                    }
+
+                    .modal{
+                        .modal-content{
+                            background-color: rgba($p1-rgba-color-2, 0.7) ;
+                            @include backdp-filter; 
+                            .modal-body
+                            {
+                                .modal-img
+                                {
+                                    &::before
+                                    {
+                                        background-image: url(../aseet/gradient-bg-9.jpg) ;
+                                    }
+                                }
+                                .modal-text
+                                {
+                                    h4{
+                                        font-family: $p1-head  ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // rating box 
+
+                .column-3
+                {
+                    input {
+                        &:checked~label {
+                            color: $p1-color-1 ;
+                        }
+                    }
+
+                    label
+                    {
+                        color: $p1-color-4;
+
+                        &:hover {
+                            color: $p1-color-4 ;
+                        }
+
+                        &:hover,
+                        &:hover~label {
+                            color: $p1-color-1 ;
+                        }
+                    }
+
+                }
+
+                
+            } // end of custom row 
+        }
+
+        @at-root 
+        .bg-image-2 {
+            background: url(../aseet/bg-image-2.jpg);
+
+            .row
+            {
+                // head text box 
+
+                .column-1
+                {
+
+                    .sub-text
+                    {
+                        outline: 1px solid  $p2-color-2 !important;
+                        p
+                        {
+                            color: $p2-color-2 !important;
+                            font-family: $p2-text ;
+                            font-size: $fs-2 ;
+                        }
+                    }
+
+                    .sub-title
+                    {
+                        h1
+                        {
+                            color: $p2-color-2  !important;
+                            font-family: $p2-head ;
+                            font-weight: 600;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .sub-btns
+                    {
+                        .btn
+                        {
+                            font-family: $p2-button;
+                            font-weight: 300 !important ;
+                            letter-spacing: 1px;
+                            color: $p2-color-6 !important;
+                            outline: 2px solid $p2-color-2 ;
+
+                            background-color: rgba($p2-color-2, 0.3) ;
+                            @include backdp-filter;
+
+                            &:hover
+                            {
+                                color: $p2-color-2 !important;
+                                outline:  2px solid $p2-color-6;
+                            }
+                        }
+                    }
+                }
+
+                // pop-card box 
+
+                .column-2
+                {
+                    .pop-btn
+                    {
+                        outline: 2px solid $p2-color-2 ;
+                        font-family: $p2-button ;
+                        color: $p2-color-6 !important;
+                        background-color: rgba($p2-color-2 , 0.3) ;
+                        @include backdp-filter;
+
+                        &:hover
+                        {
+                            background-color: rgba($p2-color-6 , 0.3) ;
+                            outline:  2px solid $p2-color-6;
+                        }
+                    }
+
+                    .modal{
+                        .modal-content{
+                            background-color: rgba($p2-color-2 , 0.5) ;
+                            @include backdp-filter; 
+                            .modal-body
+                            {
+                                .modal-img
+                                {
+                                    &::before
+                                    {
+                                        background-image: url(../aseet/gradient-bg-2.jpg) ;
+                                    }
+                                }
+                                .modal-text
+                                {
+                                    h4{
+                                        color: $p2-color-4 ;
+                                        font-family: $p2-head  ;
+                                        letter-spacing: 1.5px ;
+                                    }
+
+                                    .md-sub-text
+                                    {
+                                        color: $p2-color-4 ;
+                                        font-family: $p2-text;
+                                    }
+                                }
+                            }
+
+                            .modal-footer
+                            {
+                                @at-root
+                                ul
+                                {
+                                    li{
+                                        a
+                                        {
+                                            color: rgba($hex-white , 0.8) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // rating box 
+
+                .column-3
+                {
+                    input {
+                        &:checked~label {
+                            color: $p2-color-2 ;
+                        }
+                    }
+
+                    label
+                    {
+                        color: $p1-color-4;
+
+                        &:hover {
+                            color: $p1-color-4 ;
+                        }
+
+                        &:hover,
+                        &:hover~label {
+                            color: $p2-color-2 ;
+                        }
+                    }
+
+                }
+
+                
+            } // end of custom row 
+        }
+
+        @at-root
+        .bg-image-3 {
+            background: url(../aseet/bg-image-3.jpg);
+
+            
+            .row
+            {
+                // head text box 
+
+                .column-1
+                {
+
+                    .sub-text
+                    {
+                        outline: 1px solid  $p3-color-3 !important;
+                        p
+                        {
+                            color: $p3-color-3 !important;
+                            font-family: $p3-text ;
+                            font-size: $fs-2 ;
+                        }
+                    }
+
+                    .sub-title
+                    {
+                        h1
+                        {
+                            color: $p3-color-3 !important;
+                            font-family: $p3-head ;
+                            font-weight: 600;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .sub-btns
+                    {
+                        .btn
+                        {
+                            font-family: $p3-button;
+                            font-weight: 300 !important ;
+                            letter-spacing: 1px;
+                            color: $p3-color-3 !important;
+                            outline: 2px solid $p3-color-3 ;
+
+                            background-color: rgba($p3-color-2, 0.1) ;
+                            @include backdp-filter;
+
+                            &:hover
+                            {
+                                background-color: rgba($p3-color-2, 0.8) ;
+                                color: $p3-color-5 !important;
+                                outline:  2px solid $p3-color-3;
+                            }
+                        }
+                    }
+                }
+
+                // pop-card box 
+
+                .column-2
+                {
+                    .pop-btn
+                    {
+                        outline: 2px solid $p3-color-3 ;
+                        font-family: $p3-button ;
+                        color: $p3-color-3 !important;
+                        background-color: rgba($p3-color-3 , 0.3) ;
+                        @include backdp-filter;
+
+                        &:hover
+                        {
+                            background-color: transparent ;
+                            outline:  2px solid $p3-color-7;
+                        }
+                    }
+
+                    .modal{
+                        .modal-content{
+                            background-color: rgba($p3-color-3,0.6) ;
+                            @include backdp-filter; 
+                            .modal-body
+                            {
+                                .modal-img
+                                {
+                                    &::before
+                                    {
+                                        background-image: url(../aseet/gradient-bg-4.jpg) ;
+                                    }
+                                }
+                                .modal-text
+                                {
+                                    h4{
+                                        color: $p3-color-1;
+                                        font-family: $p3-head ;
+                                        letter-spacing: 1.5px ;
+                                    }
+
+                                    .md-sub-text
+                                    {
+                                        color: $p3-color-1;
+                                        font-family: $p3-head;
+                                    }
+                                }
+                            }
+
+                            .modal-footer
+                            {
+                                @at-root
+                                ul
+                                {
+                                    li{
+                                        a
+                                        {
+                                            color: rgba($hex-white , 0.8) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // rating box 
+
+                .column-3
+                {
+                    input {
+                        &:checked~label {
+                            color: $p3-color-3;
+                        }
+                    }
+
+                    label
+                    {
+                        color: $p1-color-4;
+
+                        &:hover {
+                            color: $p1-color-4 ;
+                        }
+
+                        &:hover,
+                        &:hover~label {
+                            color: $p3-color-3 ;
+                        }
+                    }
+
+                }
+
+                
+            } // end of custom row 
+        }
+
+        @at-root
+        .bg-image-4 {
+            background: url(../aseet/bg-image-4.jpg);
+
+            .row
+            {
+                // head text box 
+
+                .column-1
+                {
+
+                    .sub-text
+                    {
+                        outline: 1px solid  $p4-color-2 !important;
+                        p
+                        {
+                            color: $p4-color-2 !important;
+                            font-family: $p4-text ;
+                            font-size: $fs-2 ;
+                        }
+                    }
+
+                    .sub-title
+                    {
+                        h1
+                        {
+                            color: $p4-color-2 !important;
+                            font-family: $p4-head ;
+                            font-weight:300;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .sub-btns
+                    {
+                        .btn
+                        {
+                            outline: 2px solid $p4-color-5;
+                            font-family: $p4-button;
+                            color: $p4-color-2 !important;
+                            font-weight: 300 !important ;
+                            letter-spacing: 1px;
+
+                            background-color: rgba($p4-color-4, 0.3) ;
+                            @include backdp-filter;
+
+                            &:hover
+                            {
+                                background-color: rgba($p4-color-4, 0.6) ;
+                                color: $p4-color-5 !important;
+                                outline:  2px solid $p4-color-2;
+                            }
+                        }
+                    }
+                }
+
+                // pop-card box 
+
+                .column-2
+                {
+                    .pop-btn
+                    {
+                        outline: 2px solid $p4-color-5;
+                        font-family: $p4-button ;
+                        color: $p4-color-2 !important;
+                        background-color: rgba($p4-color-4 , 0.3) ;
+                        @include backdp-filter;
+
+                        &:hover
+                        {
+                            
+                            background-color: rgba($p4-color-4, 0.6) ;
+                            color: $p4-color-5 !important;
+                            outline:  2px solid $p4-color-2;
+                        }
+                    }
+
+                    .modal{
+                        .modal-content{
+                            background-color: rgba($p4-rgba-color-1,0.6) ;
+                            @include backdp-filter; 
+                            .modal-body
+                            {
+                                .modal-img
+                                {
+                                    &::before
+                                    {
+                                        background-image: url(../aseet/gradient-bg-5.jpg) ;
+                                    }
+                                }
+                                .modal-text
+                                {
+                                    h4{
+                                        color: $p4-color-5;
+                                        font-family: $p4-head ;
+                                        letter-spacing: 1.5px ;
+                                    }
+
+                                    .md-sub-text
+                                    {
+                                        color: $p4-color-5;
+                                        font-family: $p4-button;
+                                    }
+                                }
+                            }
+
+                            .modal-footer
+                            {
+                                @at-root
+                                ul
+                                {
+                                    li{
+                                        a
+                                        {
+                                            color: rgba($hex-white , 0.8) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // rating box 
+
+                .column-3
+                {
+                    input {
+                        &:checked~label {
+                            color: $p4-color-6;
+                        }
+                    }
+
+                    label
+                    {
+                        color: $p1-color-4;
+
+                        &:hover {
+                            color: $p1-color-4 ;
+                        }
+
+                        &:hover,
+                        &:hover~label {
+                            color: $p4-color-6 ;
+                        }
+                    }
+
+                }
+
+                
+            } // end of custom row 
+        }
+
+        @at-root
+        .bg-image-5 {
+            background: url(../aseet/bg-image-5.jpg);
+
+            .row
+            {
+                // head text box 
+
+                .column-1
+                {
+
+                    .sub-text
+                    {
+                        outline: 1px solid  $p5-color-1 !important;
+                        p
+                        {
+                            color: $p5-color-1 !important;
+                            font-family: $p5-text ;
+                            font-size: $fs-2 ;
+                        }
+                    }
+
+                    .sub-title
+                    {
+                        h1
+                        {
+                            color: $p5-color-2 !important;
+                            font-family: $p5-head ;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .sub-btns
+                    {
+                        .btn
+                        {
+                            outline: 2px solid $p5-color-2;
+                            font-family: $p5-button ;
+                            color: $p5-color-2 !important;
+                            font-weight: 300 !important ;
+                            letter-spacing: 1px;
+
+                            background-color: rgba($p5-color-4 , 0.3) ;
+                            @include backdp-filter;
+
+                            &:hover
+                            {
+                                background-color: rgba($p5-color-2 , 0.3 ) ;
+                                color: $p5-color-4 !important;
+                                outline:  2px solid $p5-color-4;
+                            }
+                        }
+                    }
+                }
+
+                // pop-card box 
+
+                .column-2
+                {
+                    .pop-btn
+                    {
+                        outline: 2px solid $p5-color-2;
+                        font-family: $p5-button ;
+                        color: $p5-color-2 !important;
+                        background-color: rgba($p5-color-5 , 0.3) ;
+                        @include backdp-filter;
+
+                        &:hover
+                        {
+                            background-color: rgba($p5-color-2 , 0.3 ) ;
+                        }
+                    }
+
+                    .modal{
+                        .modal-content{
+                            background-color: rgba($p5-rgba-color-1 , 0.5 ) ;
+                            @include backdp-filter; 
+                            .modal-body
+                            {
+                                .modal-img
+                                {
+                                    &::before
+                                    {
+                                        background-image: url(../aseet/gradient-bg-7.jpg) ;
+                                    }
+                                }
+                                .modal-text
+                                {
+                                    h4{
+                                        color: $p5-color-2 ;
+                                        font-family: $p5-head ;
+                                        letter-spacing: 1.5px ;
+                                    }
+
+                                    .md-sub-text
+                                    {
+                                        color: $p5-color-2;
+                                        font-family: $p5-button;
+                                    }
+                                }
+                            }
+
+                            .modal-footer
+                            {
+                                @at-root
+                                ul
+                                {
+                                    li{
+                                        a
+                                        {
+                                            color: rgba($hex-white , 0.8) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // rating box 
+
+                .column-3
+                {
+                    input {
+                        &:checked~label {
+                            color: $p5-color-3;
+                        }
+                    }
+
+                    label
+                    {
+                        color: $p5-color-2 ;
+
+                        &:hover {
+                            color: $p5-color-2 ;
+                        }
+
+                        &:hover,
+                        &:hover~label {
+                            color: $p5-color-3 ;
+                        }
+                    }
+
+                }
+
+                
+            } // end of custom row 
+        }
+
+        .bg-image-6 {
+            background: url(../aseet/bg-image-6.jpg);
+
+            .row
+            {
+                // head text box 
+
+                .column-1
+                {
+
+                    .sub-text
+                    {
+                        outline: 1px solid  $p6-color-3 !important;
+                        p
+                        {
+                            color: $p6-color-3 !important;
+                            font-family: $p6-text ;
+                            font-size: $fs-2 ;
+                        }
+                    }
+
+                    .sub-title
+                    {
+                        h1
+                        {
+                            color: $p6-color-3 !important;
+                            font-family: $p6-head ;
+                            font-weight: 600;
+                            line-height: 2.8rem ;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .sub-btns
+                    {
+                        .btn
+                        {
+                            outline: 2px solid $p6-color-3;
+                            font-family: $p6-button ;
+                            color: $p6-color-3 !important;
+                            font-weight: 300 !important ;
+
+                            background-color: rgba($p6-color-7 , 0.3) ;
+                            @include backdp-filter;
+
+                            &:hover
+                            {
+                                background-color: rgba($p6-color-2, 0.3) ;
+                                color: $p6-color-7 !important;
+                                outline:  2px solid $p6-color-7;
+                            }
+                        }
+                    }
+                }
+
+                // pop-card box 
+
+                .column-2
+                {
+                    .pop-btn
+                    {   
+                        outline: 2px solid $p6-color-2;
+                        font-family: $p6-button ;
+                        color: $p6-color-2 !important;
+
+                        background-color: rgba($p6-color-7 , 0.3) ;
+                        @include backdp-filter;
+
+                        &:hover
+                        {
+                            color: $p6-color-7 !important;
+                            background-color: rgba($p6-color-2 , 0.3 ) ;
+                        }
+                    }
+
+                    .modal{
+                        .modal-content{
+                            background-color: rgba($p6-color-2 , 0.4) ;
+                            @include backdp-filter; 
+                            .modal-body
+                            {
+                                .modal-img
+                                {
+                                    &::before
+                                    {
+                                        background-image: url(../aseet/gradient-bg-4.jpg) ;
+                                    }
+                                }
+                                .modal-text
+                                {
+                                    h4{
+                                        color: $p6-color-7 ;
+                                        font-family: $p6-head ;
+                                        letter-spacing: 1.5px ;
+                                    }
+
+                                    .md-sub-text
+                                    {
+                                        color: $p6-color-7;
+                                        font-family: $p6-text;
+                                    }
+                                }
+                            }
+
+                            .modal-footer
+                            {
+                                @at-root
+                                ul
+                                {
+                                    li{
+                                        a
+                                        {
+                                            color: rgba($hex-white , 0.8) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // rating box 
+
+                .column-3
+                {
+                    input {
+                        &:checked~label {
+                            color: $p6-color-6;
+                        }
+                    }
+
+                    label
+                    {
+                        color: $p6-color-7 ;
+
+                        &:hover {
+                            color: $p6-color-7 ;
+                        }
+
+                        &:hover,
+                        &:hover~label {
+                            color: $p6-color-6 ;
+                        }
+                    }
+
+                }
+
+                
+            } // end of custom row 
+
+        }
+
+        .bg-image-7 {
+            background: url(../aseet/bg-image-7.jpg);
+
+            .row
+            {
+                // head text box 
+
+                .column-1
+                {
+
+                    .sub-text
+                    {
+                        outline: 1px solid  $p7-color-8 !important;
+                        p
+                        {
+                            color: $p7-color-8 !important;
+                            font-family: $p7-text ;
+                            font-size: $fs-2 ;
+                        }
+                    }
+
+                    .sub-title
+                    {
+                        h1
+                        {
+                            color: $p7-color-8 !important;
+                            font-family: $p7-head ;
+                            font-weight: 600;
+                            line-height: 2.8rem ;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .sub-btns
+                    {
+                        .btn
+                        {
+                            outline: 2px solid $p7-color-7;
+                            font-family: $p7-button ;
+                            color: $p7-color-2 !important;
+                            font-weight: 300 !important ;
+
+                            background-color: rgba($p7-color-7 , 0.3) ;
+                            @include backdp-filter;
+
+                            &:hover
+                            {
+                                background-color: rgba($p6-color-2, 0.3) ;
+                                color: $p6-color-7 !important;
+                                outline:  2px solid $p6-color-7;
+                            }
+                        }
+                    }
+                }
+
+                // pop-card box 
+
+                .column-2
+                {
+                    .pop-btn
+                    {    
+                        outline: 2px solid $p7-color-7;
+                        font-family: $p7-button ;
+                        color: $p7-color-2 !important;
+
+                        background-color: rgba($p7-color-7 , 0.3) ;
+                        @include backdp-filter;
+
+                        &:hover
+                        {
+                            color: $p6-color-7 !important;
+                            background-color: rgba($p6-color-2 , 0.3 ) ;
+                        }
+                    }
+
+                    .modal{
+                        .modal-content{
+                            background-color: rgba($p7-color-2 , 0.6) ;
+                            @include backdp-filter; 
+                            .modal-body
+                            {
+                                .modal-img
+                                {
+                                    &::before
+                                    {
+                                        background-image: url(../aseet/gradient-bg-8.jpg) ;
+                                    }
+                                }
+                                .modal-text
+                                {
+                                    h4{
+                                        color: $p7-color-8 ;
+                                        font-family: $p7-head ;
+                                        letter-spacing: 1.5px ;
+                                    }
+
+                                    .md-sub-text
+                                    {
+                                        color: $p7-color-7;
+                                        font-family: $p7-text;
+                                    }
+                                }
+                            }
+
+                            .modal-footer
+                            {
+                                @at-root
+                                ul
+                                {
+                                    li{
+                                        a
+                                        {
+                                            color: rgba($hex-white , 0.8) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // rating box 
+
+                .column-3
+                {
+                    input {
+                        &:checked~label {
+                            color: $p7-color-3;
+                        }
+                    }
+
+                    label
+                    {
+                        color: $p7-color-7 ;
+
+                        &:hover {
+                            color: $p7-color-7 ;
+                        }
+
+                        &:hover,
+                        &:hover~label {
+                            color: $p7-color-3 ;
+                        }
+                    }
+
+                }
+
+                
+            } // end of custom row 
+        }
+    }
+
+
+}
+
+
+
+
+
+
+/// media responsive 
+
+@media (max-width:993px) {
+
+    .navbar {
+        .container-fluid {
+            .navbar-brand {
+                position: static !important;
+                top: auto;
+                left: auto;
+                transform: translate(0%, 0%) !important;
+            }
+        }
+
+
+
+        .navbar-collapse //main nav button classs
+
+            {
+            .menu-btn {
+                border-radius: 0% !important;
+                width: 100% !important;
+                backdrop-filter: none;
+                background-color: transparent !important;
+                position: static !important;
+                top: auto;
+                left: auto;
+                transform: translate(0%, 0%) !important;
+
+                .collapse {
+                    &:not(.show) {
+                        display: block;
+                    }
+                }
+            }
+
+            .nav-btn-group {
+                position: static !important;
+                top: auto;
+                left: auto;
+                transform: translate(0%, 0%) !important;
+
+                .btn-shop {
+                    border-radius: 10px !important;
+                    width: 120px !important;
+
+                    &::after {
+                        background-size: contain !important;
+                    }
+                }
+
+                .lang-btn {
+                    border-radius: 10px !important;
+                    backdrop-filter: none !important;
+                    background-color: none !important;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+
+    //   
+    header
+    {
+        #navbar-example2 {
+            border-radius: 0px ;
+            width: 100%;
+            overflow-x: scroll ;
+            top:97%;
+            right:0%;
+            
+            &:hover
+            {
+                top:97%;
+                right: 0%;
+            }
+
+            .head-btns
+            {
+                @include d-flex-custom(center ,flex-start)
+                {
+                    flex-flow:row nowrap;
+                };
+    
+            }
+        }
+        
+
+    }  
+
+
+    @keyframes img-zoom {
+        from 
+        {
+            transform: scale(1) ;
+        }
+        
+        to{
+            transform: scale(0.8);
+        }
+    }
+
+    .bg-mine-img {
+        padding-top: 30px !important;
+
+        .column-2
+        {
+            margin-top:25px;
+        }
+    
+        .column-3
+        {
+            margin-top: 20px ;
+        }
+    }
+}

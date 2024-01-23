@@ -1,0 +1,1388 @@
+@import 'variable' ;
+
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0% ;
+    margin: 0% ;
+    font-size: 62.25%;
+}
+
+
+ul , ol 
+{
+    list-style-type: none;
+    padding: 0% ;
+}
+
+a , span {
+    display:block ;
+    text-decoration: none ;
+}
+
+
+// sass start 
+
+        // navbar start 
+
+        .navbar
+        {
+            // border: 2px solid black;
+
+            backdrop-filter: blur(4px);
+            background: rgba(255,255,255,0.1);
+            @include flex-custom(row,center,space-between);
+
+            width: calc(100% - 2.5%);
+            min-height: 70px ;
+            margin: auto ;
+            position: fixed ;
+            z-index: 15;
+            top: 0% ;
+            left: 0% ;
+            right: 0% ;
+
+            .brand-box
+            {
+                width: 35%;
+                height:  inherit ;
+                padding: 0% 24px ;
+                
+
+                @include flex-custom(row,center,space-between)
+                {
+                    flex-wrap: wrap;
+                };
+                
+                .logo
+                {
+                    a
+                    {
+                        height: 100%; 
+                        font-family: $p1-f-heading ;
+                        color: $color-light ;
+                        font-size: 4rem;
+                        font-weight: 600;
+                        text-transform: uppercase ;
+
+                        @include  transtion-s(0.5s);
+
+                        &:hover
+                        {
+                            color: $p1-color-1;
+                        }
+                    }
+                }
+
+                .lang-btn
+                {
+                    @include flex-custom;
+                    border-radius:8px ;
+                    padding: 3px 6px;
+                    background-color: rgba($p1-color-4 , 0.2);
+
+                    @include  transtion-s(0.5s);
+
+                    
+                    &:hover
+                    {
+                        background-color: rgba($p1-color-4 , 0.5);
+                    }
+
+                    span
+                    {
+                        color: $p1-color-3;
+                        margin: auto 5px ;
+                        font-size: 2rem ;
+                        font-weight: 900;
+                    }
+
+                    a
+                    {
+                        font-family: $p1-f-body;
+                        color: $color-light ;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+
+                        @include  transtion-s(0.5s);
+
+                        &:hover
+                        {
+                            color: $p1-color-1;
+                        }
+                    }
+                }
+            }
+
+            .nav-btn-wrapper
+            {
+                width: 40%;
+                height:  100% ;
+                
+                @include flex-custom(row,center,space-between)
+                {
+                    flex-wrap: wrap;
+                };
+                
+                // search box  
+
+                .search-box
+                {
+                    flex: 0 0 50%;
+                    min-height: 45px;
+                    @include  flex-custom;
+    
+                    background-color: $p1-color-4; 
+                    border-radius: 50px ;
+                    padding: 4px 0px;
+                    font-size: 3rem;
+    
+                    cursor: pointer;
+    
+                    input
+                    {
+                        display: block;
+                        outline: 2px solid black;
+                        background-color: transparent;
+                        outline: none ;
+                        border: none ;
+                        width: 80% ;
+                        padding: 3px 6px;
+                    }
+    
+                    label
+                    {
+                        cursor: pointer;
+                        @include  flex-custom;
+                        padding: 3px 6px;
+                        width: 10%;
+                        font-size: 3rem;
+                        text-align: center ;
+                    }
+                }
+
+                .nav-btn
+                {
+                    flex: 0 0 50%;
+                    @include  flex-custom(row,center,space-evenly);
+    
+    
+                    .cart-link
+                    {
+                        a
+                        {
+                            @include  flex-custom;
+    
+                            @include transtion-s;
+    
+                            color: $p1-color-1;
+                            font-size: 4rem;
+                            text-align: center ;
+                            font-family: $p1-f-body;
+    
+                            i{
+                                margin: auto 10px;                                            
+                            }
+    
+                            .pop-num
+                            {
+                                text-align: center ;
+                                font-size: 2rem;
+                                height: 25px;
+                                width: 25px;
+                                line-height: 2.5rem;
+                                border-radius: 50% ;
+                                background-color: rgba($p1-color-4 , 0.9);
+                            }
+    
+                            &:hover
+                            {
+                                color:$p1-color-6;
+                            }
+    
+                        }
+
+                    }
+                    
+                    .menu-btn
+                    {
+                        @include flex-custom;
+                        @include transtion-s; 
+    
+                        font-size: 5rem;
+                        outline: none ;
+                        border: none ;
+                        color: $p1-color-1;
+                        background-color: $p1-color-4;
+                        border-radius: 6px ;
+                        padding: 3px 6px;
+                        cursor: pointer;
+    
+                        &:hover
+                        {
+                            color:$p1-color-6;
+                            box-shadow:inset  0px 0px 6px rgba($p1-color-1 , 0.5) ;
+                        }
+                    }
+    
+                   
+    
+                }
+            }
+            
+    
+
+        }
+
+
+    .shoes-container
+    {
+        // outline: 5px solid gold;
+
+        margin: auto;
+        width: calc(100% - 2.5% ) ;
+        min-height:100svh;
+
+
+        .shoes-wrapper
+        {
+            // border: 2px solid blue ;
+            
+            min-height:inherit; 
+            width: 100% ;
+            
+            @at-root
+            .row
+            {
+                
+                // border: 2px solid green;
+
+                @include flex-custom(row,center,space-between);
+                width: 100%;
+                min-height: inherit ; 
+                margin: auto ;
+
+                .column-1
+                {
+
+                    // border: 2px solid black;
+
+                    // main box 
+                    position: relative ;
+
+                    width: 58%; 
+                    min-height:inherit;
+
+                    @include flex-custom(row,center,flex-start);
+
+                    .main-bg-contain
+                    {
+                        background-color: $color-dark;
+                        min-height:inherit;
+                        width: 60%; 
+                        position: relative ;
+                        padding-bottom: 50px;
+
+                        @include flex-custom(column,stretch,space-between);
+
+                        // shoes bg text part 
+
+                        .bg-shoes-text
+                        {
+                            // border: 2px dashed white ;
+
+                            position: absolute ;
+                            top: 50% ;
+                            left: 0% ;
+
+                            transform: translate(0%,-50%) ;
+
+                            margin: auto ;
+                            width: 100% ;
+                        
+                            h1
+                            {
+                                color: rgba($color-light , 0.8);
+                                font-family: $p1-f-heading ;
+                                font-size: 11rem ;
+                                text-align: center ;
+                                text-transform: uppercase ;
+                                writing-mode: vertical-rl;
+                                transform: rotate(180deg);
+                            }
+
+
+                        }
+
+
+
+                        // social media  link nav 
+
+                        .social-link
+                        {
+                            // border: 2px solid black;
+
+                            z-index: 12 ;
+                            position:absolute;
+                            bottom: 24px;
+                            left: 0% ;
+                            right:  0% ;
+
+                            @include flex-custom(row,center,flex-start);
+                            width: 100% ;
+                            margin: auto ;
+                            padding: 0% 3.1rem;
+                            li
+                            {
+                                flex: 1 1 55px ;
+                                margin: 4px 6px;
+                                max-width:55px;
+                                height:50px;
+
+                                a{
+
+                                    @include  transtion-s;
+
+                                    background-color: rgba($p1-color-4 , 0.5);
+                                    border-radius: 50% ;
+                                    color: $p1-color-3;
+                                    padding: 10px 8px;
+                                    text-align: center ;
+
+                                    i
+                                    {
+                                        font-size: 3rem;
+                                    }
+
+                                    &:hover
+                                    {
+                                        background-color: rgba($p1-color-4 , 0.1);
+                                        color: $color-light;
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+
+
+
+
+                    // second for man  part 
+
+                    .main-bg-text
+                    {
+                        // border: 2px solid red ;
+
+                        position: relative ;
+                        overflow: hidden ;   
+
+                        flex: 0 0 40%;
+                        min-height:inherit;
+                        max-width: 40%;
+
+                        @include  flex-custom(colunm,center,center);
+
+                        
+                        h1
+                        {
+                            z-index: 5;
+                            position:absolute;
+                            top: 50% ;
+                            left: -20px; 
+                            transform: translate(0%,-50%);
+
+
+                            margin: auto ;
+
+                            padding: 0% ; 
+                            @extend %for-bg-text;
+                            .sub-bg-text
+                            {
+                                @extend %for-bg-text;
+                                transform:translate(5rem);
+                            }
+                        }
+                    }
+
+
+                    .main-image-container
+                    {
+                        // border: 1px solid yellow;
+                        z-index: 6 ;
+                        position: absolute ;
+                        left: 0% ;
+                        top: 0% ;
+                        right: 0% ;
+
+                        margin: auto ;
+                        width:calc(100% - 10%); 
+                        height: 100%;
+                        overflow: hidden ;
+                        
+                        img
+                        {
+                            // outline: 2px solid white ;
+                            @include  block-img(block,95%,contain);
+                            @include img-rotated;
+                            @include transtion-s;
+                            // filter: drop-shadow(0px 0px 12px rgba($p1-color-4 , 0.5));
+
+                        }
+                    }
+                }
+
+                // product details  part 
+
+                .column-2
+                {
+                    position: relative ;
+                    min-height: inherit;
+                    width: 41%;
+
+                    .details-box
+                    {
+                        // border: 2px solid red ;
+
+                        width: 100%;
+                        padding-top: 50px ;
+                        min-height: inherit ;
+                        @include flex-custom(column,flex-start,center);
+  
+                        // page navigetro link 
+
+                        .page-nav
+                        {
+                            padding-top: 30px;
+                            .target-link
+                            {
+                                padding: 4px 0px;
+                                @include flex-custom(row,center,flex-start);
+                                
+                                li
+                                {
+                                    a
+                                    {
+                                        color: black;
+                                        text-transform: capitalize;
+                                        font-size: 2rem;
+                                        font-family: $p1-f-body;
+                                    }
+                                    
+                                }
+                                
+                                i
+                                {
+                                    color: black;
+                                    margin: auto 6px;
+                                    font-size: 1.4rem ;
+                                }
+                            }
+                        }
+
+
+                        // details body part 
+
+                        .details-body
+                        {
+                            @at-root
+                            .details-head
+                            {
+                                .shoes-heading
+                                {
+                                    margin: 15px auto;
+                                    font-size: 4rem;
+                                    line-height: 4.5rem ;
+                                    text-align: left;
+                                    font-family: $p1-f-heading;
+                                    color: $p1-color-1;
+                                    text-transform: capitalize ;
+                                }
+
+                                .rating-bar
+                                {
+                                    margin: 15px auto;
+                                    @include flex-custom(row,center,flex-start);
+
+                                    .rating {
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        flex-flow: row-reverse wrap;
+        
+                                        input {
+        
+                                            display: none;
+        
+                                            &:hover, 
+                                            &:checked~label{
+                                                color: $star-color-1 ;
+                                            }
+                                        }
+        
+                                        label {
+                                            float: right;
+                                            padding: 0% ;
+                                            cursor: pointer;
+                                            color: $star-color-2;
+                                            position: relative;
+        
+                                            &::before {
+                                                display: block ;
+                                                height: 100% ;
+                                                width: 100% ;
+                                                content: '\2605';
+                                                font-size: $fs-star ;
+                                                text-align: center ;
+                                                line-height: 3rem ;
+                                                margin: auto 3px;
+                                            }
+        
+        
+                                            &::after {
+        
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 60% ;
+                                                transform: translate(-45%,0%);
+        
+        
+                                                text-align: center;
+                                                font-size: $fs-emoji ; 
+                                                line-height: 1.8rem;
+                                                content: '';
+                                                z-index: -1 ;
+                                                display: block;
+                                                width: 100%;
+                                                height: 90%;
+                                                opacity: 0 ;
+                                                background-image: url(../icons/chat.png);
+                                                background-position: center;
+                                                background-size: 35px;
+                                                background-repeat: no-repeat;
+                                                @include  transtion-s ;
+                                            }
+        
+                                            &:nth-child(10)::after {
+                                                content: '😥' !important;
+                                            }
+        
+                                            &:nth-child(8)::after {
+                                                content: '🙂' !important;
+                                            }
+        
+                                            &:nth-child(6)::after {
+                                                content: '😊' !important;
+                                            }
+        
+                                            &:nth-child(4)::after {
+                                                content: '😀' !important;
+                                            }
+        
+                                            &:nth-child(2)::after {
+                                                content: '😍' !important;
+                                            }
+        
+                                            &:hover::after {
+                                                z-index: 1;
+                                                top: -70%;
+                                                opacity: 1;
+                                            }
+        
+                                            &:hover {
+                                                color: $star-color-1 ;
+                                            }
+        
+                                            &:hover~label {
+                                                color: $star-color-1 ;
+                                            }
+                                        }
+        
+                                    }
+
+                                    .rating-num
+                                    {
+                                        margin: auto 20px;
+                                        text-transform: uppercase;
+                                        font-family: $p1-f-body;
+                                        text-align: center ;
+                                        font-size: 3rem ;
+                                        letter-spacing:1.5px;
+                                    }
+
+                                    .votes-num
+                                    {
+                                        text-transform:capitalize;
+                                        font-family:monospace ;
+                                        text-align: center ;
+                                        font-size: 3rem;
+                                    }
+                                }
+
+                                .price-box
+                                {
+                                    h1
+                                    {
+                                        margin: 20px auto;
+                                        @include flex-custom(row,center,flex-start);
+
+                                        font-size: 3.5rem ;
+                                        font-family: $p1-f-body;
+                                        font-weight: 700 ;
+                                        letter-spacing:0px;
+                                        color: $p1-color-1;
+
+                                        span
+                                        {
+                                            font-size: 1.8rem;
+                                            font-weight: 400;
+                                            margin: auto 14px;
+                                        }
+                                    }
+                                }  
+                                
+                            }
+
+                            @at-root
+                            .btn-bar
+                            {
+                                margin: 20px auto;
+                                ul
+                                {
+                                    @include flex-custom(row,center,flex-start);
+                                    li
+                                    {
+                                        margin: auto 4px ;
+                                        @include flex-custom(column,center,center);
+
+                                        .btn-head
+                                        {
+                                            text-transform: capitalize ;
+                                            color: #000 ;
+                                            text-align: center ;
+                                            font-size:2rem;
+                                            margin: auto ;
+                                            font-family: $p1-f-body;
+                                            margin-bottom: 0.5rem;
+                                        }
+
+                                        .btn-bar-wrapper
+                                        {
+                                            @include flex-custom;
+                                            border: 2px solid $p1-color-2;
+                                            border-radius: 50px ;
+                                            min-height: 50px ;
+                                            width: calc(100% - 5%);
+                                        }
+
+                                    }
+
+                                    .color
+                                    {
+                                        .btn-bar-wrapper
+                                        {
+                        
+                                            .color-btn
+                                            {
+                                                border-radius: 50% ;
+                                                margin: auto 4px;
+                                                width: 38px;
+                                                height: 34px ;
+
+                                                input[type="radio"]
+                                                {
+                                                    display: none ;
+                                                }
+
+                                                .label
+                                                {
+                                                    @include flex-custom;
+
+                                                    border-radius: 50% ;
+                                                    cursor: pointer;
+                                                    width: 100% ;
+                                                    height: 100% ;
+                                                    text-align: center ;
+
+                                                    .fa-check
+                                                    {
+                                                        @include transtion-s; 
+                                                        color:transparent;
+                                                    }
+                                                }
+
+                                                .btn-red
+                                                {
+                                                    background-color: $p1-color-6;
+                                                }
+
+                                                .btn-blue
+                                                {
+                                                    background-color: $p1-color-3;
+                                                }
+                                                .btn-black
+                                                {
+                                                    background-color: $color-dark;
+                                                }
+
+
+                                                input[type="radio"]:checked + label
+                                                {
+                                                    .fa-check
+                                                    {
+                                                        font-size: 1.8rem;
+                                                        color:$p1-color-4;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .size
+                                    {
+                                        width:130px;    
+                                        .btn-bar-wrapper
+                                        {
+                                             .size-box
+                                             {
+                                                 display: block ;
+                                                 width: 85% ;
+                                                 font-size: 2rem ;
+                                                 outline: none ;
+                                                 border: none;
+                                                 font-family: $p1-f-body ;
+                                                 text-transform: uppercase ;
+                                                 background-color: transparent;
+
+
+                                                 option
+                                                 {
+                                                    font-family: $p1-f-body ;
+                                                 }
+                                             }
+                                        }
+                                    }
+
+                                    .quantity
+                                    {
+                                        width:130px;  
+                                        .btn-bar-wrapper
+                                        {  
+
+                                            @include flex-custom(row,center,space-around);
+                                            .minus,.plus
+                                            {
+                                                display:none ;
+                                            }
+
+                                            input[type="number"]::-webkit-outer-spin-button,
+                                            input[type="number"]::-webkit-inner-spin-button {
+                                              display: none;
+                                            }
+
+                                            .input-text
+                                            {
+                                                cursor:not-allowed;
+                                                text-align: center ;
+                                                font-size: 2rem;
+                                                font-family: $p1-f-body;
+                                                background-color:transparent;
+                                                border: none ;
+                                                width: 20%;
+                                            }
+
+                                            label
+                                            {
+                                                @include flex-custom;
+                                                font-size: 2.4rem;
+                                                cursor: pointer; 
+                                                text-align: center ;
+                                            }
+
+
+                                        }
+                                    }
+                                }
+                            }
+                        
+                        }
+
+                        .details-footer
+                        {
+                            
+                            .foot-btn
+                            {
+                                padding: 4px 0px;
+                                @include flex-custom(row,center,flex-start);
+                                .add-btn
+                                {
+                                    @include transtion-s(0.6s); 
+                                    @include flex-custom;
+                                    height: 68px ;
+                                    padding: 12px 20px ;
+                                    font-family: $p1-f-body ;
+                                    text-align: center ;
+                                    text-transform: capitalize ;
+
+                                    i{
+                                       font-size: 3rem; 
+                                       margin: auto 10px;
+                                    }
+                                }
+
+                                .cart-btn
+                                {
+                                    background-color: $p1-color-5;
+                                    border: none ;
+                                    color: $color-light;
+                                    border-radius:50px;
+                                    font-size: 2.6rem ;
+                                    font-weight: 500; 
+                                    box-shadow: inset 0px 0px 15px rgba($p1-color-3,0.6);
+
+                                    &:hover
+                                    {
+                                        cursor: pointer;
+                                        color: rgba($color-dark , 0.8);
+                                        box-shadow:  0px 0px 15px  1px rgba($p1-color-3,1);
+                                    }
+                                }
+
+                                .wish-btn
+                                {
+                                    margin-left: 10px ;
+                                    background-color: transparent ;
+                                    border: 2px solid rgba($p1-color-4 , 0.8);
+                                    font-size: 1.8rem;
+                                    border-radius: 50px ;
+                                    
+                                    &:hover
+                                    {
+                                        cursor: pointer;
+                                        color:$p1-color-6 ;
+                                        border: 2px solid $p1-color-6;
+                                    }
+                                }
+                            }
+
+                            .foot-alert
+                            {
+                                font-size: 1.6rem;
+                                text-align: start ;
+                                letter-spacing: 1px;
+                                text-transform: capitalize ;
+                                font-family: $p1-f-body;
+                                margin: 25px auto 0px auto;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+    // custom for all pages 
+
+    #shoes-container-1
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background-color: rgba($p1-bg-color, 0.9) !important;
+                    
+                }
+            }
+    }
+
+    #shoes-container-2
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background-color: $p2-bg-color !important;
+
+                }
+                .main-image-container
+                {
+                    img
+                    {
+                        transform:rotate(0deg) translateY(-50px) !important;
+                    }
+                }
+            }
+    }
+
+    #shoes-container-3
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background: $p1-gradient !important;
+                    
+                }
+            }
+    }
+
+    #shoes-container-4
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background: $p4-bg-color !important;
+                    
+                }
+            }
+    }
+
+    #shoes-container-5
+    {
+            .column-1
+            {
+                order: 2;
+                .main-bg-contain
+                {
+                    order: 2;
+                    background: $p2-gradient !important;
+
+                    .bg-shoes-text
+                    {
+                        width: auto ;
+                        left: auto;
+                        right: 0%  !important;
+                    }
+
+                    .social-link
+                    {
+                        @include flex-custom(row,center,flex-end);
+                    }
+                    
+                }
+                .main-image-container
+                {
+                    img
+                    {
+                        transform:rotate(-20deg) translateY(0px) !important;
+                    }
+                }
+            }
+           
+    }
+
+    #shoes-container-6
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background: $p6-bg-color !important;
+                    
+                }
+            }
+    }
+
+    #shoes-container-7
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background: $p3-gradient !important;
+                }
+                .main-image-container
+                {
+                    img
+                    {
+                        @include  block-img(block,120%,contain);
+                        transform:rotate(0deg) translate(-12%,20px) !important;
+                    }
+                }
+            }
+    }
+
+    #shoes-container-8
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background: $p4-gradient !important;
+                }
+            }
+    }
+
+    #shoes-container-9
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background: $p5-gradient !important;
+                }
+            }
+    }
+
+    #shoes-container-10
+    {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    background: $p10-bg-color!important;
+                }
+            }
+    }
+
+    // media  start 
+
+    @media (max-width:991px)
+    {
+        .navbar
+        {
+
+            .brand-box
+            {
+                width: 50%;
+            }
+
+            .nav-btn-wrapper
+            {
+                width: 50%;
+            }
+        }
+
+        .shoes-container
+        {
+            min-height:95svh;
+        }
+
+        .row
+        {
+            @include flex-custom(column,stretch,space-between); 
+            .column-1
+            {
+                width: 100%;
+                .main-bg-contain
+                {
+                    .social-link
+                    {
+                        @include flex-custom(row,center,center);
+                        padding: 0% 2rem;
+                    }
+                }
+            }
+            .column-2
+            {
+                width: calc(100% - 5%); 
+                margin: auto ;
+                .details-box
+                {
+                    width: 100%;
+                    height: auto ;
+                    padding-top: 0px ;
+                    @include flex-custom(column,flex-start,center); 
+
+                    .page-nav
+                    {
+                        .target-link
+                        {
+                            @include flex-custom(row,center,flex-start)
+                                {
+                                    flex-wrap: wrap;
+                                };
+                        }
+                    }
+
+                    .details-body
+                    {
+                        .details-head
+                        {
+                            .rating-bar
+                            {
+                                margin: 30px auto;
+                                @include flex-custom(row,center,flex-start);
+                            }
+
+                            .price-box
+                            {
+                                h1
+                                {
+                                    margin: 30px auto;
+                                    @include flex-custom(row,center,flex-start);
+                                }
+                            }
+
+                        }
+
+                        .btn-bar
+                        {
+                            ul
+                            {
+                                @include flex-custom
+                                {
+                                    flex-wrap: wrap;
+                                    gap: 20px;
+                                };
+                            }
+                        }
+                    }
+
+                    .details-footer
+                    {
+                        .foot-btn
+                        {
+                            @include flex-custom
+                            {
+                                flex-wrap: nowrap ;
+                            };
+
+                            .add-btn
+                            {
+                                margin: auto 10px ;
+                                width:255px;
+                            }
+                        }
+
+                        .foot-alert
+                        {
+                            text-align: start ;
+                        }
+                    }
+                }
+            }
+        }
+
+        #shoes-container-5
+        {
+            .column-1
+            {
+                order: 1 !important;
+            }
+            .column-2
+            {
+                order: 2 !important;
+            }
+        }
+
+    }
+
+    @media (max-width:675px)
+    {
+        .navbar
+        {
+
+            .brand-box
+            {
+                width: 100%;
+
+                .lang-btn
+                {
+                    display: none;
+                }
+            }
+
+            .nav-btn-wrapper
+            {
+                width: 100%;
+                @include flex-custom
+                {
+                    flex-wrap: wrap;
+                };
+                .search-box
+                {
+                    display: none;
+                }
+
+                .nav-btn
+                {
+                    flex: 0 0 100%;
+                }
+            }
+        }
+
+        .row
+        {
+            @include flex-custom(column,stretch,space-between); 
+            .column-1
+            {
+                width: 100%;
+                .main-bg-contain
+                {
+                    .social-link
+                    {
+                        @include flex-custom(row,center,space-between){
+                            flex-wrap: wrap ;
+                        };
+                        padding: 0% 1.5rem;
+                        li
+                        {
+                            flex: 1 1 45px ;
+                            margin:auto 6px;
+                            max-width:45px;
+                            height:50px;
+                        }
+                    }
+                }
+            }
+            .column-2
+            {
+                width: calc(100% - 5%); 
+                margin: auto ;
+                .details-box
+                {
+                    width: 100%;
+                    height: auto ;
+                    padding-top: 0px ;
+                    @include flex-custom(column,center,center); 
+
+                    .page-nav
+                    {
+                        .target-link
+                        {
+                            @include flex-custom(row,center,flex-start)
+                                {
+                                    flex-wrap: wrap;
+                                };
+                        }
+                    }
+
+                    .details-body
+                    {
+                        .details-head
+                        {
+
+                            .shoes-heading
+                            {
+                                text-align: center ;
+                                br
+                                {
+                                    display:none;
+                                }
+                            }
+                        
+                            .rating-bar
+                            {
+                                margin: 30px auto;
+                                @include flex-custom(column,center,space-between);
+                                .rating
+                                {
+                                    margin: 10px auto;
+                                }
+                                .rating-num
+                                {
+                                    margin: 10px auto;
+                                }
+                            }
+
+                            .price-box
+                            {
+                                h1
+                                {
+                                    margin: 30px auto;
+                                    @include flex-custom(row,center,center);
+                                }
+                            }
+
+                        }
+
+                        .btn-bar
+                        {
+                            ul
+                            {
+                                @include flex-custom
+                                {
+                                    flex-wrap: wrap;
+                                    gap: 20px;
+                                };
+                            }
+                        }
+                    }
+
+                    .details-footer
+                    {
+                        .foot-btn
+                        {
+                            @include flex-custom
+                            {
+                                flex-wrap: wrap ;
+                            };
+
+                            .add-btn
+                            {
+                                margin: 10px auto;
+                                width: calc(100% - 10%);
+                            }
+                        }
+
+                        .foot-alert
+                        {
+                            text-align: center ;
+                            margin-bottom: 55px ;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    @media (max-width:365px)
+    {
+        .navbar
+        {
+
+
+            .nav-btn-wrapper
+            {
+               .nav-btn
+               {
+                .cart-link
+                {
+                    display: none;
+                }
+               }
+            }
+        }
+        .row
+        {
+            .column-1
+            {
+                .main-bg-contain
+                {
+                    .social-link
+                    {
+                        @include flex-custom(row,center,center){
+                            flex-wrap: wrap ;
+                        };
+                        padding: 0rem;
+                        li
+                        {
+                            flex: 0 0 38px;
+                            margin:auto 3px;
+                            max-width:38px;
+                            height:38px;
+
+                            a
+                            {
+                                i
+                                {
+                                    font-size: 2.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
