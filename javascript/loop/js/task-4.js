@@ -2,7 +2,7 @@
    const number = 3;
    let x = 0 , num = prompt("Guess the number game \n we give you a 10 chance : ");  
 //    let sum = num * 10 ;
-   while(x<=10)
+   while(x<9)
    {
     x++;
      if(num == number )

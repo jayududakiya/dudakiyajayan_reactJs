@@ -1,17 +1,17 @@
 {
 
-    let i=0;
-    let  j=0;
+    let i=1;
+    let  j;
 
-    while(i<5)
+    while(i<=5)
     {
-        while(j<i)
+        j=1;
+        while(j<=i)
         {
             document.write("*");
             j++;
         }
         i++;
-        document.write("* ");
         document.write("<br>");
     }
 }
