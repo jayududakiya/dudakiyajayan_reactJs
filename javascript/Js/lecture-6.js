@@ -39,11 +39,13 @@
 }
   
   {
-    // let x = 0;
+    let x = 0;
     
-    // console.log(Number(x)); // 0 is number 
-    // console.log(String(x)); // 0 in string
-    // console.log(Boolean(x)); // false is == 0
+    console.log(Number(x)); // 0 is number 
+    console.log(typeof(x)); // 0 is number 
+    console.log(String(x)); // 0 in string
+    console.log(typeof(x)); // 0 is number 
+    console.log(Boolean(x)); // false is == 0
   }
   
   {
@@ -193,17 +195,17 @@
   
   {
   
-    let z = {
-      x : "hello",
-      y: function x(){
-        return 10
-      },
-    }
+    // let z = {
+    //   x : "hello",
+    //   y: function x(){
+    //     return 10
+    //   },
+    // }
     
-    console.log(z.x);
-    console.log(Number(z)); // NaN
-    console.log(String(z.y)); // function x(){ return 10 }
-    console.log(Boolean(z)); // true
+    // console.log(z.x);
+    // console.log(Number(z)); // NaN
+    // console.log(String(z.y)); // function x(){ return 10 }
+    // console.log(Boolean(z)); // true
   }
   
   {

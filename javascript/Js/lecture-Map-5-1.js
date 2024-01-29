@@ -86,26 +86,6 @@ size	Returns the number of elements in a Map
 
 {
 
-    // delete() using 
-
-   const maps_4 = new Map ([
-    ["option-1",2],
-    ["option-2",30],
-    ["option-3","hello=3"],  // this string value 
-    ["option-4","hello=4"], // this string value 
-    ["option-5","hello=5"]  // this string value 
-    ])
-
-    
-    maps_4.delete("option-1"); // delete key for map 
-    maps_4.delete("option-4"); // delete key for map 
-
-    document.getElementById("n-map-3").innerHTML = maps_4.get("option-2");
-    console.log(maps_4);
-}
-
-{
-
     // has() using 
 
    const maps_4 = new Map ([
@@ -152,7 +132,7 @@ size	Returns the number of elements in a Map
 
 {
 
-    // size() using 
+    //entries  using 
 
    const maps_6 = new Map ([
     ["option-1",2],
