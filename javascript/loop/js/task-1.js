@@ -1,11 +1,11 @@
 // for 
 {
     document.write("for loop"  + "<br>");
-for(let i = 10 ; i >= 0 ; i--)
-{
-    document.write(i);
-    document.write("<br>");
-}
+    for(let i = 10 ; i >= 0 ; i--)
+    {
+        document.write(i);
+        document.write("<br>");
+    }
 }
 
 
@@ -24,6 +24,7 @@ for(let i = 10 ; i >= 0 ; i--)
     
 }
 
+// do while
 {
 
     document.write("do while loop " + "<br>");

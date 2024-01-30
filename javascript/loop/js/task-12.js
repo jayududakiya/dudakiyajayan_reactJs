@@ -1,30 +1,21 @@
 {
+    // program to check if a number is prime or not
 
-    let i = 1 , num = prompt("Check if a number is prime : ") ;
+// take input from the user
+const number = parseInt(prompt("Enter a positive number: "));
+let isPrime = true;
 
-    // for (i = 2; i <= n / 2; ++i) {
-
-    //     // if n is divisible by i, then n is not prime
-    //     // change flag to 1 for non-prime number
-    //     if (num % i == 0) {
-    //       flag = 1;
-    //       break;
-    //     }
-    //   }
-
-    while(i<=num)
-    {
-        if(num % 2 == 1)
-        {
-            document.write("number is prime : " + num );
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            isPrime = false;
             break;
         }
-        else
-        {
-            document.write("number is not prime : " + num );
-            break;
-        }
-        i++;
+    }
+
+    if (isPrime) {
+        document.write(`${number} is a prime number`);
+    } else {
+        document.write(`${number} is a not prime number`);
     }
 
 }

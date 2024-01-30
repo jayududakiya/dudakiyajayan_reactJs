@@ -1,4 +1,5 @@
 {
+    document.write("For loop" +"<br>");
    let i , sum = 0 ;
    
    for(i=1;i<=10;i++)
@@ -6,7 +7,7 @@
         sum = sum + i;
         document.write(i + "<br>");
     }
-document.write("Total : " + sum + "<br> <br>");
+    document.write("Total : " + sum + "<br> <br>");
 }
 
 
