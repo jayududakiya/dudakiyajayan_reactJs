@@ -1,7 +1,7 @@
 {
 
-    let on = 1 ;
-
+  var on;
+  on = parseInt(prompt("Choose Number" , ));
     switch (on) {
       case 1:
         document.write("this is For loop " + "<br>");
@@ -72,3 +72,36 @@
 
 
 }
+
+
+// {
+//   var yourchoice;
+// yourchoice = prompt("Choose a number between 1 and 4", "1, 2, 3 or 4")
+// switch (yourchoice)
+// {
+//     case "1":
+//         document.write("You typed in a 1");
+//         break;
+//     case "2":
+//         alert("You typed in a 2");
+//         break;
+//     case "3":
+//         alert("You typed in a 3");
+//         break;
+//     case "4":
+//         alert("You typed in a 4");
+//         break;
+// }
+// }
+
+// {
+
+//   var x ;
+//   x = prompt("choose Number", ); 
+
+//   switch(x){
+//     case 1: document.write("Hello Javascript")
+//   }
+
+
+// }

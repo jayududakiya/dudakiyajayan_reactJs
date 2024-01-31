@@ -2,7 +2,7 @@
 
 
 {
-    let i = prompt("Find the first odd number in a sequence using a while loop and break statement \n Enter a starting number value : " ) , num = prompt("enter a ending number value : " );  
+    let i = parseInt(prompt("Find the first odd number in a sequence using a while loop and break statement \n Enter a starting number value : " ) ), num = parseInt(prompt("enter a ending number value : " ));  
 
     //let i = 5 , num=10;
 
