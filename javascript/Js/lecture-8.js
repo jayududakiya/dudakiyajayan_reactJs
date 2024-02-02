@@ -189,7 +189,44 @@ let ShowOPT =`Your 4 digits OTP is " ${OTP} " Pleas Don't share with any on you 
 
 confirm(ShowOPT);
 
+// Math.sin();
+
+// this method is returns between -1 and 1
+// formula of angle = angle of sin * PI / 180 ;
+
+let M40 = Math.sin( 60 * 3.14 / 180);
+let M41 = Math.sin( 90 * 3.14 / 180);
+let M42 = Math.sin( 30 * 3.14 / 180);
+
+console.log(` Math.sin(60 * 3.14 / 180) >  ${M40}`);
+console.log(` Math.sin(90 * 3.14 / 180) > ${M41}`);
+console.log(` Math.sin(30 * 3.14 / 180) > ${M42}`);
+
+console.log("\n");
+
+// Math.cos();
+
+// this method is returns between -1 and 1
+// formula of angle = angle of sin * PI / 180 ;
+
+let M43 = Math.cos( 60 * 3.14 / 180);
+let M44 = Math.cos( 90 * 3.14 / 180);
+let M45 = Math.cos( 30 * 3.14 / 180);
+
+console.log(` Math.cos(60 * 3.14 / 180) >  ${M43}`);
+console.log(` Math.cos(90 * 3.14 / 180) > ${M44}`);
+console.log(` Math.cos(30 * 3.14 / 180) > ${M45}`);
+
+console.log("\n");
 
 
+// Math.log , Math.log10 , Math.log2  
 
 
+let M46 = Math.log(123);
+let M47 = Math.log2(20.33);
+let M48 = Math.log10(155);
+
+console.log(` Math.log(123) >  ${M46}`);
+console.log(` Math.log2(20.33) > ${M47}`);
+console.log(` Math.log10(155) > ${M48}`);
