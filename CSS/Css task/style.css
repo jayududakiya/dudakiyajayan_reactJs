@@ -1,0 +1,154 @@
+*{
+    margin: 0% ;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 62.50%;
+}
+
+img
+{
+    display: block ;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* main Css start  */
+
+main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center ;
+}
+
+
+.card-wrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center ;
+    justify-content: space-evenly;
+}
+
+.card-wrapper .card
+{
+    cursor: pointer;
+    height: 400px;
+    width: 34rem;
+    margin: 2rem  auto;
+    position: relative;
+    border-radius: 20px ;
+}
+
+.card .img-box
+{
+    border-radius: 20px ;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .img-box::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0% ;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: linear-gradient(to bottom, #0066ff, #5059a1, #7a79ab, #9d9ab4, #bebebe);
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover .img-box::after
+{
+    opacity: 0.5;
+}
+
+.card:hover .img-box img
+{
+    transform: scale(1.15);
+}
+
+.card .card-body{
+    display: flex;
+    flex-flow: column wrap ;
+    align-items: center ;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    padding: 3rem;
+}
+
+.card:hover .card-head{
+    margin-top: 2.4rem ;
+    transition: all 0.6s ease-in-out;
+}
+
+.card-body .card-head .title{
+    text-transform: capitalize;
+    text-align: left; 
+    font-size: 1.6rem ;
+    color: lawngreen;
+    margin-bottom: .6rem;
+}
+
+.card-body .card-head .heading{
+    color: #ffffff;    
+    font-size: 2.6rem ;
+    text-transform: capitalize;
+    word-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.card-body .card-head .time-title,
+.card-body .card-head .time-title i{
+    font-size: 1.6rem ;
+    color: #fff;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.card-body .card-foot
+{
+    width: 100%;
+}
+
+.card-body .card-foot .profile-box{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center ;
+    justify-content: flex-start;
+}
+
+.card-foot .profile-box .profile-img{
+    overflow: hidden;
+    border-radius: 50%;
+    width: 50px ;
+    height: 50px ;
+    margin-right: 0.8rem ;
+}
+
+
+.card-body .card-foot .profile-box .profile-data h4,
+.card-body .card-foot .profile-box .profile-data p{
+    text-align:left;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: .2rem ;
+}
+
+.card-body .card-foot .profile-box .profile-data p{
+    font-size: 1.3rem;
+}
