@@ -1,0 +1,34 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+
+.container{
+    border: 2px solid red ;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.circle{
+    background-color:blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: moveFade 1s linear 2s 3 ;
+    position: absolute;
+}
+
+@keyframes moveFade{
+    0%{
+        left: 0% ;
+    }
+    50%{
+        left: 10%;
+        border: 15px solid rgba(137, 43, 226, 0.864);
+    }
+    100%{
+        left: 20%;
+    }
+}

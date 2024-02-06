@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+
+    min-height: 100vh;
+    display: grid;
+    place-items:center ;
+}
+
+.rectangle{
+    background-color: blue;
+    width: 80%;
+    height: 360px;
+    animation:  scale .9s linear 1 backwards alternate ;
+    animation-play-state: paused;
+}
+
+.rectangle:hover{
+    animation-play-state: running;
+}
+
+
+
+@keyframes  scale{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

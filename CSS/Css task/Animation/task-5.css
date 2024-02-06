@@ -1,0 +1,273 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit:contain;
+    object-position: center;
+}
+
+
+.main-container{
+    overflow: hidden;
+    margin: auto;
+    /* width: 70%; */
+    min-height: 100vh;
+    border: 3px solid blue ;
+    position: relative;
+}
+
+.bg-image{
+    position: absolute;
+    bottom: 0%;
+    min-height: 65svh;
+    width: 100%;
+
+    background: url(images/mountain.png) no-repeat;
+    background-size:cover;
+    background-position: top ;
+
+    z-index: 10;
+}
+
+.sun{
+    background-color: #FDB813 ;
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    top: 60%;
+    right: 36%;
+    transform: translate(-50%,-50%);
+    animation: sun-move 18s linear 1s 2 alternate ;
+}
+
+@keyframes sun-move 
+{
+    0%{
+        top: 60%;
+        right: 36%;
+        transform: translate(-50%,-50%);
+    }
+    50%{
+        opacity: 1;
+        top: -20%;
+        background-color: #FDB813 ;
+    }
+    80%{
+        background-color: #FDB813 ;
+        opacity: 1;
+        top: 50%;
+    }
+    100%{
+        background-color: #513900;
+        top: 70%;
+        opacity: 0;
+    }
+}
+
+
+.cloud{
+    width: 180px ;
+    height: 12  0px ;
+
+    position: absolute;
+    z-index: 3;
+    top: 30%;
+    right: -20%;
+    transform: translate(0%,-50%);
+
+    animation: CloudMove1 18s linear 2 alternate;
+}
+
+
+@keyframes CloudMove1{
+    0%{
+        right: -20%;
+    }
+    10%{
+        right: 15%;
+    }
+    20%{
+        right: 25%;
+    }
+    30%{
+        right: 50%;
+    }
+    40%{
+        right: 75%;
+    }
+    50%{
+        right: 105%;
+    }
+    60%{
+        right: 75%;
+    }
+    70%{
+        right: 50%;
+    }
+    80%{
+        right: 25%;
+    }
+    90%{
+        right: 15%;
+    }
+    100%{
+        right: -20%;
+    }
+
+}
+
+.cloud-2{
+    z-index: 4;
+    top: 30%;
+    left: -20%;
+    transform: translate(0%,-50%);
+
+    animation: CloudMove2 9s linear 2 alternate-reverse;
+}
+
+
+
+@keyframes CloudMove2{
+    0%{
+        left: -20%;
+    }
+    10%{
+        left: 15%;
+    }
+    20%{
+        left: 25%;
+    }
+    30%{
+        left: 50%;
+    }
+    40%{
+        left: 75%;
+    }
+    50%{
+        left: 105%;
+    }
+    60%{
+        right: -20%;
+    }
+    70%{
+        right: 25%;
+    }
+    80%{
+        right: 50%;
+    }
+    90%{
+        right: 75%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+
+
+.cloud-big{
+    width: 260px ;
+    height: 150px ;
+
+    position: absolute;
+    z-index: 4;
+    top: 30%;
+    right: -30%;
+    transform: translate(0%,-50%);
+
+    animation: Cloud-big1 9s linear 2 alternate-reverse;
+}
+
+@keyframes Cloud-big1{
+    0%{
+        right: -30%;
+    }
+    10%{
+        right: 15%;
+    }
+    20%{
+        right: 25%;
+    }
+    30%{
+        right: 50%;
+    }
+    40%{
+        right: 75%;
+    }
+    50%{
+        right: 105%;
+    }
+    60%{
+        right: 75%;
+    }
+    70%{
+        right: 50%;
+    }
+    80%{
+        right: 25%;
+    }
+    90%{
+        right: 15%;
+    }
+    100%{
+        right: -20%;
+    }
+
+}
+
+.cloud-4{
+    z-index: 5;
+    top: 30%;
+    right: -30%;
+    transform: translate(0%,-50%);
+
+    animation: Cloud-big2 9s linear 1s 2 alternate-reverse;
+}
+
+
+
+@keyframes Cloud-big2{
+    0%{
+        right: -20%;
+    }
+    10%{
+        right: 15%;
+    }
+    20%{
+        right: 25%;
+    }
+    30%{
+        right: 50%;
+    }
+    40%{
+        right: 75%;
+    }
+    50%{
+        right: 105%;
+    }
+    60%{
+        right: 75%;
+    }
+    70%{
+        right: 50%;
+    }
+    80%{
+        right: 25%;
+    }
+    90%{
+        right: 15%;
+    }
+    100%{
+        right: -20%;
+    }
+
+}
