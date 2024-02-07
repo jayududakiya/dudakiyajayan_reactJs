@@ -51,32 +51,52 @@ main{
 }
 
 .spot-3{
-    transform: translate(41rem,28rem);
+    transform: translate(44rem,3.8rem);
+    
 }
 
 .spot-4{
-    transform: translate(69rem,29rem);
-}
-
-.spot-5{
     transform: translate(61rem,9.5rem);
 }
 
+.spot-5{
+    transform: translate(69rem,29rem);
+}
+
 .spot-6{
-    transform: translate(44rem,3.8rem);
+    transform: translate(41rem,28rem);
+}
+
+.spot-7{
+    transform: translate(22rem,20rem);
 }
 
 
-.airplane{
+.airplane-1{
     position: absolute;
     width: 70px;
     height: auto;
     z-index: 3;
-
-    top: 9rem;
-    left: 9rem;
-    animation: planeMove 59s linear 1s 2 alternate ;
 }
+
+.airplane{
+    position: absolute;
+    z-index: 3;
+    width: 70px;
+    height: auto;
+    /* animation: rotate 3s linear 1s 2 alternate; */
+    animation: planeMove 30s linear 1s 2 reverse
+}
+
+/* .airplane-box{
+    border: 1px solid red ;
+    position: absolute;
+    z-index: 3;
+    transform: translate(8.5rem,8.5rem);
+    transform: translate(20.6rem,19rem);
+    transform: translate(19.5rem,30.5rem);
+}
+ */
 
 @keyframes  planeMove {
     0%{
@@ -147,3 +167,65 @@ main{
     }
     
 }
+/* 
+@keyframes  planeMove {
+  0%{
+    transform: translate(8.5rem,8.5rem);
+  }
+  5%{
+    transform: translate(20.6rem,19rem);
+  } 
+  10%{
+    transform: translate(19.5rem,30.5rem);
+  }
+  20%{
+    transform: translate(19.5rem,30.5rem);
+  }
+
+  21%{}
+  25%{}
+  26%{}
+  30%{}
+  31%{}
+  35%{}
+  36%{}
+  40%{}
+
+
+  41%{}
+  45%{}
+  50%{}
+  51%{}
+  55%{} 
+  56%{}
+  60%{}
+
+
+  61%{}
+  65%{}
+  66%{}
+  70%{}
+  71%{}
+  75%{}
+  76%{}
+  80%{}
+
+  81%{}
+  85%{}
+  86%{}
+  90%{}
+  91%{}
+  95%{}
+  96%{}
+  100%{}
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+} */
