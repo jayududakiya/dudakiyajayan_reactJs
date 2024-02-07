@@ -18,7 +18,6 @@ img{
     margin: auto;
     /* width: 70%; */
     min-height: 100vh;
-    border: 3px solid blue ;
     position: relative;
 }
 
@@ -43,8 +42,8 @@ img{
     position: absolute;
     z-index: 2;
     opacity: 1;
-    top: 60%;
-    right: 36%;
+    top: 76%;
+    right: 40%;
     transform: translate(-50%,-50%);
     animation: sun-move 18s linear 1s 2 alternate ;
 }
@@ -66,7 +65,7 @@ img{
     }
     100%{
         background-color: #513900;
-        top: 70%;
+        top: 78%;
         opacity: 0;
     }
 }
