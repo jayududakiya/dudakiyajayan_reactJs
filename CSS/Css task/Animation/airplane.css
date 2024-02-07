@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/*  */
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* css start  */
+
+main{
+    min-height:100svh;
+}
+
+.main-bg-image{
+
+    background: url(images/map-of-the-world-1.jpg) no-repeat center;
+    background-size: cover;
+
+    min-height:inherit;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.spot{
+    position: absolute;
+    background-color: #ffffff;
+    display: inline-block;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.spot-1{
+    transform: translate(10rem,10rem);
+}
+
+.spot-2{
+    transform: translate(21rem,32rem);
+}
+
+.spot-3{
+    transform: translate(41rem,28rem);
+}
+
+.spot-4{
+    transform: translate(69rem,29rem);
+}
+
+.spot-5{
+    transform: translate(61rem,9.5rem);
+}
+
+.spot-6{
+    transform: translate(44rem,3.8rem);
+}
+
+
+.airplane{
+    position: absolute;
+    width: 70px;
+    height: auto;
+    z-index: 3;
+
+    top: 9rem;
+    left: 9rem;
+    animation: planeMove 59s linear 1s 2 alternate ;
+}
+
+@keyframes  planeMove {
+    0%{
+        transform: rotate(-30deg);
+    }
+    5%{
+        transform: rotate(10deg);
+    }
+    10%{
+        transform: rotate(0deg);
+        left: 20rem;
+        top: 31rem;
+    }
+    11%{
+        transform: rotate(180deg);  
+        left: 20rem;
+        top: 31rem;
+    }
+    15%{
+        transform: rotate(230deg);  
+        left: 42rem;
+        top: 3rem;
+    }
+    16%{
+        transform: rotate(290deg);  
+        left: 42rem;
+        top: 3rem;
+    }
+    20%{
+        transform: rotate(290deg);  
+        left: 61rem;
+        top: 9rem;
+    }
+    21%{
+        transform: rotate(325deg);  
+        left: 61rem;
+        top: 9rem;
+    }
+    24%{
+        transform: rotate(330deg);  
+        left: 69rem;
+        top: 29rem;
+    }
+    25%{
+        transform: rotate(90deg);  
+        left: 69rem;
+        top: 29rem;
+    }
+    30%{
+        transform: rotate(90deg);  
+        left: 41rem;
+        top: 28rem;
+    }
+    31%{
+        transform: rotate(120deg);  
+        left: 41rem;
+        top: 28rem;
+    }
+    35%{
+        transform: rotate(120deg);  
+        left: 10rem;
+        top: 10rem;
+    }
+    36%{
+        transform: rotate(0deg);  
+        left: 10rem;
+        top: 10rem;
+    }
+    
+}
