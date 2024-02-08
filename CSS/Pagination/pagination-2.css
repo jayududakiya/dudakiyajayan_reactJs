@@ -1,0 +1,132 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style-type:none;
+}
+
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #3d3d3d;
+}
+
+
+.box{
+    width: 500px;
+    height: 45px;
+    border: 2px solid blue;
+    position: relative;
+}
+
+/* .box .circle-box{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+/* .box .circle-box  */
+.circle{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    z-index: 1;
+    display: block;
+    height: 80%;
+    width: 33px;
+    border-radius: 50%;
+    background-color: #000;
+    /* transform: translateX(380px); */
+    animation: move 7s linear 1 forwards;
+    animation-play-state: paused;
+}
+
+.pagination:hover ~ .circle{
+    animation-play-state: running ;
+}
+
+@keyframes move {
+    0%{
+        opacity: 0%;
+    }
+    10%{
+        opacity: 1;
+        transform: translateX(85px);
+    }
+    20%{
+        opacity: 1;
+        transform: translateX(132.5px);
+    }
+    30%{
+        opacity: 1;
+        transform: translateX(183px);
+    }
+    40%{
+        opacity: 1;
+        transform: translateX(231px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(281px);
+    }
+    60%{
+        opacity: 1;
+        transform: translateX(330px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(380px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(85px);
+    }
+
+}
+
+.pagination{
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+li{
+    border: 2px solid white ;
+    border-radius: 50px ;
+    padding: 5px 10px ;
+    transition: all 0.3s ease-in;
+}
+
+li:hover{
+    background-color: black;
+}
+
+.previous ,.next{
+    padding: 6px 10px ;
+}
+
+
+li a{
+    text-transform: uppercase;
+    color: #fff;
+}

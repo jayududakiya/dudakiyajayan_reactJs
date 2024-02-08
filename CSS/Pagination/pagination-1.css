@@ -1,0 +1,111 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul{
+    list-style-type:none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: darkolivegreen;
+}
+
+span{
+    display: inline-block;
+}
+
+main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.pagination{
+    min-width: 550px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.next , .previous{
+    padding: 0% 20px ;
+}
+
+:where(.next , .previous ) a{
+    color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.next a .fa-solid{
+    transform: translate(50px);
+}
+.previous a .fa-solid{
+    transform: translate(-50px);
+}
+
+:where(.next , .previous ) a span,
+:where(.next , .previous ) a .fa-solid{
+    transition: all 0.3s ease-in-out;
+}
+
+.next:hover span{
+    transform: translate(170%);
+}
+.previous:hover span{
+    transform: translate(-150%);
+}
+
+.next:hover .fa-solid{
+    transform: translate(-25px);
+}
+.previous:hover .fa-solid{
+    transform: translate(50px);
+}
+
+:where(.next , .previous ):hover a{
+    color: darkgreen;
+}
+
+.page-link{
+    transform:skewX(-30deg);
+    height: 100%;
+    width: 60px ;
+    padding: 0% 5px ;
+    border-left: 1px solid darkgreen;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.page-link:hover{
+    background-color: darkgreen;
+}
+.page-link:hover a{
+    color: white;
+}
+
+.pagination .page-link:nth-last-child(2){
+    border-right: 1px solid darkgreen;
+}
+
+.page-link a{
+    transform:skewX(30deg);
+}
