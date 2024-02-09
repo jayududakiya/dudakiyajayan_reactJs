@@ -26,7 +26,6 @@ main{
 .box{
     width: 500px;
     height: 45px;
-    border: 2px solid blue;
     position: relative;
 }
 
@@ -50,9 +49,10 @@ main{
     height: 80%;
     width: 33px;
     border-radius: 50%;
+    opacity: 0;
     background-color: #000;
     /* transform: translateX(380px); */
-    animation: move 7s linear 1 forwards;
+    /* animation: move 7s linear 1 forwards; */
     animation-play-state: paused;
 }
 
@@ -107,7 +107,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
 }
 
 li{
