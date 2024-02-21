@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <title>task-18</title>
-
-    <style>
-        .min-bg-image
-        {
-            background: url(aseet/wallpaperflare_44.jpg)  no-repeat center;
-            background-size: cover;
-        }
-    </style>
 </head>
-
 <body>
+    <div class="md:container m-auto">
+        <h1 class="text-center font-medium text-4xl mb-5 mt-3.5">Prototyping for the web with Frames</h1>
 
-    <div class="sm:container m-auto">
+        <div class="main-box min-h-[inherit]">
+            
+            <div class="link-box mb-6">
 
-        <div class="min-bg-image shadow-xl shadow-slate-800 mx-auto mt-10 rounded-xl p-3 w-[95%] sm:w-[60%] h-[480px] flex flex-col flex-wrap items-stretch justify-between">
-
-            <div class="w-full">
-                 <a href="#" class="ml-auto w-20 grid place-content-center text-3xl text-slate-900">
-                    <i class="fa-brands fa-xbox"></i>
-                 </a>
-            </div>
-
-            <div class="text-box mb-5">
-
-                <h1 class="mb-2 flex items-center justify-statr text-2xl text-left font-semibold p-0 text-gray-50">
-                 Tokyo , Japan <a href="#" class="min-h-[inherit] ml-2 grid rounded-xl text-light px-3 py-0.5  capitalize bg-gray-50 text-slate-900 text-sm ">jack pitres</a>
-                </h1>
-
-                <p class="text-left text-gray-300 leading-relaxed text-ellipsis overflow-hidden" >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem culpa animi vitae ab dolore vero est a, excepturi, ad error ea ex magnam atque neque dicta saepe temporibus maxime non.
-                </p>
+                <ul class="w-[100%] flex flex-nowrap items-center justify-start md:justify-around border-b-2 overflow-x-scroll md:overflow-hidden">
+                    <li class="border-b-2 transition-all border-transparent hover:border-blue-500 text-gray-400 hover:text-blue-500 pb-1 min-w-[13rem]"><a class="block text-xl text-center font-normal " href="#">Feature uno</a></li>
+                    <li class="border-b-2 transition-all border-transparent hover:border-blue-500 text-gray-400 hover:text-blue-500 pb-1 min-w-[13rem]"><a class="block text-xl text-center font-normal " href="#">Use case </a></li>
+                    <li class="border-b-2 transition-all border-transparent hover:border-blue-500 text-gray-400 hover:text-blue-500 pb-1 min-w-[13rem]"><a class="block text-xl text-center font-normal " href="#">Pricing</a></li>
+                    <li class="border-b-2 transition-all border-transparent hover:border-blue-500 text-gray-400 hover:text-blue-500 pb-1 min-w-[13rem]"><a class="block text-xl text-center font-normal " href="#">Components</a></li>
+                    <li class="border-b-2 transition-all border-transparent hover:border-blue-500 text-gray-400 hover:text-blue-500 pb-1 min-w-[13rem]"><a class="block text-xl text-center font-normal " href="#">Contacts</a></li>
+                </ul>
 
             </div>
 
+            <div class="content-box w-full flex flex-col md:flex-row items-stretch justify-between px-5">
 
+                <div class="img-box max-w-[100%] md:max-w-[49%] p-4">
+                    <img src="aseet/p1.jpg" class="block rounded-md min-h-full object-cover">
+                </div>
+
+                <div class="data-box max-w-[100%]  md:max-w-[49%] mt-4 md:mt-0 pb-10">
+
+                    <div class="text-1 mb-4">
+                        <h1 class="font-semibold capitalize text-2xl my-2.5">Saiyan Prototype</h1>
+                        <p class="text-gray-500 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt recusandae optio dolore commodi possimus id fuga totam asperiores eligendi incidunt earum vero provident doloremque illo dolorum deserunt itaque alias, error expedita ratione, eius nemo? Voluptate neque tempora dicta unde error maiores deleniti tenetur consectetur, quasi eveniet, voluptas inventore in.</p>
+                    </div>
+
+                    <div class="text-2 flex flex-col sm:flex-row">
+
+                        <div class="sub-txt ">
+
+                            <p class="inline-block pb-1.5 font-semibold capitalize text-2xl mb-2 border-b-2 border-blue-400 ">Nested Symbols</p>
+                            <p class="text-gray-500 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vitae quod, similique asperiores eveniet, non voluptate, eos illum nostrum dicta saepe. Sit ullam quibusdam reprehenderit architecto vel, fugit maiores in.</p>
+                        </div>
+
+                        <div class="sub-txt ">
+                            <p class="inline-block pb-1.5 font-semibold capitalize text-2xl mb-2 border-b-2 border-blue-400 ">layer Style</p>
+                            <p class="text-gray-500 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vitae quod, similique asperiores eveniet, non voluptate, eos illum nostrum dicta saepe. Sit ullam quibusdam reprehenderit architecto vel, fugit maiores in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-
-
-
 </body>
-
 </html>
-
-
