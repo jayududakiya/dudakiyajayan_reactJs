@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Font Html CDN link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font awesome CDN link-->
+    
+    <script src="https://kit.fontawesome.com/f84c90e4f4.js" crossorigin="anonymous"></script>    
+
+    <!-- custom style link -->
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- run in cdm  > npx tailwindcss -i ./src/input.css -o ./project/css/output.css --watch -->
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- welcome page  -->
+    <div class="welcome-wrapper grid place-items-center bg-black">
+        <ul class="text-white welcome-text">
+            <li class="flex items-center">  <i class="fa-solid fa-circle text-[0.5rem] mr-2"></i> <p class="text-3xl" >नमस्ते  </p> </li>
+            <li class="flex items-center">  <i class="fa-solid fa-circle text-[0.5rem] mr-2"></i> <p class="text-3xl" >राधे राधे</p> </li>
+            <li class="flex items-center">  <i class="fa-solid fa-circle text-[0.5rem] mr-2"></i> <p class="text-3xl" >नमस्कार</p> </li>
+            <li class="flex items-center">  <i class="fa-solid fa-circle text-[0.5rem] mr-2"></i> <p class="text-3xl" >કેમ છો </p> </li>
+            <li class="flex items-center">  <i class="fa-solid fa-circle text-[0.5rem] mr-2"></i> <p class="text-3xl" >Hello </p> </li>
+        </ul>
+    </div>
+    <header>
+
+        <!-- PROFILE IMAGE  -->
+
+        <div class="profile-img">
+        </div>
+
+        <!-- <img class="profile-img" src="image/DSC07033.jpg"> -->
+
+        <nav class="navbar">
+
+                <!-- LOGO -->
+
+                <div class="logo">
+                    
+                    <a class="logo-link montserrat" href="./index.html">
+                        <span class="copy">
+                            &#169;
+                        </span>
+                        <div class="logo-text">
+                            <p>Copy by Jayan</p>
+                            <p>Jayan Dudakiya </p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- NAV LINK -->
+
+                <div class="nav-link-wrapper">
+
+                    <ul class="navbar-links flex items-center justify-end">
+
+                        <li class="nav-li montserrat"><a href="#Work">Work</a></li>
+
+                        <li class="nav-li montserrat"><a href="#About">About</a></li>
+
+                        <li class="nav-li montserrat"><a href="#Contact">Contact</a></li>
+
+                    </ul>
+
+                    <!-- MENU BUTTON -->
+
+                    <div class="menu-btn montserrat min-h-[inherit] text-white">
+                        <button type="button" onclick="toggleMenu()">
+                            .Menu
+                        </button>
+                    </div> 
+
+                </div>
+        </nav>
+
+        <section class="header_wrapper h-full w-full flex flex-col items-center justify-end">
+
+            <div class="home-header w-full flex items-center justify-between">
+                
+                <div class="location-wrapper">
+
+                    <div class="location flex rounded-r-full">
+                        
+                        <p class="loca-text text-[1.1rem] montserrat font-semibold capitalize text-white">
+                            locations in the
+                            India
+                        </p>
+                         
+                        <div class="loca-icon">
+                            <!-- <video src="image/Globe animation-global-icon.mp4" autoplay loop class="Globe-earth" ></video> -->
+                            <img src="image/Globe-animation-global-icon-1-unscreen.gif" class="Globe-earth" >
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="about-work">
+
+                    <img src="image/arrow-right-down.svg"   class="arrow-icon" alt="arrow icon">
+
+                    <h1 class="work-text text-white text-[1.8rem] sm:text-3xl leading-[2.5rem]">
+                        <span>Freelance</span>
+                        Designer & Developer
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <div class="headname-wrapper w-full">
+
+                <h1 class="scroll-text montserrat">
+                        Jayan Dudakiya <span class="font-bold">&#8212;</span> Jayan Dudakiya 
+                </h1>
+
+            </div>
+
+        </section>
+
+        
+    </header> 
+
+    <!-- <button type="button" onclick="toggleMenu()" >menu</button> -->
+    <button aria-label='Toggle menu' class='nav-button button-lines button-lines-x close' role='button' type='button'>
+        <!-- <span class='lines'>menu</span> -->
+        menu
+      </button>
+    
+    <div id="nav-button" class="m-box nav-button">
+
+        <div class="menu-container">
+
+            <div class="menu-items flex flex-col justify-center">
+
+                <div class="container">
+
+                    <p class="border-b-2 opacity-70 pb-7 montserrat mb-9 pl-[10px] text-[12px] font-medium">NAVIGATION</p>
+
+                    <ul class="menu-link montserrat mb-10">
+                        <li><a href="#" class="items-center justify-start">  Home    </a></li>
+                        <li><a href="#" class="items-center justify-start">  Work    </a></li>
+                        <li><a href="#" class="items-center justify-start">  About   </a></li>
+                        <li><a href="#" class="items-center justify-start">  Contact </a></li>
+                    </ul>
+
+                    <p class="montserrat mb-9 pl-[10px] text-[12px] font-medium">SOCIALS</p>
+
+                    <ul class="social-link flex flex-wrap items-center justify-evenly montserrat">
+                        <li><a href="#" class="font-medium">Instagram</a></li>
+                        <li><a href="#" class="font-medium">Twitter</a></li>
+                        <li><a href="#" class="font-medium">Linked In</a></li>
+                        <li><a href="#" class="font-medium">Whatsapp</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+            // function toggleMenu() {
+            //     var menuBox = document.getElementById('menu-box');
+            //     if (menuBox.style.display == "none") {
+            //         // if is menuBox displayed, hide it
+            //         menuBox.style.display = "block";
+            //     }
+                
+            //     else { 
+            //         // if is menuBox hidden, display it
+            //         menuBox.style.display = "none";
+            //     }
+            // }
+
+            let navButton = document.querySelector(".nav-button");
+
+            navButton.addEventListener("click", (e) => { 
+                e.preventDefault();
+              // toggle nav state 
+            document.body.classList.toggle("nav-visible"); });
+    </script>
+
+</body>
+</html>

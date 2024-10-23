@@ -1,0 +1,105 @@
+
+/* @media  (min-width:1250px) {
+     header .profile-img{
+        background-size:cover;
+    }
+} */
+
+@media (max-width:1250px) {
+     header .profile-img{
+        background-size:cover;
+    }
+}
+
+
+@media (max-width:767px) {
+
+    .nav-link-wrapper{
+        min-width: 40%;
+    }
+    header{
+        min-height: 86vh;   
+    }
+
+    /* header .profile-img{
+        background-position:center -25%;
+        background-size:cover;
+    } */
+
+    .about-work{
+        margin-right: 0%;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .navbar-links{
+        display: none;
+    }
+    
+    .nav-link-wrapper .menu-btn{
+        display: block; 
+    }  
+    
+    /* header .profile-img{
+        background-position:center -25%;
+        background-size:cover;
+    } */
+
+    
+    .home-header{
+        order: 2;
+        margin-bottom: 4rem;
+    }
+
+    .home-header{
+
+        flex-flow: row ;
+        align-items: center;
+        justify-content: space-between !important;
+    }
+
+    
+    .location-wrapper{
+        margin-top: auto;
+    }
+    
+    .location-wrapper .location{
+        background-color: transparent ;
+        min-width: auto;
+        min-height: auto;
+    }
+    
+    .location .loca-icon{
+        background-color: transparent ;
+        margin:0;
+    }
+
+    .location .loca-text{
+        display: none;
+    }
+
+    .about-work{
+        margin: 0%;
+        order: 0;
+    }
+    
+    .headname-wrapper{
+        order: 1;
+    }
+
+    .menu-items{
+        width: 100%;
+    }  
+}
+
+
+@media (max-width:320px) {
+    .navbar{
+        justify-content:center;
+    }
+    .nav-link-wrapper .menu-btn button{
+        margin: auto;
+    }
+}

@@ -1,0 +1,523 @@
+
+/* CUSTOM CSS  */
+
+.montserrat{
+    font-family: "Montserrat", sans-serif !important;
+}
+
+a , span , img{
+    display: block !important;
+}
+
+
+.ctom-container{
+    max-width: calc(100% - 4%) ;
+    margin: auto;
+    font-size: 60.50% !important;
+}
+
+
+
+/* CSS START  */
+
+/* Welcome Page  */
+
+.welcome-wrapper{
+    overflow: hidden;
+    height: 100vh;
+    animation: welcome 2s linear 3.5s 1 forwards ;
+    border-radius:0%;
+}
+
+@keyframes  welcome {
+    0%{
+        height: 100vh;
+    }
+    100%{
+        border-radius: 50% 50% 50% 50% / 0% 0% 5% 5%;
+        height: 0vh;
+    }
+}
+
+.welcome-text{
+    margin: auto;
+    height: 100vh;
+    width: 150px;
+    display: flex ;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.welcome-text li{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 150px;
+    margin: auto;
+    animation: welcome-txt 2s linear 1 forwards ;
+    opacity: 0;
+}
+
+.welcome-text li:nth-of-type(1){
+    animation-delay: 1s;
+}
+
+.welcome-text li:nth-of-type(2){
+    animation-delay: 2s;
+}
+
+.welcome-text li:nth-of-type(3){
+    animation-delay: 2.5s;
+}
+
+.welcome-text li:nth-of-type(4){
+    animation-delay: 3s;
+}
+
+.welcome-text li:nth-of-type(5){
+    animation-delay: 3.5s;
+}
+
+
+.welcome-text li{
+    animation-delay: 2s;
+}
+
+@keyframes  welcome-txt {
+    0%{
+        display: flex !important;
+        opacity: 1;
+      }
+    100%{
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+
+/* >> HEADER */
+
+header{
+    min-height:100vh;
+    position: relative;
+    background-color: #999D9E;
+}
+
+/* MAIN BG IMAGE  */
+
+header .profile-img{
+    /* background: url(../image/Untitled-1.jpg);
+    background-position:center 25%;
+    background-size:cover; */
+
+     background: url(../image/DSC07033.jpg);
+    background-position:center 18%;
+    background-repeat:no-repeat;
+    background-size: 60%;
+    background-attachment: fixed;
+    min-height: inherit;
+}
+
+/* NAV BAR  */
+.navbar{
+    
+    width:calc(100% - 6%);
+    min-height: 50px;
+    margin: 10px auto;
+
+    z-index: 10;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* NAV LOGO  */
+
+.logo .logo-link
+{
+    font-weight: 600;
+    font-size: 1.1rem ;
+    max-width: 170px;
+    display: flex !important;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+}
+
+.logo .logo-link .copy {
+    display: block;
+    margin: auto 4px;
+    font-size: 1.3rem ;
+    transition: all 0.5s ease-in-out;
+}
+
+/* HOVER */
+
+.logo .logo-link:hover .copy{
+    transform: rotate(360deg);
+}
+
+.logo .logo-link .logo-text{
+    display: flex !important;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo .logo-link .logo-text p {
+    margin: auto 6px;
+    text-wrap: nowrap;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+/* HOVER  */
+
+.logo-link:hover .logo-text p:nth-child(1) {
+    transform: translateX(-110%);
+    opacity: 0;
+}
+
+.logo-link .logo-text p:nth-child(2){
+    opacity: 0;
+}
+
+.logo-link:hover .logo-text p:nth-child(2) {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-101%) ;
+}
+
+
+/* >> NAVBAR LINK */
+
+.nav-link-wrapper{
+    min-width: 50%;
+    min-height:inherit;
+}
+
+.navbar-links{
+    width: 100%;
+    min-height:inherit;
+    position: relative;
+}
+
+.navbar-links li{
+    position: relative;
+    margin-left: 2.4rem;
+}
+
+.navbar-links li::after{
+    position: absolute;
+    bottom: -10px;
+    left: 0%;
+    right: 0%;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin:auto;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+
+/* HOVER */
+
+.navbar-links li:hover::after{
+    opacity: 1;
+}
+
+
+
+.navbar-links li a{
+    font-weight: 400;
+    color: #fff;
+    font-size:1rem;
+}
+
+/* MENU BUTTON */
+
+.nav-link-wrapper .menu-btn{
+    display: none; 
+}
+
+.nav-link-wrapper .menu-btn button{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    min-height: inherit;
+    font-weight: 600;
+    font-size:1.2rem;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* header_wrapper */
+
+.header_wrapper{
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+}
+
+.home-header{
+    order: 1;
+}
+.location-wrapper{
+    order: 1;
+}
+
+.location-wrapper .location{
+    background: #1c1d20;
+    min-width: 240px;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.location .loca-text{
+    height: inherit;
+    max-width: 4rem;
+    cursor: default;
+    margin:auto;
+    line-height: 1.4rem;
+}
+
+.location .loca-text::selection{
+    cursor: not-allowed;
+}
+
+.location .loca-icon{
+    margin-block: auto ;
+    margin-right: 0.9rem;
+    border-radius: 50%;
+    background-color: #999D9E;
+    overflow: hidden;
+    width:4rem;
+    height: 4rem;
+}
+.location .loca-icon .Globe-earth{
+    /* outline: 2px solid yellow !important; */
+    display: block;
+    margin: auto;
+    min-width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: rotate(0deg) scale(1.1);
+    animation: globe-rotation 10s linear infinite alternate-reverse;
+}
+@keyframes globe-rotation {
+    0%{
+        transform: rotate(0deg) scale(1.1);
+    }
+    50%{
+        transform: rotate(10deg) scale(1.1);
+    }
+    100%{
+        transform: rotate(-10deg) scale(1.1);
+    }
+}
+
+
+
+/* ABOUT WORK  */
+
+.about-work {
+    order: 2;
+    margin-left:auto;
+    margin-right: 10%;
+}
+
+.about-work .arrow-icon{
+    max-width:2.5rem;
+    object-position: center;
+    margin-bottom: 1.5rem;
+}
+
+
+/* HEADNAME WRAPPER*/
+
+.headname-wrapper{
+    order: 2;
+    margin-bottom:1%;
+    overflow-x:hidden;
+}
+
+h1.scroll-text{
+    cursor:default;
+    padding: 0% 10px;
+    color: #fff;
+    font-size: 10rem;
+    text-wrap: nowrap;
+    animation: scroll-txt 16s linear 1s infinite ;
+}
+
+h1.scroll-text::selection,
+h1.scroll-text span::selection{
+    cursor: not-allowed;
+}
+
+h1.scroll-text span{
+    display: inline !important;
+}
+
+@keyframes scroll-txt {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* MENU  BOX */
+
+
+.m-box{
+    min-height: 100vh;
+}
+
+.menu-container{
+    min-height: inherit;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.menu-items{
+    background: #1c1d20;
+    min-height: inherit;
+    width: 38%;
+    margin-left: auto;
+    color: #fff;
+}
+
+.menu-items .container{
+    width: 90%;
+    margin: auto;
+}
+
+.menu-items .menu-link li a{
+    font-size: 2rem;
+    padding: 6px 0px 6px 10px;
+    display: flex !important;
+    position: relative;
+    transition: 0.2s all linear;
+} 
+
+
+/* HOVER */
+
+.menu-items .menu-link li a:hover{
+    transform: translateY(10%); 
+    font-size: 1.8rem;
+}
+
+.menu-items .menu-link li a::before{
+    position: absolute;
+    left: -3%;
+    content: " ";
+    display: block;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    border-radius: 50%;
+
+    transition: 0.2s all linear;
+}
+
+
+
+/* HOVER */
+
+.menu-items .menu-link li:hover a::before{
+    opacity: 1;
+}
+
+
+.menu-items .social-link li a::after{
+    content: " ";
+    display: block;
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    margin: auto;
+    margin-top: 8px;
+    /* opacity: 0; */
+
+    transition: 0.2s all linear;
+}
+
+/* HOVER */
+
+.menu-items .social-link li a:hover::after{
+    width: 100%;
+    border-radius: 10px;
+    margin-top:0%;
+}
+
+
+#blue{
+    background-color: blue;
+}
+
+#red{
+    background-color: red;
+}
+
+
+
+/* click */
+
+
+
+.nav-visible .nav-wrapper {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
+  .nav {
+    position: relative;
+    transform: rotateY(90deg);
+    transform-origin: left center;
+    transition: transform 0.6s;
+  }
+  
+  .nav-visible .nav {
+    transform: rotateY(0deg);
+  }
+
+.nav-visible .button-lines-x .lines {
+    background: transparent;
+  }
+  
+  .nav-visible .button-lines-x .lines:after, .nav-visible .button-lines-x .lines:before {
+    top: 0;
+    transition: top 0.3s ease, transform 0.3s 0.3s ease;
+  }
+  
+  .nav-visible .button-lines-x .lines:after {
+    transform: rotate3d(0, 0, 1, 45deg);
+  }
+  
+  .nav-visible .button-lines-x .lines:before {
+    transform: rotate3d(0, 0, 1, -45deg);
+  }
