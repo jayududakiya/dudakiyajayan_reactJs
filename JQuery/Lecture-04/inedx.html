@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* .text{
+      color:red;
+      background-color: yellow;
+      padding: 20px;
+    }
+    .box{
+      border:5px solid black;
+    } */
+
+    .divParent {
+      height: 500px;
+      width: 500px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ulParent {
+      height: 400px;
+      width: 400px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .liChild {
+      height: 100px;
+      width: 300px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spanChild {
+      height: 50px;
+      width: 200px;
+      border: 2px solid black;
+    }
+
+    .strongChild {
+      height: 50px;
+      width: 200px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--block lavel tag not use under inline tag-->
+
+
+  <!-- <div class="text">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos enim accusamus laborum asperiores ad nemo fugiat odit autem deserunt ullam ipsa, voluptates quis minima! Corporis impedit reiciendis mollitia ullam.</p>
+  </div><br>
+  <button>Click remove</button>
+  <button>Click append</button> -->
+
+
+  <!-- <div class="divParent">
+    <ul class="ulParent">
+      <li class="liChild">
+        <span class="spanChild">This is Span tag</span>
+      </li>
+      <li class="liChild">
+        <strong class="strongChild">This is Strong Tag</strong>
+      </li>
+    </ul>
+  </div> -->
+
+
+  <h1>This is Heading Tag</h1>
+  <div>This is div tag</div>
+  <p>This is p tag</p>
+  <p>This is p tag</p>
+  <b>this is bold tag</b>
+  <div class="sibling" style="background-color: red;">this is div tag</div>
+  <p>This is p tag</p>
+  <p>This is p tag</p>
+  <p>This is p tag</p>
+  <span>This is Span tag</span>
+  <span>This is Span tag</span>
+  <span>This is Span tag</span>
+  <div>This is div tag</div>
+
+
+
+
+
+  <button style="margin-top: 100px;">Traversing</button>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script async src="JQuery.js"></script>
+</body>
+
+</html>
