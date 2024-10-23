@@ -1,0 +1,348 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.container{
+    width: calc(100% - 5%);
+    margin: 0% auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* NAV BAR CSS */
+
+nav{
+    padding: 10px 0px;
+
+    background-color: #D94848;
+    box-shadow: 0px 0px 10px 3px #D94848;
+}
+
+nav .Nav-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-box{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-box .logo-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.cart-btn{
+    margin-block:auto;
+    width: 80px;
+    height: 40px;
+    background-color:#212730;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 0px 10px;
+    font-size: 1.4rem;
+    border: 0px;
+    outline: 0px;
+    color: #fdf3f3;
+    border-radius: 20px;
+}
+
+.cart-btn .count-carts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* SHOP ITEM CSS */
+
+.shop-Product-list{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 26px;
+    min-height: 100svh;
+    min-width: 100%;
+}
+
+#Shop-list{
+    padding: 30px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    align-items: stretch;
+    justify-content:center;
+}
+
+
+.shop-item{
+    border: 2px solid black;
+    width: 19rem;
+    min-height: 17rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.shop-item .Sp-item-img{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+}
+
+.shop-item .Sp-item-img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Sp-item-body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 95% ;
+    height: 50%;
+    margin: 0% auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: space-evenly;
+    color: #292929;
+}
+
+
+.Sp-item-body .Product-name{
+    font-size:1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.Sp-item-body p {
+    font-size: 0.9rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Sp-item-body p small{
+    font-size:1rem;
+    opacity: 0.8;
+}
+
+
+.Sp-item-body .Product-desc{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+}
+
+.price_cart{
+    width: 100%;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price_cart button.ADD_btn{
+    border: 0px;
+    outline: 0px;
+    padding-top: 2px;
+    background-color: #F24F13;
+    color: #f8f8f8;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s linear;
+}
+
+
+.price_cart button:hover{
+    background-color: #f8f8f8;
+    color: #F24F13;
+}
+
+/* CART ITEM CSS */
+
+#Cart-list-Warp.active{
+    transform: translateX(1000px);
+}
+
+.cart-Product-list{
+    transition: all 0.6s linear ;
+    position: fixed;
+    inset: 0px 0px auto auto;
+    z-index: 5;
+    height: 100vh;
+    min-width: 400px;
+    background-image: linear-gradient(to right, #d4ccc2d5, #c9bbb5d5, #bbaaaad5, #aa9ba1d5, #968d97d5, #86818cd5, #767582c5, #666977c5, #595b6bd5, #4c4e5fd5, #3f4153d5, #333547d5);
+    backdrop-filter: blur(3px);
+}
+
+
+
+#Cart-list{
+    height:inherit;
+    padding: 6px;
+    overflow-y: auto;
+    padding-bottom: 6.5rem;
+}
+
+#Cart-list::-webkit-scrollbar{
+    display: none;
+}
+
+.CLOSE{
+    position:sticky;
+    top: 0%;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-size: 1.4rem;
+    border: 0px;
+    background-color: #212730;
+    color: #f8f8f8;
+    padding: 8px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.CART_TOTAL{
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, #d4ccc265, #b2a19bdd, #8d787cdd, #635462, #333547);
+}
+
+.CART_TOTAL h1{
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 8px;
+    color: #f8f8f8;
+}
+
+
+.CART_TOTAL p{
+    font-size: 1.2rem;
+    text-align: right;
+    padding: 8px;
+    color: #000;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+}
+
+
+.Ct-item-img{
+    border-radius: 10px ;
+    height: 80px;
+}
+
+
+.Ct-item-img .item-img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cart-item .Ct-item-body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f8f8f8;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: space-around;
+}
+
+
+.Ct-item-body .cart-name {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Ct-item-body p {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ct-item-body p span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    padding-bottom: 3px;
+}
+
+.Ct-item-body small{
+    text-transform: capitalize ;
+    color: #212730;
+    font-weight: 200;
+}
+
+
+.Ct-item-body .cart-price {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.REMOVE_btn{
+    border: 0px;
+    border-radius: 10px;
+    height: 38px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.4rem;
+    background-color: #D94848;
+    color: #f8f8f8;
+    transition:  all 0.3s linear;
+}
+
+
+.REMOVE_btn:hover {
+    background-color: #f8f8f8;
+    color: #D94848;
+}
+
